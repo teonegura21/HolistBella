@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { SERVICES } from "@/lib/constants";
+import { MAIN_SERVICES, ADDITIONAL_SERVICES } from "@/lib/constants";
+import { Link } from "wouter";
 
 export default function Services() {
   return (
@@ -13,38 +14,69 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {SERVICES.map((service) => (
-            <Card key={service.id} className="service-card shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
-              <img 
-                src={service.image} 
-                alt={service.title} 
-                className="w-full h-48 object-cover"
-              />
-              <CardContent className="p-6">
-                <h3 className={`text-2xl font-semibold mb-3 ${service.color}`}>
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">
-                  {service.description}
-                </p>
-                <div className="flex items-center justify-between">
-                  <span className={`font-semibold ${service.color}`}>
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-center mb-8 text-gray-800">Servicii Principale</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {MAIN_SERVICES.map((service) => (
+              <Card key={service.id} className="service-card shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+                <img 
+                  src={service.image} 
+                  alt={service.title} 
+                  className="w-full h-48 object-cover"
+                />
+                <CardContent className="p-6">
+                  <h3 className={`text-2xl font-semibold mb-3 ${service.color}`}>
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 mb-4 leading-relaxed">
+                    {service.description}
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <span className={`font-semibold ${service.color}`}>
+                      {service.benefits.join(" • ")}
+                    </span>
+                    <Link href={`/${service.slug}`}>
+                      <Button 
+                        size="sm"
+                        className={service.color.includes("green") ? "bg-green-600 hover:bg-green-700" :
+                                  service.color.includes("blue") ? "bg-blue-600 hover:bg-blue-700" :
+                                  service.color.includes("orange") ? "bg-orange-600 hover:bg-orange-700" :
+                                  "bg-purple-600 hover:bg-purple-700"}
+                      >
+                        Află Mai Multe
+                      </Button>
+                    </Link>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <h3 className="text-2xl font-bold text-center mb-8 text-gray-800">Alte Servicii</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {ADDITIONAL_SERVICES.map((service) => (
+              <Card key={service.id} className="service-card shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+                <img 
+                  src={service.image} 
+                  alt={service.title} 
+                  className="w-full h-40 object-cover"
+                />
+                <CardContent className="p-6">
+                  <h3 className={`text-xl font-semibold mb-3 ${service.color}`}>
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 mb-4 leading-relaxed text-sm">
+                    {service.description}
+                  </p>
+                  <span className={`font-semibold text-sm ${service.color}`}>
                     {service.benefits.join(" • ")}
                   </span>
-                  <Button 
-                    size="sm"
-                    className={service.color.includes("green") ? "bg-green-600 hover:bg-green-700" :
-                              service.color.includes("blue") ? "bg-blue-600 hover:bg-blue-700" :
-                              service.color.includes("orange") ? "bg-orange-600 hover:bg-orange-700" :
-                              "bg-purple-600 hover:bg-purple-700"}
-                  >
-                    Află Mai Multe
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
 
         {/* Apa Kangen Section */}
@@ -71,9 +103,11 @@ export default function Services() {
                 </div>
               </div>
               
-              <Button className="bg-white text-blue-600 hover:bg-gray-100">
-                Află Mai Multe despre Apa Kangen
-              </Button>
+              <Link href="/apa-kangen">
+                <Button className="bg-white text-blue-600 hover:bg-gray-100">
+                  Află Mai Multe despre Apa Kangen
+                </Button>
+              </Link>
             </div>
             
             <div className="h-64 lg:h-full">

@@ -13,7 +13,7 @@ import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
 import { insertContactSubmissionSchema } from "@shared/schema";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import { CONTACT_INFO, SERVICES, OFFICE_HOURS } from "@/lib/constants";
+import { CONTACT_INFO, ALL_SERVICES, OFFICE_HOURS } from "@/lib/constants";
 import { z } from "zod";
 
 export default function Contact() {
@@ -149,12 +149,11 @@ export default function Contact() {
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
-                            {SERVICES.map((service) => (
+                            {ALL_SERVICES.map((service) => (
                               <SelectItem key={service.id} value={service.id}>
                                 {service.title}
                               </SelectItem>
                             ))}
-                            <SelectItem value="apa-kangen">Apa Kangen</SelectItem>
                             <SelectItem value="consultatie-generala">Consultație Generală</SelectItem>
                           </SelectContent>
                         </Select>

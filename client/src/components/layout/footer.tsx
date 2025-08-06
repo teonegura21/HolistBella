@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Facebook, Phone, Mail, MapPin } from "lucide-react";
-import { CONTACT_INFO, SERVICES } from "@/lib/constants";
+import { CONTACT_INFO, ALL_SERVICES } from "@/lib/constants";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -53,7 +53,7 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Servicii</h4>
             <ul className="space-y-2 text-gray-400">
-              {SERVICES.map((service) => (
+              {ALL_SERVICES.slice(0, 5).map((service) => (
                 <li key={service.id}>
                   <button
                     onClick={() => scrollToSection("servicii")}
@@ -63,14 +63,6 @@ export default function Footer() {
                   </button>
                 </li>
               ))}
-              <li>
-                <button
-                  onClick={() => scrollToSection("servicii")}
-                  className="hover:text-white transition-colors"
-                >
-                  Apa Kangen
-                </button>
-              </li>
             </ul>
           </div>
           
