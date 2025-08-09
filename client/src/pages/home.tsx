@@ -6,7 +6,7 @@ import Services from "@/components/sections/services";
 import About from "@/components/sections/about";
 import Testimonials from "@/components/sections/testimonials";
 import Contact from "@/components/sections/contact";
-import WhatsAppFloat from "@/components/ui/whatsapp-float";
+import FloatingWhatsApp from "@/components/ui/floating-whatsapp";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
-      <WhatsAppFloat />
+      <FloatingWhatsApp />
     </div>
   );
 }

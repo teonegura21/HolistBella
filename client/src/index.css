@@ -13,23 +13,30 @@
   --card-foreground: hsl(20, 14.3%, 4.1%);
   --border: hsl(20, 5.9%, 90%);
   --input: hsl(20, 5.9%, 90%);
-  --primary: hsl(123, 38%, 57%);
+  --primary: hsl(142, 71%, 45%);
   --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(207, 90%, 54%);
-  --secondary-foreground: hsl(211, 100%, 99%);
-  --accent: hsl(36, 100%, 50%);
+  --secondary: hsl(197, 37%, 96%);
+  --secondary-foreground: hsl(204, 50%, 18%);
+  --accent: hsl(39, 100%, 57%);
   --accent-foreground: hsl(0, 0%, 100%);
   --destructive: hsl(0, 84.2%, 60.2%);
   --destructive-foreground: hsl(60, 9.1%, 97.8%);
-  --ring: hsl(20, 14.3%, 4.1%);
-  --radius: 0.5rem;
+  --ring: hsl(142, 71%, 45%);
+  --radius: 0.75rem;
   
-  /* Medical wellness colors */
-  --healing-green: hsl(123, 38%, 57%);
-  --wellness-blue: hsl(207, 90%, 54%);
+  /* Enhanced Holistic Wellness Color Palette */
+  --healing-green: hsl(142, 71%, 45%);
+  --healing-green-light: hsl(142, 76%, 68%);
+  --healing-green-dark: hsl(142, 71%, 35%);
+  --wellness-blue: hsl(197, 71%, 52%);
+  --wellness-blue-light: hsl(197, 76%, 68%);
+  --serenity-purple: hsl(269, 35%, 62%);
   --earth-tone: hsl(25, 25%, 45%);
-  --warm-accent: hsl(36, 100%, 50%);
-  --soft-gray: hsl(210, 11%, 96%);
+  --warm-gold: hsl(39, 100%, 57%);
+  --soft-cream: hsl(45, 25%, 97%);
+  --nature-sage: hsl(120, 25%, 75%);
+  --tranquil-teal: hsl(174, 62%, 47%);
+  --sunset-orange: hsl(24, 95%, 53%);
 }
 
 .dark {
@@ -43,7 +50,7 @@
   --card-foreground: hsl(0, 0%, 98%);
   --border: hsl(240, 3.7%, 15.9%);
   --input: hsl(240, 3.7%, 15.9%);
-  --primary: hsl(123, 38%, 57%);
+  --primary: hsl(142, 71%, 45%);
   --primary-foreground: hsl(0, 0%, 100%);
   --secondary: hsl(240, 3.7%, 15.9%);
   --secondary-foreground: hsl(0, 0%, 98%);
@@ -62,47 +69,167 @@
   body {
     @apply font-sans antialiased bg-background text-foreground;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    scroll-behavior: smooth;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     font-weight: 600;
+    letter-spacing: -0.025em;
+  }
+  
+  .scroll-smooth {
+    scroll-behavior: smooth;
   }
 }
 
 @layer components {
   .gradient-bg {
-    background: linear-gradient(135deg, hsl(123, 38%, 57%) 0%, hsl(123, 48%, 47%) 50%, hsl(123, 58%, 37%) 100%);
+    background: linear-gradient(135deg, var(--healing-green) 0%, var(--tranquil-teal) 50%, var(--wellness-blue) 100%);
   }
-
+  
+  .gradient-wellness {
+    background: linear-gradient(135deg, var(--soft-cream) 0%, var(--nature-sage) 100%);
+  }
+  
+  .holistic-card {
+    @apply bg-white/90 backdrop-blur-sm border-0 shadow-lg rounded-2xl transition-all duration-500;
+    transform: translateY(0);
+  }
+  
+  .holistic-card:hover {
+    @apply shadow-2xl;
+    transform: translateY(-8px);
+  }
+  
+  .wellness-button {
+    @apply bg-gradient-to-r text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl;
+    background: linear-gradient(135deg, var(--healing-green), var(--tranquil-teal));
+  }
+  
+  .floating-element {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  
+  .pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite alternate;
+  }
+  
+  .slide-in-left {
+    animation: slideInLeft 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  
+  .slide-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  
+  .bg-healing-green { background-color: var(--healing-green); }
+  .bg-healing-green-light { background-color: var(--healing-green-light); }
+  .bg-wellness-blue { background-color: var(--wellness-blue); }
+  .bg-serenity-purple { background-color: var(--serenity-purple); }
+  .bg-warm-gold { background-color: var(--warm-gold); }
+  .bg-soft-cream { background-color: var(--soft-cream); }
+  .bg-tranquil-teal { background-color: var(--tranquil-teal); }
+  .bg-sunset-orange { background-color: var(--sunset-orange); }
+  
+  .text-healing-green { color: var(--healing-green); }
+  .text-wellness-blue { color: var(--wellness-blue); }
+  .text-serenity-purple { color: var(--serenity-purple); }
+  .text-warm-gold { color: var(--warm-gold); }
+  .text-tranquil-teal { color: var(--tranquil-teal); }
+  .text-sunset-orange { color: var(--sunset-orange); }
+  
+  .service-card {
+    @apply bg-white rounded-2xl shadow-lg border-0 overflow-hidden transition-all duration-500;
+    transform: translateY(0);
+  }
+  
+  .service-card:hover {
+    @apply shadow-2xl;
+    transform: translateY(-8px) scale(1.02);
+  }
+  
   .glass-effect {
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.9);
   }
-
-  .service-card {
-    transition: all 0.3s ease;
-  }
-
-  .service-card:hover {
-    transform: translateY(-5px);
-  }
-
+  
   .animate-fade-in {
     animation: fadeIn 0.6s ease-out;
   }
-
+  
   .animate-slide-up {
     animation: slideUp 0.6s ease-out;
   }
-
+  
   .animate-scale-in {
     animation: scaleIn 0.4s ease-out;
   }
-
+  
   .whatsapp-pulse {
     animation: pulse 2s infinite;
   }
+  
+  .interactive-hover {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  .interactive-hover:hover {
+    @apply transform scale-105 shadow-xl;
+  }
+  
+  .wellness-gradient-text {
+    background: linear-gradient(135deg, var(--healing-green), var(--tranquil-teal));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 20px rgba(76, 175, 80, 0.3); }
+  100% { box-shadow: 0 0 40px rgba(76, 175, 80, 0.6); }
 }
 
 @keyframes fadeIn {
@@ -158,6 +285,42 @@ button:focus,
 input:focus,
 textarea:focus,
 select:focus {
-  outline: 2px solid hsl(123, 38%, 57%);
+  outline: 2px solid var(--healing-green);
   outline-offset: 2px;
+}
+
+/* Enhanced interactive elements */
+.btn-holistic {
+  @apply px-8 py-4 rounded-full font-semibold text-white transition-all duration-300 transform;
+  background: linear-gradient(135deg, var(--healing-green), var(--tranquil-teal));
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.btn-holistic:hover {
+  @apply scale-105;
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+}
+
+/* Card animations and effects */
+.card-enter {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: cardEnter 0.6s ease-out forwards;
+}
+
+@keyframes cardEnter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.testimonial-card {
+  @apply bg-white rounded-2xl p-6 shadow-lg transition-all duration-300;
+  border-left: 4px solid var(--healing-green);
+}
+
+.testimonial-card:hover {
+  @apply shadow-xl;
+  transform: translateY(-5px);
 }
