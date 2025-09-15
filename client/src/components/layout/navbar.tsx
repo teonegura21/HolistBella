@@ -76,6 +76,24 @@ export default function Navbar() {
               <Link href="/healy" className="w-full" data-testid="nav-link-healy">Healy</Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
+              <Link href="/drenaj-limfatic" className="w-full" data-testid="nav-link-drenaj-limfatic">Drenaj Limfatic</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="/hidroterapie" className="w-full" data-testid="nav-link-hidroterapie">Hidroterapie</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="/aromaterapie" className="w-full" data-testid="nav-link-aromaterapie">Aromaterapie</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="/haloterapie" className="w-full" data-testid="nav-link-haloterapie">Haloterapie</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="/infrarosu" className="w-full" data-testid="nav-link-infrarosu">Infrarosu</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="/reflexologie" className="w-full" data-testid="nav-link-reflexologie">Reflexologie</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
               <Link href="/alte-servicii" className="w-full" data-testid="nav-link-alte-servicii">Alte Servicii</Link>
             </DropdownMenuItem>
           </DropdownMenuContent>
@@ -105,6 +123,24 @@ export default function Navbar() {
           </Link>
           <Link href="/healy" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
             Healy
+          </Link>
+          <Link href="/drenaj-limfatic" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
+            Drenaj Limfatic
+          </Link>
+          <Link href="/hidroterapie" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
+            Hidroterapie
+          </Link>
+          <Link href="/aromaterapie" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
+            Aromaterapie
+          </Link>
+          <Link href="/haloterapie" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
+            Haloterapie
+          </Link>
+          <Link href="/infrarosu" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
+            Infrarosu
+          </Link>
+          <Link href="/reflexologie" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
+            Reflexologie
           </Link>
           <Link href="/alte-servicii" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
             Alte Servicii
