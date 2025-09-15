@@ -1,6 +1,6 @@
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
-import WhatsAppFloat from "@/components/ui/whatsapp-float";
+import FloatingWhatsApp from "@/components/ui/floating-whatsapp";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Waves, Thermometer, Heart, ArrowRight, Star } from "lucide-react";
@@ -237,7 +237,7 @@ export default function AndullationPage() {
       </section>
 
       <Footer />
-      <WhatsAppFloat />
+      <FloatingWhatsApp />
     </div>
   );
 }

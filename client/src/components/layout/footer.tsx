@@ -79,10 +79,12 @@ export default function Footer() {
               <ul className="space-y-3">
                 {quickLinks.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href}>
-                      <a className="text-gray-300 hover:text-healing-green transition-colors cursor-pointer">
-                        {link.title}
-                      </a>
+                    <Link 
+                      href={link.href} 
+                      className="text-gray-300 hover:text-healing-green transition-colors cursor-pointer"
+                      data-testid={`footer-link-${link.href.replace('/', '')}`}
+                    >
+                      {link.title}
                     </Link>
                   </li>
                 ))}
@@ -162,6 +164,7 @@ export default function Footer() {
                 <button
                   onClick={() => scrollToSection("contact")}
                   className="bg-white text-healing-green hover:bg-gray-50 px-8 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
+                  data-testid="button-schedule-consultation"
                 >
                   Programează Consultația
                 </button>
@@ -170,6 +173,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 px-8 py-3 rounded-full font-semibold transition-all duration-300 border border-white/30"
+                  data-testid="link-whatsapp-direct"
                 >
                   WhatsApp Direct
                 </a>
@@ -187,15 +191,22 @@ export default function Footer() {
               </div>
               
               <div className="flex items-center space-x-6 text-sm text-gray-400">
-                <a href="#" className="hover:text-healing-green transition-colors">
+                <a href="#" className="hover:text-healing-green transition-colors" data-testid="footer-link-privacy">
                   Politica de Confidențialitate
                 </a>
-                <a href="#" className="hover:text-healing-green transition-colors">
+                <a href="#" className="hover:text-healing-green transition-colors" data-testid="footer-link-terms">
                   Termeni și Condiții
                 </a>
-                <a href="#" className="hover:text-healing-green transition-colors">
+                <a href="#" className="hover:text-healing-green transition-colors" data-testid="footer-link-gdpr">
                   GDPR
                 </a>
+                <button 
+                  onClick={() => window.dispatchEvent(new CustomEvent('openCookiePreferences'))}
+                  className="hover:text-healing-green transition-colors cursor-pointer"
+                  data-testid="button-cookie-preferences"
+                >
+                  Preferințe Cookie-uri
+                </button>
               </div>
             </div>
 

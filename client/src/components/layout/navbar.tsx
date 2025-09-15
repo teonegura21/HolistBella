@@ -46,26 +46,50 @@ export default function Navbar() {
           <DropdownMenuTrigger className="px-3 py-2 text-gray-700 hover:text-primary transition-colors flex items-center">
             Servicii <ChevronDown className="ml-1 h-4 w-4" />
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="w-48">
+          <DropdownMenuContent className="w-56">
             <DropdownMenuItem>
-              <Link href="/apa-kangen" className="w-full">Apa Kangen</Link>
+              <Link href="/terapie-bowen" className="w-full" data-testid="nav-link-terapie-bowen">Terapie Bowen</Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Link href="/biorezonanta" className="w-full">Biorezonanță</Link>
+              <Link href="/nutritie-celulara" className="w-full" data-testid="nav-link-nutritie-celulara">Nutriție Celulară</Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Link href="/andullation" className="w-full">Andullation</Link>
+              <Link href="/terapie-reiki" className="w-full" data-testid="nav-link-terapie-reiki">Terapie Reiki</Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Link href="/healy" className="w-full">Healy</Link>
+              <Link href="/detoxifiere-naturala" className="w-full" data-testid="nav-link-detoxifiere-naturala">Detoxifiere Naturală</Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Link href="/alte-servicii" className="w-full">Alte Servicii</Link>
+              <Link href="/apa-kangen" className="w-full" data-testid="nav-link-apa-kangen">Apa Kangen</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="/biorezonanta" className="w-full" data-testid="nav-link-biorezonanta">Biorezonanță</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="/andullation" className="w-full" data-testid="nav-link-andullation">Andullation</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="/healy" className="w-full" data-testid="nav-link-healy">Healy</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="/alte-servicii" className="w-full" data-testid="nav-link-alte-servicii">Alte Servicii</Link>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       ) : (
         <>
+          <Link href="/terapie-bowen" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
+            Terapie Bowen
+          </Link>
+          <Link href="/nutritie-celulara" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
+            Nutriție Celulară
+          </Link>
+          <Link href="/terapie-reiki" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
+            Terapie Reiki
+          </Link>
+          <Link href="/detoxifiere-naturala" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
+            Detoxifiere Naturală
+          </Link>
           <Link href="/apa-kangen" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
             Apa Kangen
           </Link>
