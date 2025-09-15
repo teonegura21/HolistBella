@@ -40,6 +40,10 @@ export default function Navbar() {
         Acasă
       </Link>
       
+      <Link href="/programare" className={`${mobile ? "block px-3 py-2" : "px-3 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"} transition-colors`} data-testid="nav-link-programare">
+        {mobile ? "Programare" : "📅 Programare"}
+      </Link>
+      
       {/* Services Dropdown */}
       {!mobile ? (
         <DropdownMenu>

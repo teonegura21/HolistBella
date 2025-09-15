@@ -52,19 +52,26 @@ export const appointments = pgTable("appointments", {
   statusPlata: text("status_plata").default('unpaid'), // unpaid, paid, refunded
   stripePaymentIntentId: text("stripe_payment_intent_id"),
   
+  // GDPR Compliance
+  gdprConsent: boolean("gdpr_consent").notNull().default(false),
+  consentTimestamp: timestamp("consent_timestamp").defaultNow().notNull(),
+  
   // Timestamps
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });
 
-export const insertAppointmentSchema = createInsertSchema(appointments).omit({
+export const insertAppointmentSchema = createInsertSchema(appointments, {
+  dataOra: z.string().min(1, "Data și ora sunt obligatorii"), // Accept ISO string from frontend
+  varsta: z.number().min(1).max(120).optional(),
+  gdprConsent: z.literal(true, { errorMap: () => ({ message: "Consimțământul GDPR este obligatoriu" }) }),
+  pret: z.number().optional(),
+}).omit({
   id: true,
   createdAt: true,
   updatedAt: true,
-}).extend({
-  dataOra: z.string(), // Accept string from frontend, will be converted to Date
-  pret: z.number().optional(),
-  varsta: z.number().min(1).max(120).optional(),
+  consentTimestamp: true, // Set automatically by server
+  stripePaymentIntentId: true,
 });
 
 export type InsertAppointment = z.infer<typeof insertAppointmentSchema>;

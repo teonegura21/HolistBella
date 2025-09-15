@@ -17,6 +17,7 @@ import DetoxifiereNaturalaPage from "@/pages/detoxifiere-naturala";
 import AndullationPage from "@/pages/andullation";
 import HealyPage from "@/pages/healy";
 import AlteServiciiPage from "@/pages/alte-servicii";
+import ProgramarePage from "@/pages/programare";
 import DesprePage from "@/pages/despre";
 import TestimonialePage from "@/pages/testimoniale";
 import NotFound from "@/pages/not-found";
@@ -37,6 +38,7 @@ function Router() {
       <Route path="/andullation" component={AndullationPage} />
       <Route path="/healy" component={HealyPage} />
       <Route path="/alte-servicii" component={AlteServiciiPage} />
+      <Route path="/programare" component={ProgramarePage} />
       <Route path="/despre" component={DesprePage} />
       <Route path="/testimoniale" component={TestimonialePage} />
       <Route component={NotFound} />
