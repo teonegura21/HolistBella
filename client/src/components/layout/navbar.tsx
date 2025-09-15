@@ -108,8 +108,12 @@ export default function Navbar() {
         </>
       )}
       
-      <Link href="/despre" className={`${mobile ? "block px-3 py-2" : "px-3 py-2"} text-gray-700 hover:text-primary transition-colors`}>
+      <Link href="/despre" className={`${mobile ? "block px-3 py-2" : "px-3 py-2"} text-gray-700 hover:text-primary transition-colors`} data-testid={`nav-link-despre${mobile ? '-mobile' : ''}`}>
         Despre
+      </Link>
+      
+      <Link href="/testimoniale" className={`${mobile ? "block px-3 py-2" : "px-3 py-2"} text-gray-700 hover:text-primary transition-colors`} data-testid={`nav-link-testimoniale${mobile ? '-mobile' : ''}`}>
+        Testimoniale
       </Link>
       
       <button
