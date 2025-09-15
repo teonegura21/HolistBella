@@ -36,85 +36,105 @@ export default function AlteServiciiPage() {
     }
   };
 
-  const serviciiComplementare = [
+  const pacheteTerapeutice = [
+    {
+      icon: Waves,
+      titlu: "Pachetul Detoxifiere Completă",
+      descriere: "Combinație optimă de terapii pentru detoxifierea profundă a organismului și revitalizare",
+      durata: "4-6 săptămâni",
+      terapii: ["Drenaj Limfatic Manual", "Hidroterapie", "Aromaterapie", "Biorezonanță"],
+      beneficii: ["Eliminarea toxinelor", "Îmbunătățirea energiei", "Optimizarea circulației", "Echilibru sistem imunitar"],
+      aplicatii: ["Oboseală cronică", "Retenție de apă", "Probleme de piele", "Scăderea imunității"],
+      pret: "Discount 15% la pachete complete"
+    },
+    {
+      icon: Heart,
+      titlu: "Programul Antistres Integral",
+      descriere: "Abordare holistică pentru gestionarea stresului prin multiple modalități terapeutice",
+      durata: "6-8 săptămâni",
+      terapii: ["Terapie Reiki", "Aromaterapie", "Reflexologie", "Haloterapie"],
+      beneficii: ["Reducerea anxietății", "Îmbunătățirea somnului", "Echilibru emoțional", "Relaxare profundă"],
+      aplicatii: ["Stres cronic", "Burnout", "Anxietate", "Tulburări de somn"],
+      pret: "Pachet optimizat pentru rezultate maxime"
+    },
+    {
+      icon: Thermometer,
+      titlu: "Recuperarea Sportivului",
+      descriere: "Protocol specializat pentru sportivi și persoane active fizic",
+      durata: "2-4 săptămâni",
+      terapii: ["Terapie cu Infraroșu", "Drenaj Limfatic", "Terapie Bowen", "Hidroterapie"],
+      beneficii: ["Recuperare musculară accelerată", "Prevenirea leziunilor", "Îmbunătățirea performanței", "Reducerea inflamației"],
+      aplicatii: ["Post-antrenament", "Leziuni sportive", "Pregătire competiții", "Menținere formă"],
+      pret: "Programe flexibile și personalizate"
+    },
+    {
+      icon: Flower2,
+      titlu: "Echilibrul Feminin",
+      descriere: "Terapii adaptate nevoilor specifice ale femeilor în diferite etape ale vieții",
+      durata: "6-12 săptămâni",
+      terapii: ["Nutriție Celulară", "Aromaterapie", "Reflexologie", "Terapie Reiki"],
+      beneficii: ["Echilibru hormonal", "Reducerea simptomelor menopauză", "Energie optimă", "Bunăstare generală"],
+      aplicatii: ["Sindrom premenstrual", "Menopauză", "Fertilitate", "Stres maternal"],
+      pret: "Consultație gratuită pentru personalizare"
+    }
+  ];
+
+  const serviciiIndividuale = [
     {
       icon: Droplets,
       titlu: "Drenaj Limfatic Manual",
       descriere: "Tehnica de masaj specializată pentru stimularea sistemului limfatic și reducerea edemelor",
       evidenta: "solid",
-      beneficii: ["Reducerea edemelor", "Detoxifierea organismului", "Îmbunătățirea circulației", "Susținerea imunității"],
-      aplicatii: ["Post-operatorii", "Celulită", "Retenție de apă", "Recuperare sportivă"],
-      cercetare: "Validată de Cleveland Clinic pentru limfedem și insuficiența venoasă cronică. Studii demonstrează eficacitate în reducerea edemelor post-chirurgicale.",
-      limitari: "Contraindicat în tromboza venoasă profundă, insuficiența cardiacă acută, infecții acute."
+      link: "/drenaj-limfatic"
     },
     {
       icon: Waves,
-      titlu: "Hidroterapia",
-      descriere: "Terapie cu apă folosind izvoarele termale naturale ale României pentru vindecarea holistică",
+      titlu: "Hidroterapie",
+      descriere: "Terapie cu apă folosind izvoarele termale naturale ale României",
       evidenta: "solid",
-      beneficii: ["Relaxare musculară", "Îmbunătățirea circulației", "Reducerea inflamației", "Echilibru mineral"],
-      aplicatii: ["Afecțiuni reumatismale", "Stres și tensiune", "Recuperare musculară", "Detoxifiere"],
-      cercetare: "România are peste 1/3 din izvoarele minerale și termale europene. Beneficii validate pentru afecțiuni reumatismale, circulatorii și de stres.",
-      limitari: "Evaluare medicală necesară pentru anumite afecțiuni cardiace sau dermatologice."
+      link: "/hidroterapie"
     },
     {
       icon: Flower2,
-      titlu: "Aromaterapia",
-      descriere: "Utilizarea uleiurilor esențiale naturale pentru echilibru fizic, mental și emoțional",
+      titlu: "Aromaterapie",
+      descriere: "Utilizarea uleiurilor esențiale naturale pentru echilibru holistic",
       evidenta: "moderat",
-      beneficii: ["Reducerea stresului", "Îmbunătățirea dispoziției", "Relaxare profundă", "Echilibru hormonal"],
-      aplicatii: ["Anxietate și stres", "Tulburări de somn", "Dureri de cap", "Echilibru emoțional"],
-      cercetare: "Studii demonstrează beneficii pentru reducerea anxietății și îmbunătățirea calității somnului. Efecte placebo semnificative în unele studii.",
-      limitari: "Pot apărea reacții alergice. Unele uleiuri contraindicat în sarcină sau pentru copii."
+      link: "/aromaterapie"
     },
     {
       icon: Mountain,
-      titlu: "Haloterapia (Terapia cu Sare)",
-      descriere: "Inhalarea aerului saturat cu particule de sare naturală în camere speciale de sare",
+      titlu: "Haloterapie",
+      descriere: "Inhalarea aerului saturat cu particule de sare naturală",
       evidenta: "preliminar",
-      beneficii: ["Îmbunătățirea respirației", "Reducerea inflamației", "Detoxifierea plămânilor", "Relaxare profundă"],
-      aplicatii: ["Afecțiuni respiratorii", "Alergii", "Stres", "Probleme de piele"],
-      cercetare: "Studii preliminare sugerează beneficii pentru astm și bronșită cronică. România are peșteri de sare naturale cu proprietăți terapeutice.",
-      limitari: "Evidence limitată din studii controlate. Nu înlocuiește tratamentul medical convențional pentru afecțiuni respiratorii grave."
+      link: "/haloterapie"
     },
     {
       icon: Thermometer,
-      titlu: "Terapia cu Infraroșu",
-      descriere: "Utilizarea căldurii infraroșii pentru penetrare profundă în țesuturi și stimularea circulației",
+      titlu: "Terapie cu Infraroșu",
+      descriere: "Utilizarea căldurii infraroșii pentru penetrare profundă în țesuturi",
       evidenta: "moderat",
-      beneficii: ["Îmbunătățirea circulației", "Relaxare musculară", "Reducerea durerii", "Eliminarea toxinelor"],
-      aplicatii: ["Dureri musculare", "Artrita", "Recuperare sportivă", "Stres și tensiune"],
-      cercetare: "Studii demonstrează beneficii pentru durerea cronică și recuperarea musculară. Mecanisme fiziologice validate pentru îmbunătățirea circulației.",
-      limitari: "Precauții pentru persoanele cu afecțiuni cardiovasculare, sarcină sau medicamente fotosensibilizante."
+      link: "/infrarosu"
     },
     {
       icon: Heart,
-      titlu: "Reflexologia",
-      descriere: "Aplicarea presiunii pe puncte specifice de pe tălpi, mâini și urechi pentru echilibru general",
+      titlu: "Reflexologie",
+      descriere: "Aplicarea presiunii pe puncte specifice pentru echilibru general",
       evidenta: "limitat",
-      beneficii: ["Reducerea stresului", "Îmbunătățirea relaxării", "Echilibru general", "Susținerea wellness-ului"],
-      aplicatii: ["Stres și anxietate", "Tulburări de somn", "Tensiune generală", "Complement la alte terapii"],
-      cercetare: "Studii mixte - unele demonstrează beneficii pentru anxietate și durere, dar lipsă evidență convingătoare pentru pretențiile specifice despre 'zone reflexe'.",
-      limitari: "Nu există dovezi științifice solide pentru hărțile reflexologice specifice. Beneficiile pot fi din relaxare generală."
-    }
-  ];
-
-  const terapiiTraditionale = [
+      link: "/reflexologie"
+    },
     {
       icon: Sparkles,
-      titlu: "Terapia Reiki",
+      titlu: "Terapie Reiki",
       descriere: "Tehnică japoneză de vindecare energetică prin transfer de energie universală",
       evidenta: "limitat",
-      beneficii: ["Relaxare profundă", "Reducerea stresului", "Echilibru emoțional", "Sentiment de pace"],
-      aplicatii: ["Stres și anxietate", "Trauma emoțională", "Echilibru personal", "Complementar la alte tratamente"]
+      link: "/terapie-reiki"
     },
     {
       icon: Wind,
-      titlu: "Terapia Bowen",
+      titlu: "Terapie Bowen",
       descriere: "Tehnica terapeutică blândă care activează capacitatea naturală de auto-vindecare",
       evidenta: "preliminar",
-      beneficii: ["Relaxare musculară", "Îmbunătățirea posturii", "Reducerea tensiunii", "Echilibru structural"],
-      aplicatii: ["Dureri de spate", "Tensiuni musculare", "Probleme posturale", "Stres fizic"]
+      link: "/terapie-bowen"
     }
   ];
 
@@ -162,12 +182,12 @@ export default function AlteServiciiPage() {
                 </Badge>
                 
                 <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                  Alte <span className="text-teal-200">Servicii</span>
+                  Pachete <span className="text-teal-200">Terapeutice</span>
                 </h1>
                 
                 <p className="text-xl text-teal-100 mb-8 leading-relaxed">
-                  Servicii complementare evaluate transparent - de la terapii cu evidență solidă 
-                  până la abordări tradiționale, cu informații oneste despre beneficii și limitări.
+                  Programe complete care combină multiple terapii pentru rezultate optime. 
+                  Abordări holistice personalizate pentru nevoile tale specifice.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -202,8 +222,8 @@ export default function AlteServiciiPage() {
                 <div className="inline-block p-8 bg-white/10 backdrop-blur-sm rounded-2xl">
                   <Flower2 className="w-32 h-32 text-teal-200 mx-auto lg:ml-auto" />
                   <div className="mt-6 text-center lg:text-right">
-                    <div className="text-2xl font-bold text-white">6+ Servicii</div>
-                    <div className="text-teal-200">Evaluare Transparentă</div>
+                    <div className="text-2xl font-bold text-white">4 Pachete</div>
+                    <div className="text-teal-200">Abordări Holistice</div>
                   </div>
                 </div>
               </div>
@@ -211,95 +231,84 @@ export default function AlteServiciiPage() {
           </div>
         </section>
 
-        {/* Servicii Complementare Principale */}
+        {/* Pachete Terapeutice */}
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Servicii Complementare Principale
+                Pachete Terapeutice Complete
               </h2>
               <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-                Terapii cu diferite niveluri de evidență științifică - prezentate transparent 
-                pentru a vă ajuta să luați decizii informate.
+                Programe holistice care combină multiple terapii pentru rezultate optime. 
+                Fiecare pachet este personalizat în funcție de nevoile individuale.
               </p>
             </div>
 
-            <div className="space-y-12">
-              {serviciiComplementare.map((serviciu, index) => (
+            <div className="grid md:grid-cols-2 gap-8">
+              {pacheteTerapeutice.map((pachet, index) => (
                 <Card 
                   key={index} 
                   className="hover:shadow-xl transition-all duration-300 border-l-4 border-teal-400"
-                  data-testid={`complementary-service-card-${index}`}
+                  data-testid={`therapeutic-package-card-${index}`}
                 >
-                  <CardContent className="p-8">
-                    <div className="grid lg:grid-cols-2 gap-8 items-start">
+                  <CardContent className="p-6">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mr-4">
+                        <pachet.icon className="w-6 h-6 text-teal-600" />
+                      </div>
                       <div>
-                        <div className="flex items-center mb-4">
-                          <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mr-4">
-                            <serviciu.icon className="w-6 h-6 text-teal-600" />
-                          </div>
-                          <div>
-                            <h3 className="text-2xl font-bold text-gray-900">{serviciu.titlu}</h3>
-                            <Badge 
-                              variant={getBadgeVariant(serviciu.evidenta)}
-                              className="mt-1"
-                            >
-                              {getBadgeText(serviciu.evidenta)}
-                            </Badge>
-                          </div>
-                        </div>
-                        
-                        <p className="text-gray-700 mb-6 leading-relaxed">
-                          {serviciu.descriere}
-                        </p>
-
-                        <div className="grid md:grid-cols-2 gap-4">
-                          <div>
-                            <h4 className="font-semibold text-gray-900 mb-3">Beneficii:</h4>
-                            <ul className="space-y-2">
-                              {serviciu.beneficii.map((beneficiu, idx) => (
-                                <li key={idx} className="flex items-center text-sm">
-                                  <CheckCircle className="w-4 h-4 text-teal-500 mr-2 flex-shrink-0" />
-                                  {beneficiu}
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                          
-                          <div>
-                            <h4 className="font-semibold text-gray-900 mb-3">Aplicații:</h4>
-                            <ul className="space-y-2">
-                              {serviciu.aplicatii.map((aplicatie, idx) => (
-                                <li key={idx} className="flex items-center text-sm">
-                                  <CheckCircle className="w-4 h-4 text-blue-500 mr-2 flex-shrink-0" />
-                                  {aplicatie}
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        </div>
+                        <h3 className="text-xl font-bold text-gray-900">{pachet.titlu}</h3>
+                        <Badge variant="secondary" className="mt-1">
+                          {pachet.durata}
+                        </Badge>
                       </div>
+                    </div>
+                    
+                    <p className="text-gray-700 mb-4 leading-relaxed">
+                      {pachet.descriere}
+                    </p>
 
-                      <div className="space-y-4">
-                        <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
-                          <h4 className="font-semibold text-green-800 mb-2 flex items-center">
-                            <CheckCircle className="w-4 h-4 mr-2" />
-                            Cercetare și Evidență
-                          </h4>
-                          <p className="text-green-700 text-sm leading-relaxed">
-                            {serviciu.cercetare}
-                          </p>
-                        </div>
-
-                        <div className="p-4 bg-amber-50 border border-amber-200 rounded-lg">
-                          <h4 className="font-semibold text-amber-800 mb-2 flex items-center">
-                            ⚠️ Limitări și Precauții
-                          </h4>
-                          <p className="text-amber-700 text-sm leading-relaxed">
-                            {serviciu.limitari}
-                          </p>
-                        </div>
+                    <div className="mb-4">
+                      <h4 className="font-semibold text-gray-900 mb-2">Terapii incluse:</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {pachet.terapii.map((terapie, idx) => (
+                          <Badge key={idx} variant="outline" className="text-xs">
+                            {terapie}
+                          </Badge>
+                        ))}
                       </div>
+                    </div>
+
+                    <div className="grid md:grid-cols-1 gap-4">
+                      <div>
+                        <h4 className="font-semibold text-gray-900 mb-2">Beneficii:</h4>
+                        <ul className="space-y-1 mb-4">
+                          {pachet.beneficii.map((beneficiu, idx) => (
+                            <li key={idx} className="flex items-center text-sm">
+                              <CheckCircle className="w-4 h-4 text-teal-500 mr-2 flex-shrink-0" />
+                              {beneficiu}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <h4 className="font-semibold text-gray-900 mb-2">Recomandat pentru:</h4>
+                        <ul className="space-y-1 mb-4">
+                          {pachet.aplicatii.map((aplicatie, idx) => (
+                            <li key={idx} className="flex items-center text-sm">
+                              <CheckCircle className="w-4 h-4 text-blue-500 mr-2 flex-shrink-0" />
+                              {aplicatie}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div className="p-3 bg-blue-50 border border-blue-200 rounded-lg">
+                      <p className="text-blue-700 text-sm font-medium">
+                        💰 {pachet.pret}
+                      </p>
                     </div>
                   </CardContent>
                 </Card>
@@ -308,70 +317,64 @@ export default function AlteServiciiPage() {
           </div>
         </section>
 
-        {/* Terapii Tradiționale */}
+        {/* Servicii Individuale - Navigare */}
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Terapii Tradiționale și Energetice
+                Servicii Individuale Disponibile
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Abordări holistische cu focus pe relaxare și echilibru personal.
+              <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+                Fiecare terapie are o pagină dedicată cu informații detaliate, evidență științifică și protocoale complete.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
-              {terapiiTraditionale.map((terapie, index) => (
+            <div className="grid md:grid-cols-4 gap-6">
+              {serviciiIndividuale.map((serviciu, index) => (
                 <Card 
                   key={index} 
-                  className="hover:shadow-lg transition-all duration-300 border-l-4 border-purple-400"
-                  data-testid={`traditional-therapy-card-${index}`}
+                  className="hover:shadow-lg transition-all duration-300 cursor-pointer group"
+                  data-testid={`individual-service-card-${index}`}
                 >
-                  <CardContent className="p-6">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
-                        <terapie.icon className="w-6 h-6 text-purple-600" />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-gray-900">{terapie.titlu}</h3>
-                        <Badge variant={getBadgeVariant(terapie.evidenta)}>
-                          {getBadgeText(terapie.evidenta)}
-                        </Badge>
-                      </div>
+                  <CardContent className="p-4 text-center">
+                    <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-teal-200 transition-colors">
+                      <serviciu.icon className="w-6 h-6 text-teal-600" />
                     </div>
-                    
-                    <p className="text-gray-700 mb-4 leading-relaxed">
-                      {terapie.descriere}
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{serviciu.titlu}</h3>
+                    <p className="text-sm text-gray-600 mb-3 leading-relaxed">
+                      {serviciu.descriere}
                     </p>
-
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-3">Beneficii:</h4>
-                        <ul className="space-y-2">
-                          {terapie.beneficii.map((beneficiu, idx) => (
-                            <li key={idx} className="flex items-center text-sm">
-                              <CheckCircle className="w-4 h-4 text-purple-500 mr-2 flex-shrink-0" />
-                              {beneficiu}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                      
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-3">Aplicații:</h4>
-                        <ul className="space-y-2">
-                          {terapie.aplicatii.map((aplicatie, idx) => (
-                            <li key={idx} className="flex items-center text-sm">
-                              <CheckCircle className="w-4 h-4 text-indigo-500 mr-2 flex-shrink-0" />
-                              {aplicatie}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                    <Badge 
+                      variant={getBadgeVariant(serviciu.evidenta)}
+                      className="mb-3"
+                    >
+                      {getBadgeText(serviciu.evidenta)}
+                    </Badge>
+                    <div>
+                      <Button 
+                        asChild 
+                        variant="outline" 
+                        size="sm" 
+                        className="w-full group-hover:bg-teal-50"
+                        data-testid={`button-view-service-${index}`}
+                      >
+                        <a href={serviciu.link}>Vezi Detalii</a>
+                      </Button>
                     </div>
                   </CardContent>
                 </Card>
               ))}
+            </div>
+
+            <div className="text-center mt-12">
+              <div className="p-6 bg-blue-50 border border-blue-200 rounded-lg inline-block">
+                <h3 className="font-semibold text-blue-800 mb-2">💡 Recomandare</h3>
+                <p className="text-blue-700 leading-relaxed max-w-2xl">
+                  Pentru rezultate optime, recomandăm combinarea mai multor terapii. 
+                  În timpul consultației inițiale, vom crea un plan personalizat care combină 
+                  terapiile cele mai potrivite pentru obiectivele tale de sănătate.
+                </p>
+              </div>
             </div>
           </div>
         </section>
