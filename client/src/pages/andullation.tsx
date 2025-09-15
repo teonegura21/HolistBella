@@ -67,10 +67,12 @@ export default function AndullationPage() {
       tip: "Studiu Clinic",
       participanti: "50 participanți",
       durata: "5 zile (30 min/zi)",
+      conditie: "Durere Lombară Cronică",
       rezultate: "Pragul durerii crescut cu 34.48% (zona lombară), scăderea percepției subiective a durerii cu 52.3%, îmbunătățirea bunăstării cu 45.1%",
       parametri: "Frecvență: 5-40 Hz, Amplitudine: 2-8 mm",
-      limitari: "Fără grup de control, finanțare parțială de la producător",
-      credibilitate: "pozitiv-limitat"
+      limitari: "Eșantion mic, fără grup de control, finanțare parțială de la producător",
+      sursa: "Clinical study - peer reviewed",
+      credibilitate: "evidență preliminară"
     },
     {
       an: "2024",
@@ -78,26 +80,39 @@ export default function AndullationPage() {
       participanti: "44 pacienți",
       conditie: "Hernie Discală Cervicală",
       rezultate: "Reducerea durerii și îmbunătățirea funcției vs. terapia convențională singură",
+      limitari: "Eșantion mic, necesare studii de replicare",
       sursa: "Journal of Clinical Medicine",
-      credibilitate: "pozitiv"
+      credibilitate: "evidență moderată"
     },
     {
       an: "2023",
-      tip: "Studiu Pilot - Stimulare Mecanică Multimodală",
-      participanti: "20 pacienți",
-      conditie: "Durere Lombară Acută/Cronică",
-      rezultate: "Reducerea durerii cu 45-57% pe scala vizuală analogă (20 min ședințe, 50-200 Hz)",
-      sursa: "Frontiers in Pain Research",
-      credibilitate: "preliminar"
-    },
-    {
-      an: "2023",
-      tip: "Meta-Analiză Sistematică",
+      tip: "Review Sistematic",
       participanti: "14 studii, 860 subiecți",
       conditie: "Durere Lombară Cronică",
       rezultate: "Îmbunătățiri semnificative în intensitatea durerii și indicii de dizabilitate",
+      limitari: "Heterogenitate în protocoale, calitatea studiilor variabilă",
       sursa: "Journal of Orthopaedic Surgery Research",
-      credibilitate: "pozitiv"
+      credibilitate: "evidență moderată"
+    },
+    {
+      an: "2023",
+      tip: "Studiu Pilot",
+      participanti: "20 pacienți",
+      conditie: "Durere Lombară Acută/Cronică",
+      rezultate: "Reducerea durerii cu 45-57% pe scala vizuală analogă",
+      limitari: "Eșantion foarte mic, lipsește grupul de control",
+      sursa: "Frontiers in Pain Research",
+      credibilitate: "evidență preliminară"
+    },
+    {
+      an: "2022",
+      tip: "Studiu Observațional",
+      participanti: "67 pacienți",
+      conditie: "Durere Cervicală și Lombară",
+      rezultate: "Reducere durere 38-45%, îmbunătățire mobilitate la majoritatea pacienților",
+      limitari: "Lipsește grupul de control, urmărire pe termen scurt",
+      sursa: "International Journal of Rehabilitation Research",
+      credibilitate: "evidență preliminară"
     }
   ];
 
@@ -128,45 +143,141 @@ export default function AndullationPage() {
     {
       conditie: "Durere Lombară Cronică",
       nivel: "Evidență Moderată",
-      studii: "Meta-analiză 2023",
-      descriere: "Cel mai bine documentat - îmbunătățiri consistente în intensitatea durerii și funcționalitate"
+      studii: "Review sistematic 2023 (14 studii, 860 subiecți)",
+      descriere: "Cel mai bine documentat - îmbunătățiri în intensitatea durerii și funcționalitate",
+      protocol: "2-3x/săptămână, 30-45 min, 8-12 săptămâni",
+      limitari: "Studiile variază în protocoale și măsuri de rezultat, eșantioane relativ mici"
     },
     {
-      conditie: "Reabilitare Post-AVC",
-      nivel: "Evidență Promițătoare", 
-      studii: "Review sistematic 2025",
-      descriere: "Reducerea spasticității și îmbunătățirea funcției motorii a membrelor superioare"
-    },
-    {
-      conditie: "Drenaj Limfatic",
-      nivel: "Evidență Preliminară",
-      studii: "Studii pe animale + clinic lipedema",
-      descriere: "Stimularea vaselor limfatice, eficacitate superioară când combinat cu drenaj manual"
-    },
-    {
-      conditie: "Managementul Durerii",
+      conditie: "Durere Cervicală",
       nivel: "Evidență Moderată",
-      studii: "Teoria Gate Control",
-      descriere: "Activarea interneuronilor inhibitori pentru reducerea percepției durerii"
+      studii: "Studiu controlat randomizat 2024 (44 pacienți)",
+      descriere: "Îmbunătățiri în durere și funcție comparativ cu terapia convențională",
+      protocol: "Protocol personalizat, 30-45 min/sesiune",
+      limitari: "Eșantion mic, necesare studii de replicare pe populații mai mari"
+    },
+    {
+      conditie: "Stimularea Circulației",
+      nivel: "Evidență Preliminară",
+      studii: "Studii observaționale mici",
+      descriere: "Potențial pentru îmbunătățirea circulației periferice prin stimularea mecanică",
+      protocol: "Protocol individualizat în funcție de toleranță",
+      limitari: "Necesare studii controlate pentru confirmarea beneficiilor circulatorii"
+    },
+    {
+      conditie: "Managementul General al Durerii",
+      nivel: "Evidență Preliminară",
+      studii: "Studii pilot diverse condiții dureroase",
+      descriere: "Potențial terapeutic pentru diverse sindroame dureroase bazat pe teoria 'gate control'",
+      mecanisme: "Stimulare senzorială care poate influența transmisia durerii",
+      limitari: "Mecanismele exacte necesită cercetare suplimentară, eficacitatea variază"
+    },
+    {
+      conditie: "Terapie Complementară în Reabilitare",
+      nivel: "Evidență Preliminară",
+      studii: "Rapoarte de caz și studii pilot",
+      descriere: "Utilizare ca adjuvant în programe de reabilitare pentru diverse condiții",
+      protocol: "Integrat în programe multidisciplinare, durata și frecvența personalizate",
+      limitari: "Lipsesc studii randomizate controlate de mari dimensiuni"
     }
   ];
 
+  const contraindicatiiSiguranta = [
+    {
+      categoria: "Contraindicații Absolute",
+      conditii: ["Tromboză acută", "Aneurisme aortic", "Sarcină primul trimestru", "Implanturi cardiace nestabile", "Fractură acută neconsolidată"],
+      nivel: "interzis"
+    },
+    {
+      categoria: "Contraindicații Relative",
+      conditii: ["Hipertensiune severă necontrolată (>180/110)", "Epilepsie necontrolată", "Proteze articulare recente (<6 luni)", "Tumori osoase", "Osteoporoză severă"],
+      nivel: "precauție"
+    },
+    {
+      categoria: "Protocoale de Siguranță",
+      masuri: ["Evaluare medicală prealabilă obligatorie", "Monitorizare parametri vitali în primele sesiuni", "Progresie graduală a intensității", "Întrerupere imediată la orice disconfort", "Supraveghere de către personal calificat"],
+      nivel: "standard"
+    },
+    {
+      categoria: "Parametri de Siguranță Recomandați",
+      specificatii: ["Frecvență: 5-35 Hz (conform studiilor disponibile)", "Amplitudine: Maximum 6mm pentru confort", "Durata: 30-45 min per sesiune", "Frecvența: 2-3x/săptămână inițial", "Pauza: Minimum 4 ore între sesiuni"],
+      sursa: "Bazat pe protocoalele din studiile publicate și recomandări generale de siguranță"
+    }
+  ];
+
+  const mecanismeTehniceAvansate = [
+    {
+      aspect: "Biomecânica Vibrațiilor",
+      descriere: "Oscilațiile multidirecționale creează unde de presiune în țesuturi, activând mecanoreceptorii senzitivi",
+      teorie: "Bazat pe principii cunoscute ale stimulării mecanice",
+      limitari: "Mecanismele exacte necesită cercetări suplimentare"
+    },
+    {
+      aspect: "Teoria Gate Control",
+      descriere: "Vibrațiile ar putea bloca semnalele de durere la nivelul măduvei spinale conform teoriei Melzack-Wall",
+      evidenta: "Teorie acceptată, dar aplicarea specifică necesită mai multe studii",
+      limitari: "Eficacitatea variază în funcție de tipul și originea durerii"
+    },
+    {
+      aspect: "Stimularea Circulației",
+      descriere: "Vibrațiile ar putea îmbunătăți fluxul sanguin prin activarea pompei musculare",
+      observatii: "Efecte observate în studii mici, mecanismul exact neclar",
+      limitari: "Necesare măsurători obiective în studii mai mari"
+    }
+  ];
+
+  const disclaimerMedical = {
+    text: "IMPORTANT: Această informație este prezentată în scop educativ și informativ și NU constituie consultanță medicală, diagnostic sau tratament medical. Informațiile prezentate NU înlocuiesc în niciun fel consultația, diagnosticul sau tratamentul unui medic calificat. Rezultatele pot varia semnificativ de la o persoană la alta.",
+    importante: [
+      "NU este un dispozitiv medical certificat în România",
+      "NU este un tratament medical diagnosticat sau aprobat oficial",
+      "Consultația medicală prealabilă este OBLIGATORIE",
+      "NU înlocuiește tratamentele medicale standard sau prescrise",
+      "Rezultatele individuale pot varia foarte mult",
+      "Pot exista riscuri și contraindicații necunoscute",
+      "Terapia poate să NU fie eficientă pentru toate persoanele",
+      "Cercetarea este încă preliminară și necesită confirmări suplimentare"
+    ],
+    juridic: [
+      "Furnizorul NU își asumă responsabilitatea pentru efectele adverse",
+      "Informațiile prezentate nu garantează rezultate specifice",
+      "Utilizarea se face pe propria răspundere după consultare medicală",
+      "În caz de probleme de sănătate, contactați imediat un medic"
+    ]
+  };
+
   const intrebariFrec = [
     {
-      q: "Cum funcționează terapia Andullation?",
-      a: "Andullation folosește vibrații multidirecționale (5-40 Hz) pentru a stimula reflexele musculare naturale. Aceasta activează pompa musculară, îmbunătățind circulația și reducând durerea prin teoria gate control - vibratiile blochează semnalele de durere către creier."
+      q: "Cum funcționează exact terapia Andullation?",
+      a: "Andullation folosește vibrații multidirecționale (5-40 Hz) care creează stimulare mecanică în țesuturi. Acestea pot activa mecanoreceptorii și influența transmisia semnalelor de durere conform teoriei 'gate control'. Mecanismele exacte sunt încă în curs de cercetare și necesită studii suplimentare pentru o înțelegere completă."
     },
     {
       q: "Ce dovezi științifice există pentru eficacitate?",
-      a: "Studiul principal de la Universitatea din Sevilla (2019) cu 50 participanți a demonstrat reduceri de 52% în durere și îmbunătățiri de 45% în bunăstare. Meta-analiza din 2023 pe 860 subiecți confirmă beneficiile pentru durerea lombară cronică, deși studiile sunt încă relativ mici."
+      a: "Studiul de la Universitatea din Sevilla (2019) cu 50 participanți a demonstrat reduceri de 52% în percepția durerii și îmbunătățiri de 45% în bunăstare. Review-ul sistematic din 2023 pe 860 subiecți confirmă beneficii pentru durerea lombară cronică, deși studiile sunt încă relativ mici și necesită replicare în populații mai mari pentru confirmarea rezultatelor."
     },
     {
-      q: "Este sigură terapia cu vibrații?",
-      a: "Studiile nu au raportat efecte adverse grave. Este considerată sigură, mai ales în reabilitarea geriatrică. Totuși, ca orice terapie, necesită evaluare profesională pentru a determina adecvarea în cazuri specifice."
+      q: "Care sunt contraindicațiile și precautiile?",
+      a: "Contraindicații absolute includ: tromboză acută, aneurisme, sarcină primul trimestru, implanturi cardiace nestabile. Contraindicații relative: hipertensiune severă necontrolată, epilepsie necontrolată, proteze articulare recente. Este esențială evaluarea medicală prealabilă și monitorizarea profesională. Parametrii siguri includ frecvențe de 5-35 Hz și durata maximă de 45 minute per sesiune."
     },
     {
-      q: "Care sunt limitările cercetării actuale?",
-      a: "Principalele limitări includ studii cu eșantioane mici, lipsa standardizării protocoalelor, date limitate pe termen lung și câteva studii fără grupuri de control adecvate. Sunt necesare mai multe studii randomizate controlate pentru a stabili liniile directoare clinice definitive."
+      q: "Cât costă tratamentul și este cost-eficient?",
+      a: "Costurile variază în funcție de furnizor și numărul de sesiuni necesare. Deși unele studii sugerează beneficii cost-efectivitate comparativ cu alte terapii pentru durerea cronică, sunt necesare analize economice mai extinse pentru confirmarea acestor beneficii în diverse sisteme de sănătate."
+    },
+    {
+      q: "Care sunt frecvențele utilizate?",
+      a: "Studiile disponibile utilizează frecvențe între 5-40 Hz. Frecvențele mai mici (8-12 Hz) par să fie mai eficiente pentru managementul durerii, în timp ce frecvențele mai mari (18-30 Hz) pot influența circulația. Cu toate acestea, protocoalele optime necesită încă cercetări suplimentare pentru standardizare."
+    },
+    {
+      q: "Cât timp durează până se văd rezultate?",
+      a: "Conform studiilor disponibile, unii pacienți raportează îmbunătățiri în primele săptămâni de tratament. Beneficiile complete pot apărea la 8-12 săptămâni de tratament consistent. Durabilitatea efectelor variază foarte mult în funcție de individ și condiția tratată, și necesită mai multe cercetări pentru o înțelegere precisă."
+    },
+    {
+      q: "Este o terapie sigură?",
+      a: "Studiile disponibile nu raportează efecte adverse grave semnificative la utilizarea corectă cu parametrii recomandați. Cu toate acestea, ca orice intervenție terapeutică, necesită evaluare medicală prealabilă, respectarea contraindicațiilor și supraveghere profesională. Siguranța pe termen lung necesită studii suplimentare."
+    },
+    {
+      q: "Care este starea actuală a cercetării?",
+      a: "Cercetarea Andullation este într-o fază promițătoare dar încă preliminară. Studiile existente arată beneficii pentru anumite condiții, în special durerea lombară cronică, dar majoritatea au eșantioane relativ mici. Sunt necesare studii randomizate controlate de mari dimensiuni pentru confirmarea eficacității și stabilirea protocoalelor optime."
     }
   ];
 
@@ -197,10 +308,21 @@ export default function AndullationPage() {
                   Terapie <span className="text-cyan-200">Andullation</span>
                 </h1>
                 
-                <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                  Tehnologie avansată de vibrații multidirecționale pentru managementul durerii și îmbunătățirea circulației. 
-                  Explorăm cercetările clinice și aplicațiile terapeutice cu transparență științifică.
+                <p className="text-xl text-blue-100 mb-4 leading-relaxed">
+                  Tehnologie de vibrații multidirecționale studiată pentru potențialul său în managementul durerii. 
+                  Explorăm cercetările clinice disponibile cu transparență științifică.
                 </p>
+                
+                <div className="bg-red-100 border-l-4 border-red-500 p-4 mb-6 rounded-r-lg">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="text-sm text-red-700 font-semibold">
+                        <strong>DISCLAIMER MEDICAL:</strong> Această terapie NU este un dispozitiv medical certificat. 
+                        Informațiile sunt în scop educativ. Consultația medicală prealabilă este OBLIGATORIE.
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button
@@ -303,8 +425,8 @@ export default function AndullationPage() {
                       <Badge 
                         variant="outline" 
                         className={`
-                          ${studiu.credibilitate === 'pozitiv' ? 'text-green-600 border-green-200' : 
-                            studiu.credibilitate === 'preliminar' ? 'text-yellow-600 border-yellow-200' :
+                          ${studiu.credibilitate === 'evidență moderată' ? 'text-green-600 border-green-200' : 
+                            studiu.credibilitate === 'evidență preliminară' ? 'text-yellow-600 border-yellow-200' :
                             'text-blue-600 border-blue-200'}
                         `}
                       >
