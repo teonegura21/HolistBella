@@ -6,9 +6,6 @@ import { SEO } from '@/components/ui/seo';
 import { useAnalytics } from '@/hooks/use-analytics';
 import { trackEvent } from '@/lib/analytics';
 import { CONTACT_INFO } from '@/lib/constants';
-import Navbar from '@/components/layout/navbar';
-import Footer from '@/components/layout/footer';
-import FloatingWhatsApp from '@/components/ui/floating-whatsapp';
 
 export default function AlteServiciiPage() {
   useAnalytics();
@@ -159,8 +156,7 @@ export default function AlteServiciiPage() {
   };
 
   return (
-    <div className="min-h-screen">
-      <Navbar />
+    <div>
       <SEO
         title="Alte Servicii Complementare - Terapii Holistice | Holist Bella Iași"
         description="Servicii complementare: drenaj limfatic, hidroterapie, aromaterapie, haloterapie, infraroșu, reflexologie. Evaluare transparentă a beneficiilor și limitărilor."
@@ -475,9 +471,6 @@ export default function AlteServiciiPage() {
           </div>
         </section>
       </div>
-      
-      <Footer />
-      <FloatingWhatsApp />
     </div>
   );
 }

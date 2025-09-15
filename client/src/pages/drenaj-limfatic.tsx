@@ -6,9 +6,6 @@ import { SEO } from '@/components/ui/seo';
 import { useAnalytics } from '@/hooks/use-analytics';
 import { trackEvent } from '@/lib/analytics';
 import { CONTACT_INFO } from '@/lib/constants';
-import Navbar from '@/components/layout/navbar';
-import Footer from '@/components/layout/footer';
-import FloatingWhatsApp from '@/components/ui/floating-whatsapp';
 import { Link } from 'wouter';
 
 export default function DrenajLimfaticPage() {
@@ -222,8 +219,7 @@ export default function DrenajLimfaticPage() {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Navbar />
+    <div>
       <SEO
         title="Drenaj Limfatic Manual - Terapie Validată Clinic | Holist Bella Iași"
         description="Drenaj limfatic manual profesional cu tehnologii Vodder validate de Cleveland Clinic și Mayo Clinic. Eficient pentru limfedem, edem post-chirurgical și detoxifiere."
@@ -683,9 +679,6 @@ export default function DrenajLimfaticPage() {
           </div>
         </section>
       </div>
-      
-      <Footer />
-      <FloatingWhatsApp />
     </div>
   );
 }

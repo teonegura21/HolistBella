@@ -6,9 +6,6 @@ import { SEO } from '@/components/ui/seo';
 import { useAnalytics } from '@/hooks/use-analytics';
 import { trackEvent } from '@/lib/analytics';
 import { CONTACT_INFO } from '@/lib/constants';
-import Navbar from '@/components/layout/navbar';
-import Footer from '@/components/layout/footer';
-import FloatingWhatsApp from '@/components/ui/floating-whatsapp';
 
 export default function InfrarosuPage() {
   useAnalytics();
@@ -269,8 +266,7 @@ export default function InfrarosuPage() {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Navbar />
+    <div>
       <SEO
         title="Terapia cu Infraroșu - Vindecarea prin Căldură Profundă | Holist Bella Iași"
         description="Terapia cu infraroşu profesională pentru dureri cronice, recuperare musculară și detoxifierea. NIR, MIR, FIR - validare clinică pentru circulație și regenerare tissuară."
@@ -834,9 +830,6 @@ export default function InfrarosuPage() {
           </div>
         </section>
       </div>
-      
-      <Footer />
-      <FloatingWhatsApp />
     </div>
   );
 }

@@ -7,6 +7,9 @@ import { CookieConsent } from "@/components/ui/cookie-consent";
 import { useEffect } from "react";
 import { initGA } from "./lib/analytics";
 import { useAnalytics } from "./hooks/use-analytics";
+import Navbar from "@/components/layout/navbar";
+import Footer from "@/components/layout/footer";
+import FloatingWhatsApp from "@/components/ui/floating-whatsapp";
 import Home from "@/pages/home";
 import ApaKangenPage from "@/pages/apa-kangen";
 import BiorezonantaPage from "@/pages/biorezonanta";
@@ -17,6 +20,12 @@ import DetoxifiereNaturalaPage from "@/pages/detoxifiere-naturala";
 import AndullationPage from "@/pages/andullation";
 import HealyPage from "@/pages/healy";
 import AlteServiciiPage from "@/pages/alte-servicii";
+import DrenajaLimfaticPage from "@/pages/drenaj-limfatic";
+import HidroterapiePage from "@/pages/hidroterapie";
+import AromaterapiePage from "@/pages/aromaterapie";
+import HaloterapiePage from "@/pages/haloterapie";
+import InfrarosuPage from "@/pages/infrarosu";
+import ReflexologiePage from "@/pages/reflexologie";
 import ProgramarePage from "@/pages/programare";
 import DesprePage from "@/pages/despre";
 import TestimonialePage from "@/pages/testimoniale";
@@ -37,6 +46,12 @@ function Router() {
       <Route path="/detoxifiere-naturala" component={DetoxifiereNaturalaPage} />
       <Route path="/andullation" component={AndullationPage} />
       <Route path="/healy" component={HealyPage} />
+      <Route path="/drenaj-limfatic" component={DrenajaLimfaticPage} />
+      <Route path="/hidroterapie" component={HidroterapiePage} />
+      <Route path="/aromaterapie" component={AromaterapiePage} />
+      <Route path="/haloterapie" component={HaloterapiePage} />
+      <Route path="/infrarosu" component={InfrarosuPage} />
+      <Route path="/reflexologie" component={ReflexologiePage} />
       <Route path="/alte-servicii" component={AlteServiciiPage} />
       <Route path="/programare" component={ProgramarePage} />
       <Route path="/despre" component={DesprePage} />
@@ -59,8 +74,13 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        <div className="min-h-screen">
+          <Navbar />
+          <Router />
+          <Footer />
+          <FloatingWhatsApp />
+        </div>
         <Toaster />
-        <Router />
         <CookieConsent />
       </TooltipProvider>
     </QueryClientProvider>

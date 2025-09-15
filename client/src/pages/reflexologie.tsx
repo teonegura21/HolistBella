@@ -6,9 +6,6 @@ import { SEO } from '@/components/ui/seo';
 import { useAnalytics } from '@/hooks/use-analytics';
 import { trackEvent } from '@/lib/analytics';
 import { CONTACT_INFO } from '@/lib/constants';
-import Navbar from '@/components/layout/navbar';
-import Footer from '@/components/layout/footer';
-import FloatingWhatsApp from '@/components/ui/floating-whatsapp';
 
 export default function ReflexologiePage() {
   useAnalytics();
@@ -259,8 +256,7 @@ export default function ReflexologiePage() {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Navbar />
+    <div>
       <SEO
         title="Reflexologie - Terapie prin Presiune cu Abordare Echilibrată | Holist Bella"
         description="Reflexologie profesională pentru relaxare, reducerea stresului și wellness general. Abordare transparentă - beneficii validate pentru relaxare, fără pretențiile nefondate despre organe."
@@ -864,9 +860,6 @@ export default function ReflexologiePage() {
           </div>
         </section>
       </div>
-      
-      <Footer />
-      <FloatingWhatsApp />
     </div>
   );
 }

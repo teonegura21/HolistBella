@@ -1,6 +1,3 @@
-import Navbar from "@/components/layout/navbar";
-import Footer from "@/components/layout/footer";
-import FloatingWhatsApp from "@/components/ui/floating-whatsapp";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Heart, Users, Award, Clock, Phone } from "lucide-react";
@@ -264,8 +261,6 @@ export default function DesprePage() {
         </div>
       </section>
 
-      <Footer />
-      <FloatingWhatsApp />
     </div>
   );
 }

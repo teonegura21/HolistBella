@@ -18,9 +18,6 @@ import { insertAppointmentSchema } from '@shared/schema';
 import { z } from 'zod';
 import { format, addDays, setHours, setMinutes } from 'date-fns';
 import { ro } from 'date-fns/locale';
-import Navbar from '@/components/layout/navbar';
-import Footer from '@/components/layout/footer';
-import FloatingWhatsApp from '@/components/ui/floating-whatsapp';
 
 // Extended form schema for frontend validation
 const bookingFormSchema = insertAppointmentSchema.extend({
@@ -203,8 +200,7 @@ export default function ProgramarePage() {
   }
 
   return (
-    <div className="min-h-screen">
-      <Navbar />
+    <div>
       <SEO
         title="Programare Online - Rezervă Consultația Ta | Holist Bella Iași"
         description="Programează consultația ta holistică online. Servicii personalizate: Bowen, Reiki, Nutriție Celulară, Detoxifiere. Plata se face la locație."
@@ -590,9 +586,6 @@ export default function ProgramarePage() {
           </Card>
         </div>
       </div>
-
-      <Footer />
-      <FloatingWhatsApp />
     </div>
   );
 }

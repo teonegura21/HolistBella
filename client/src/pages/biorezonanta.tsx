@@ -6,9 +6,6 @@ import { SEO } from '@/components/ui/seo';
 import { useAnalytics } from '@/hooks/use-analytics';
 import { trackEvent } from '@/lib/analytics';
 import { CONTACT_INFO } from '@/lib/constants';
-import Navbar from '@/components/layout/navbar';
-import Footer from '@/components/layout/footer';
-import FloatingWhatsApp from '@/components/ui/floating-whatsapp';
 import { Link, useLocation } from 'wouter';
 
 export default function BiorezonantaPage() {
@@ -338,8 +335,7 @@ export default function BiorezonantaPage() {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Navbar />
+    <div>
       <SEO
         title="Biorezonanță Magnetică - Terapie Energetică și Diagnostic | Holist Bella"
         description="Descoperă terapia de biorezonanță magnetică în Iași. Analizez cercetările asupra diagnosticului energetic și terapiei prin frecvențe. Consultație gratuită și transparentă."
@@ -908,9 +904,6 @@ export default function BiorezonantaPage() {
           </div>
         </section>
       </div>
-      
-      <Footer />
-      <FloatingWhatsApp />
     </div>
   );
 }

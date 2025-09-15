@@ -6,9 +6,6 @@ import { SEO } from '@/components/ui/seo';
 import { useAnalytics } from '@/hooks/use-analytics';
 import { trackEvent } from '@/lib/analytics';
 import { CONTACT_INFO } from '@/lib/constants';
-import Navbar from '@/components/layout/navbar';
-import Footer from '@/components/layout/footer';
-import FloatingWhatsApp from '@/components/ui/floating-whatsapp';
 
 export default function HidroterapiePage() {
   useAnalytics();
@@ -251,8 +248,7 @@ export default function HidroterapiePage() {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Navbar />
+    <div>
       <SEO
         title="Hidroterapie cu Ape Minerale Românești - Patrimoniu Terapeutic | Holist Bella"
         description="Hidroterapie profesională cu ape termale și minerale româneşti. Băile Herculane, Felix, Sovata - validare clinică pentru reumatism, dermatologie și recuperare."
@@ -749,9 +745,6 @@ export default function HidroterapiePage() {
           </div>
         </section>
       </div>
-      
-      <Footer />
-      <FloatingWhatsApp />
     </div>
   );
 }

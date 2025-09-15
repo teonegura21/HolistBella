@@ -6,9 +6,6 @@ import { SEO } from '@/components/ui/seo';
 import { useAnalytics } from '@/hooks/use-analytics';
 import { trackEvent } from '@/lib/analytics';
 import { CONTACT_INFO } from '@/lib/constants';
-import Navbar from '@/components/layout/navbar';
-import Footer from '@/components/layout/footer';
-import FloatingWhatsApp from '@/components/ui/floating-whatsapp';
 
 export default function HaloterapiePage() {
   useAnalytics();
@@ -269,8 +266,7 @@ export default function HaloterapiePage() {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Navbar />
+    <div>
       <SEO
         title="Haloterapie în Saline Naturale - Patrimoniu Terapeutic Românesc | Holist Bella"
         description="Haloterapie profesională în salinele româneşti naturale. Turda, Slănic, Ocnele Mari. Validată pentru astm, BPOC, afecțiuni respiratorii. Microclimate terapeutice unice."
@@ -826,9 +822,6 @@ export default function HaloterapiePage() {
           </div>
         </section>
       </div>
-      
-      <Footer />
-      <FloatingWhatsApp />
     </div>
   );
 }
