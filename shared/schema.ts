@@ -47,10 +47,6 @@ export const appointments = pgTable("appointments", {
   status: text("status").default('pending').notNull(), // pending, confirmed, completed, cancelled
   confirmareClient: boolean("confirmare_client").default(false),
   
-  // Payment Information
-  pret: decimal("pret", { precision: 10, scale: 2 }),
-  statusPlata: text("status_plata").default('unpaid'), // unpaid, paid, refunded
-  stripePaymentIntentId: text("stripe_payment_intent_id"),
   
   // GDPR Compliance
   gdprConsent: boolean("gdpr_consent").notNull().default(false),
@@ -65,13 +61,11 @@ export const insertAppointmentSchema = createInsertSchema(appointments, {
   dataOra: z.string().min(1, "Data și ora sunt obligatorii"), // Accept ISO string from frontend
   varsta: z.number().min(1).max(120).optional(),
   gdprConsent: z.literal(true, { errorMap: () => ({ message: "Consimțământul GDPR este obligatoriu" }) }),
-  pret: z.number().optional(),
 }).omit({
   id: true,
   createdAt: true,
   updatedAt: true,
   consentTimestamp: true, // Set automatically by server
-  stripePaymentIntentId: true,
 });
 
 export type InsertAppointment = z.infer<typeof insertAppointmentSchema>;
@@ -82,31 +76,26 @@ export const SERVICII_DISPONIBILE = {
   'terapie-bowen': {
     nume: 'Terapie Bowen',
     durata: 60,
-    pret: 250,
     descriere: 'Terapie holistică pentru dureri musculare și echilibru corporal'
   },
   'nutritie-celulara': {
     nume: 'Nutriție Celulară',
     durata: 90,
-    pret: 350,
     descriere: 'Consultație nutrițională personalizată cu plan de suplimente'
   },
   'terapie-reiki': {
     nume: 'Terapie Reiki',
     durata: 60,
-    pret: 200,
     descriere: 'Vindecare energetică pentru echilibru emoțional și spiritual'
   },
   'detoxifiere-naturala': {
     nume: 'Detoxifiere Naturală',
     durata: 120,
-    pret: 400,
     descriere: 'Protocol complet de detoxifiere cu monitorizare personalizată'
   },
   'consultatie-initiala': {
     nume: 'Consultație Inițială',
     durata: 45,
-    pret: 0,
     descriere: 'Consultație gratuită pentru evaluare și plan de tratament'
   }
 } as const;

@@ -121,7 +121,6 @@ export default function ProgramarePage() {
   if (showSuccessMessage) {
     return (
       <div className="min-h-screen">
-        <Navbar />
         <SEO
           title="Programare Confirmată | Holist Bella Iași"
           description="Programarea dumneavoastră a fost înregistrată cu succes. Veți fi contactat în curând pentru confirmare."
@@ -192,9 +191,6 @@ export default function ProgramarePage() {
             </div>
           </div>
         </div>
-        
-        <Footer />
-        <FloatingWhatsApp />
       </div>
     );
   }
@@ -353,7 +349,7 @@ export default function ProgramarePage() {
                               <SelectContent>
                                 {services && Object.entries(services as Record<string, any>).map(([key, service]) => (
                                   <SelectItem key={key} value={key}>
-                                    {service.nume} - {service.pret > 0 ? `${service.pret} RON` : 'GRATUIT'} ({service.durata} min)
+                                    {service.nume} ({service.durata} min)
                                   </SelectItem>
                                 ))}
                               </SelectContent>
