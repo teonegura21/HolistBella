@@ -347,7 +347,7 @@ export default function ProgramarePage() {
                                 </SelectTrigger>
                               </FormControl>
                               <SelectContent>
-                                {services && Object.entries(services as Record<string, any>).map(([key, service]) => (
+                                {services && Object.entries(services as Record<string, any>).map(([key, service]: [string, any]) => (
                                   <SelectItem key={key} value={key}>
                                     {service.nume} ({service.durata} min)
                                   </SelectItem>
