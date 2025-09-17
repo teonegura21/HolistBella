@@ -55,8 +55,7 @@ export default function DesprePage() {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Navbar />
+    <div>
       
       {/* Hero Section */}
       <section className="pt-20 pb-16 bg-gradient-to-br from-green-600 via-teal-600 to-green-800 text-white">
