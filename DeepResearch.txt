@@ -1,0 +1,1144 @@
+Blueprint Strategic pentru Website-ul Holist Bella Iași
+Acest document reprezintă un plan strategic și tehnic complet pentru proiectarea, dezvoltarea și lansarea website-ului-portofoliu pentru cabinetul de medicină alternativă Holist Bella din Iași. Obiectivul este crearea unei prezențe digitale de nivel național, care să comunice profesionalism, încredere și eficiență, respectând în același timp rigorile etice și de conformitate ale domeniului medical (YMYL/E-E-A-T).
+
+1. Raport de Cercetare Aprofundată
+Fundamentul oricărui proiect digital de succes este o înțelegere profundă a contextului de piață, a competiției și a nevoilor publicului țintă. Această secțiune analizează peisajul digital în care Holist Bella va opera.
+
+1.1. Analiza Pieței de Terapii Alternative și Recuperare (Focus Iași & Național)
+Piața serviciilor de wellness și recuperare din Iași este caracterizată de o polarizare evidentă. Pe de o parte, există clinici de recuperare medicală și centre medicale integrate, precum Alchimeia, Orthospine, Vasimedica sau HermaMed Center, care au investit într-o prezență online profesională, cu site-uri bine structurate, informații clare despre servicii, echipă medicală și prețuri. Aceste entități au educat publicul local, stabilind un standard înalt de așteptare în ceea ce privește credibilitatea și transparența digitală.   
+
+Pe de altă parte, cabinetele specializate exclusiv pe terapii alternative sau complementare au, în general, o prezență online mai puțin sofisticată, uneori limitată la o pagină de social media sau un site rudimentar. Această discrepanță creează o oportunitate strategică majoră. Publicul interesat de terapii non-invazive este adesea precaut, căutând validare și profesionalism. Un cabinet de medicină alternativă care se prezintă digital la standardele unei clinici medicale de top poate capta un segment semnificativ de piață, umplând acest deficit de încredere.   
+
+Holist Bella se poate poziționa exact în acest spațiu intermediar: un brand premium, de încredere, care oferă beneficiile terapiilor holistice într-un cadru ce inspiră rigoare și siguranță medicală. Investiția într-un site de nivel național nu este, așadar, un lux, ci un avantaj competitiv decisiv pe piața locală.
+
+La nivel național, jucători precum Youness Clinic sau Ida Spa definesc standardul pentru estetica wellness premium, în timp ce cabinete de nișă, cum ar fi Bowen Brașov, demonstrează cum se poate construi autoritate în jurul unui singur serviciu prin conținut de calitate și testimoniale. Holist Bella va prelua bune practici de la ambele categorii pentru a crea o experiență unică.   
+
+1.2. Benchmark Competitori
+Analiza comparativă a competitorilor direcți și indirecți relevă punctele forte, slăbiciunile și oportunitățile de diferențiere. Au fost analizați 15 jucători relevanți, atât din Iași, cât și de la nivel național.
+
+Nume Competitor	Localizare	Poziționare / Servicii Cheie	UX/UI Site	SEO Local (Iași)	Elemente E-E-A-T	Puncte Tari / Oportunități pentru Holist Bella
+Alchimeia    
+
+Iași	Centru de recuperare medicală premium, tehnologie avansată.	Modern, profesional, complex.	Puternic	Echipă medicală vastă, certificări, concept clar.	Standard de profesionalism de egalat. Oportunitate de a oferi o alternativă mai personală, holistică.
+HermaMed Center    
+
+Iași	Clinică medicală privată cu servicii CAS, oferă Biorezonanță.	Funcțional, dar învechit.	Mediu	Echipă medicală vizibilă, contract CAS.	Poziționarea Biorezonanței într-un context mai modern, wellness. Site superior din punct de vedere vizual și UX.
+Vasimedica    
+
+Iași	Centru medical cu focus pe recuperare și salinoterapie.	Simplu, curat, ușor de navigat.	Bun	Medici prezentați, servicii clare.	Afișare transparentă a prețurilor. Oportunitate de a avea un design mai energic și convingător.
+ProMAMA    
+
+Iași	Nișat pe servicii pre/post-natale, oferă Terapie Bowen.	Hibrid servicii/e-commerce, funcțional.	Mediu (nișat)	Terapeut menționat, focus pe o nișă specifică.	Poziționarea Terapiei Bowen pentru un public mai larg, nu doar mame/copii.
+Orthospine    
+
+Iași	Centru de recuperare, focus pe tehnologie și echipă tânără.	Modern, dinamic, focus pe testimoniale video.	Bun	Echipă vizibilă, aparatură de ultimă generație.	Utilizarea puternică a dovezilor sociale (testimoniale).
+Spitalul Clinic de Recuperare    
+
+Iași	Instituție publică, autoritate medicală.	Instituțional, învechit, greu de navigat.	Slab	Autoritate inerentă (spital).	Oferirea unei alternative private, accesibile, cu o experiență digitală superioară.
+Clinica de Nutriție    
+
+Iași	Specializată pe nutriție, diabet, boli metabolice.	Profesional, academic, focus pe echipă.	Mediu (nișat)	Echipă de medici, acreditări internaționale.	Model excelent pentru prezentarea expertizei și a echipei.
+Bowen Brașov    
+
+Brașov	Cabinet specializat exclusiv pe Terapia Bowen.	Simplu, focusat pe conținut, eficient.	N/A	Terapeut vizibil, blog extins, testimoniale.	Exemplu de cum se construiește autoritate pe o singură nișă prin conținut educațional.
+Armonia Center    
+
+București	Centru de terapii complementare (Bowen, Biorezonanță).	Curat, listă de prețuri clară.	N/A	Servicii și prețuri transparente.	Model bun pentru structurarea paginii de prețuri.
+LeClinic    
+
+București	Clinică premium, oferă Biorezonanță SCIO.	Elegant, modern, premium.	N/A	Specialist detaliat, tehnologie de vârf (NASA).	Exemplu de marketing aspirațional și construire a autorității prin asociere cu tehnologie avansată.
+Youness Clinic    
+
+Național	Retreat de detox & wellness de lux.	Experiențial, imagistică de înaltă calitate.	N/A	Branding puternic, focus pe experiență.	Inspirație pentru stilul vizual și tonul vocii aspirațional.
+Ida Spa    
+
+București	Spa urban de lux.	Minimalist, elegant, focus pe produse premium.	N/A	Branding vizual puternic.	Inspirație pentru un design curat și rafinat.
+Holistic Wellness Hub    
+
+Național	Platformă cu multiple terapii alternative.	Simplu, listă de servicii.	N/A	Portofoliu variat.	Demonstrează cererea pentru o ofertă diversificată de terapii holistice.
+Alma Retreat    
+
+Național	Retreat & Spa, focus pe ritualuri și relaxare.	Modern, sistem de rezervări online.	N/A	Experiență imersivă, prețuri clare.	Inspirație pentru prezentarea serviciilor ca "ritualuri" sau "experiențe".
+Terapii-Alternative.ro    
+
+Național	Terapeut cu multiple specializări, vinde și dispozitive.	Aglomerat, focus pe autoritatea personală a terapeutului.	N/A	Medalii, certificări, recunoaștere internațională.	Exemplu de construire a autorității personale prin premii și certificări.
+1.3. Analiză SERP și Cercetare de Cuvinte Cheie (Română)
+Intențiile de căutare ale publicului țintă se grupează în jurul unor nevoi clare, pentru care Holist Bella poate oferi soluții. Strategia de conținut se va axa pe dezvoltarea de pagini și articole care răspund acestor nevoi.   
+
+Clustere Tematice Principale:
+
+Cluster "Durere și Recuperare" (Intenție Tranzacțională/Comercială):
+
+Cuvinte cheie principale: terapie bowen iasi, biorezonanta iasi pret, tratament dureri de spate iasi, recuperare medicala iasi.
+
+Cuvinte cheie long-tail: terapie non-invaziva dureri lombare iasi, cel mai bun cabinet bowen iasi, evaluare energetica biorezonanta iasi.
+
+Conținut necesar: Pagini de servicii optimizate local, pagină de prețuri, testimoniale.
+
+Cluster "Stres, Oboseală și Wellness" (Intenție Informațională/Comercială):
+
+Cuvinte cheie principale: remedii stres si oboseala cronica, drenaj limfatic iasi, terapii de relaxare iasi, echilibrare energetica.
+
+Cuvinte cheie long-tail: beneficii terapie andullation pentru stres, cum sa gestionez oboseala cronica natural, masaj drenaj limfatic manual iasi.
+
+Conținut necesar: Articole de blog detaliate, pagini de servicii care evidențiază beneficiile pentru relaxare (Andullation, Bowen).
+
+Cluster "Optimizare Stil de Viață și Prevenție" (Intenție Informațională):
+
+Cuvinte cheie principale: stil de viata sanatos, optimizare stare de bine, medicina holistica ce inseamna, apa alcalina beneficii.
+
+Cuvinte cheie long-tail: ghid incepatori medicina holistica, cum sa imi imbunatatesc hidratarea zilnica, suport nutritie celulara.
+
+Conținut necesar: Articole de blog tip ghid, o pagină "Despre" care explică filozofia holistică, pagini de servicii (Apă Kangen, AplGo) focusate pe educație și obiceiuri sănătoase.
+
+Cluster "Cercetare Specifică de Servicii" (Intenție Informațională Pură):
+
+Cuvinte cheie principale: ce este terapia bowen, aparat healy pareri, andullation functionare, biorezonanta contraindicatii.
+
+Conținut necesar: Secțiuni FAQ extinse pe fiecare pagină de serviciu, articole de blog care explică în detaliu fiecare tehnologie.
+
+Gap-uri de conținut identificate: Există puține resurse de înaltă calitate, echilibrate și în limba română despre tehnologii precum Andullation sau Healy, majoritatea conținutului fiind fie direct de la producători, fie de la distribuitori MLM. Holist Bella poate umple acest gol cu articole obiective, care prezintă atât beneficiile potențiale, cât și limitările și nivelul actual al dovezilor științifice.
+
+1.4. Ghid Aplicat YMYL/E-E-A-T
+Pentru un site din domeniul sănătății ("Your Money or Your Life"), respectarea principiilor Google E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) nu este opțională, ci esențială pentru vizibilitate și credibilitate.   
+
+Provocarea strategică fundamentală pentru Holist Bella este gestionarea tensiunii dintre USP-ul declarat ("tehnici susținute de dovezi medicale/științifice") și realitatea științifică a unora dintre servicii (Healy, Apă Kangen, AplGo), pentru care dovezile clinice robuste sunt limitate sau controversate. A pretinde altceva ar submina instantaneu încrederea și ar încălca principiile E-E-A-T.   
+
+Soluția constă în onestitate radicală și transparență. Aceasta va deveni cel mai puternic element de diferențiere și de construire a încrederii.
+
+Implementarea E-E-A-T pentru Holist Bella:
+
+Experience (Experiență):
+
+Pagina "Despre Noi" va conține o biografie detaliată a terapeutului, cu accent pe experiența practică și filozofia de lucru.
+
+Testimonialele vor fi autentice, colectate de la clienți reali, și vor descrie experiența lor subiectivă.
+
+Articolele de blog vor fi semnate de autor (terapeutul), demonstrând experiență directă cu subiectele abordate.
+
+Expertise (Expertiză):
+
+O secțiune dedicată pe pagina "Despre Noi" va lista vizibil toate certificările, diplomele și cursurile de formare continuă, cu linkuri către instituțiile emitente, unde este posibil.
+
+Logo-urile asociațiilor profesionale din care face parte terapeutul vor fi afișate.
+
+Authoritativeness (Autoritate):
+
+Fiecare pagină de serviciu și articol de blog care face referire la studii sau date științifice va cita surse externe de înaltă autoritate (ex: linkuri către studii de pe PubMed, articole de la National Center for Complementary and Integrative Health - NCCIH).   
+
+Vom crea o pagină de autor detaliată pentru blog, consolidând expertiza acestuia.
+
+Nivelul dovezilor va fi menționat explicit pentru fiecare beneficiu afirmat. Se vor folosi formulări precise:
+
+"Beneficii susținute de studii clinice randomizate..."
+
+"Eficacitate observată în studii de caz și cercetări preliminare..."
+
+"Principiu de funcționare bazat pe teorii biofizice..."
+
+"Efecte raportate frecvent în experiența utilizatorilor..."
+
+Trustworthiness (Încredere):
+
+Transparență totală: Datele de contact (Nume, Adresă, Telefon - NAP) vor fi vizibile pe fiecare pagină.
+
+Securitate: Site-ul va folosi HTTPS pe toate paginile.
+
+Politici clare: Paginile legale (Confidențialitate, Cookies, Termeni, Disclaimer Medical) vor fi ușor accesibile din footer.
+
+Design profesional: Un design curat, modern și fără erori tehnice contribuie masiv la percepția de încredere.
+
+Recenzii: Integrarea recenziilor de pe Google Business Profile va adăuga un strat important de dovadă socială.
+
+2. Arhitectura Informațională (IA) & Sitemap
+O arhitectură informațională logică și intuitivă este coloana vertebrală a unei experiențe de navigare fluide. Sitemap-ul este proiectat pentru a fi scalabil, ușor de înțeles atât pentru utilizatori, cât și pentru motoarele de căutare.
+
+2.1. Arborele Site-ului (Sitemap Complet)
+Structura URL-urilor va fi scurtă, descriptivă și optimizată pentru SEO local.
+
+/ (Acasă)
+
+/servicii (Pagină Hub care prezintă toate serviciile)
+
+/servicii/terapie-bowen-iasi
+
+/servicii/biorezonanta-iasi
+
+/servicii/terapie-healy-iasi
+
+/servicii/apa-kangen-iasi
+
+/servicii/terapie-andullation-iasi
+
+/servicii/nutritie-celulara-aplgo-iasi
+
+/despre-noi (Include Misiune, profil Terapeut, imagini Cabinet)
+
+/preturi-si-abonamente (Listă centralizată cu prețuri și pachete)
+
+/testimoniale (Pagină agregator cu toate recenziile, filtrabile pe servicii)
+
+/resurse (Blog/Centru de informații)
+
+/resurse/[slug-articol] (ex: /resurse/ghid-management-dureri-spate)
+
+/programari (Pagină dedicată cu metodele de contact pentru programare)
+
+/contact (Hartă, date NAP, orar, detalii acces)
+
+/politica-confidentialitate
+
+/politica-cookies
+
+/termeni-si-conditii
+
+/disclaimer-medical
+
+2.2. Structura de Navigație
+Navigația este concepută pentru a oferi acces rapid la cele mai importante secțiuni, indiferent de pagina pe care se află utilizatorul.
+
+Navigație Primară (Header Sticky): Meniul principal va fi vizibil în permanență în partea de sus a ecranului și va conține:
+
+Acasă
+
+Servicii (cu Mega-Menu)
+
+Despre Noi
+
+Prețuri
+
+Resurse
+
+Contact
+
+Buton CTA Principal: "Programează-te" (cu un design distinct, care va direcționa către pagina /programari)
+
+Mega-Menu pentru "Servicii": La trecerea cursorului peste linkul "Servicii", se va deschide un meniu extins care va afișa toate cele șase servicii. Fiecare serviciu va fi prezentat cu o pictogramă reprezentativă și o descriere de o singură propoziție (ex: "Terapie Bowen: Tehnică neuromusculară blândă pentru reechilibrare și relaxare."). Această abordare, inspirată de site-uri cu oferte complexe , ajută utilizatorii să înțeleagă rapid portofoliul și să navigheze direct la serviciul de interes.   
+
+Breadcrumbs (Fire de navigație): Pe toate paginile interioare (servicii, articole de blog), va fi afișat un breadcrumb pentru a facilita orientarea și a întări structura de linkuri interne, un element important pentru SEO.
+
+Exemplu: Acasă › Servicii › Terapie Andullation Iași
+
+Navigație în Footer (Subsol): Footer-ul va fi bogat în informații și structurat pe 4 coloane pentru claritate:
+
+Despre Holist Bella: O scurtă descriere a misiunii și link către pagina /despre-noi.
+
+Linkuri Rapide: Linkuri către toate paginile principale (Servicii, Prețuri, Resurse, Contact).
+
+Contact: Datele NAP (Nume, Adresă, Telefon) formatate pentru Schema.org, orar și linkuri către rețelele sociale.
+
+Legal: Linkuri către paginile de politici (Confidențialitate, Cookies, Termeni, Disclaimer Medical) și sigla ANPC.
+
+3. Wireframes High-Fidelity (Descriere Textuală)
+Wireframe-urile descriu arhitectura vizuală și ierarhia conținutului pentru fiecare șablon de pagină, fără a defini elementele de stil (culori, fonturi). Acestea servesc ca un schelet structural pentru designul UI.
+
+3.1. Șablon Pagină: Acasă (Homepage)
+Pagina principală este concepută pentru a capta atenția, a comunica propunerea unică de valoare (USP) și a ghida utilizatorii către secțiunile relevante.
+
+Secțiunea 1: Hero
+
+Layout: Ecran complet.
+
+Conținut:
+
+Titlu Principal (H1): Terapii holistice non-invazive pentru o viață echilibrată și fără durere.
+
+Subtitlu: La Holist Bella Iași, combinăm tehnici avansate cu o abordare personalizată pentru a-ți reactiva potențialul natural de vindecare.
+
+CTA Primar (buton): "Programează o ședință de evaluare" (link către /programari).
+
+CTA Secundar (link text): "Descoperă toate serviciile noastre" (link către /servicii).
+
+Elemente de Încredere (Social Proof): O linie sub CTA-uri cu pictograme: "Peste 500 de clienți mulțumiți", "Rating 4.9/5 pe Google", "Terapeut certificat internațional". (Notă: Cifrele sunt un placeholder și trebuie actualizate cu date reale).
+
+Secțiunea 2: Cum te putem ajuta? (Orientată pe probleme)
+
+Layout: O grilă de 3 carduri.
+
+Conținut: Fiecare card reprezintă o nevoie a publicului țintă.
+
+Card 1: Titlu: "Eliberarea de durere". Text: "Abordări blânde pentru dureri de spate, gât sau articulare." Link: "Vezi terapiile recomandate".
+
+Card 2: Titlu: "Managementul stresului". Text: "Soluții pentru reducerea oboselii cronice, anxietății și îmbunătățirea somnului." Link: "Descoperă metodele de relaxare".
+
+Card 3: Titlu: "Optimizarea stării de bine". Text: "Programe de prevenție și echilibrare pentru un stil de viață energic și sănătos." Link: "Află cum poți investi în sănătatea ta".
+
+Secțiunea 3: Servicii Principale
+
+Layout: Un titlu urmat de o grilă cu 4 carduri de servicii.
+
+Conținut: Prezentarea celor mai populare servicii. Fiecare card conține o imagine reprezentativă, numele serviciului, o descriere de 1-2 propoziții și un buton "Află mai mult" care duce la pagina dedicată.
+
+Secțiunea 4: Despre Terapeut & Filozofia Holist Bella
+
+Layout: Două coloane. Coloana stângă cu o fotografie profesională, caldă, a terapeutului. Coloana dreaptă cu text.
+
+Conținut: Un titlu (ex: "O abordare centrată pe tine"), un paragraf despre filozofia holistică a cabinetului și experiența terapeutului, și un buton "Citește mai mult despre misiunea noastră" (link către /despre-noi).
+
+Secțiunea 5: Testimoniale
+
+Layout: Un carusel (slider) care afișează câte un testimonial pe rând.
+
+Conținut: 3-4 testimoniale de impact. Fiecare slide conține textul recenziei, numele (inițialele) și prenumele clientului, și serviciul urmat (ex: "Maria I. - Terapie Bowen").
+
+Secțiunea 6: Resurse Recente (Blog)
+
+Layout: Titlu urmat de 3 carduri.
+
+Conținut: Fiecare card prezintă un articol recent de pe blog, cu imagine, titlu și un scurt extras.
+
+Secțiunea 7: CTA Final
+
+Layout: Un banner lat, cu un fundal de culoare de accent.
+
+Conținut: Un mesaj direct și încurajator: "Ești pregătit(ă) să faci primul pas către o stare de bine? Programează o discuție și hai să găsim împreună soluția potrivită pentru tine." Urmat de butoanele mari "Programează-te pe WhatsApp" și "Sună acum".
+
+3.2. Șablon Pagină: Serviciu
+Acest șablon este critic pentru conversie. Este proiectat pentru a oferi toate informațiile necesare într-un mod structurat și ușor de parcurs, menținând în același timp CTA-urile vizibile.
+
+Header Pagină:
+
+Breadcrumb: Acasă › Servicii ›
+
+Titlu (H1):  în Iași – [Promisiunea principală a serviciului] (ex: Terapie Bowen în Iași – Reechilibrare neuromusculară pentru corp și minte)
+
+Layout Principal (Desktop): Două coloane.
+
+Coloana Stângă (30% lățime, "sticky" la scroll):
+
+Imagine reprezentativă de înaltă calitate a terapiei/aparatului.
+
+O casetă "Pe scurt" cu:
+
+Ideal pentru: (listă cu 3-4 puncte cheie, ex: Dureri de spate, Stres, Mobilitate redusă).
+
+Durată ședință: (ex: 50-60 minute).
+
+Preț: "De la X RON / ședință".
+
+Buton CTA Primar: "Programează pe WhatsApp"
+
+Buton CTA Secundar: "Sună acum: +40 744 922 305"
+
+Link: "Vezi toate prețurile și pachetele"
+
+Coloana Dreaptă (70% lățime, scroll-abilă): Conținutul detaliat, structurat cu ancore de navigare interne.
+
+Ce este și cum funcționează? (paragrafe explicative, limbaj simplu).
+
+Beneficii posibile (cu nivelul dovezilor): Listă cu pictograme. Fiecare beneficiu va avea o scurtă descriere și o notă discretă despre nivelul de evidență științifică.
+
+Cui i se adresează? / Contraindicații: Două liste clare, eventual cu pictograme "check" (verde) și "stop" (roșu) pentru impact vizual.
+
+Cum decurge o ședință? (Pas cu Pas): O listă numerotată sau o infografică simplă care descrie experiența clientului (ex: 1. Discuție inițială, 2. Terapia propriu-zisă, 3. Recomandări post-terapie).
+
+Întrebări Frecvente (FAQ): Un acordeon cu 5-8 cele mai comune întrebări.
+
+Testimoniale Specifice: Un carusel cu 2-3 recenzii de la clienți care au urmat acest serviciu specific.
+
+Disclaimer Medical: Textul legal standard, plasat vizibil.
+
+CTA Final: O secțiune care reiterează butoanele de programare.
+
+3.3. Alte Șabloane de Pagini
+Despre Noi: Layout curat, cu secțiuni distincte:
+
+Hero: O imagine a cabinetului și titlul "Misiunea noastră: Sănătate holistică și stare de bine durabilă".
+
+Filozofia Noastră: Text care detaliază abordarea integrativă.
+
+Faceți cunoștință cu terapeutul: Fotografie, biografie extinsă, urmată de o grilă vizuală cu logo-urile certificărilor.
+
+Cabinetul Nostru: O galerie foto/video a spațiului pentru a crea o atmosferă primitoare și a spori încrederea.
+
+Prețuri și Abonamente:
+
+Layout: Un tabel clar și aerisit.
+
+Conținut: Coloane pentru "Serviciu", "Durată", "Preț Ședință Individuală", "Pachet 5 Ședințe" (cu preț redus), "Pachet 10 Ședințe" (cu preț redus). Note de subsol care explică valabilitatea pachetelor.
+
+Contact:
+
+Layout: Două coloane. Stânga: datele de contact. Dreapta: harta.
+
+Conținut:
+
+Stânga: Date NAP formatate cu Schema.org, orar, butoane de contact (WhatsApp, Telefon, Email), detalii despre parcare și accesibilitate (ex: acces pentru persoane cu dizabilități).
+
+Dreapta: Embed interactiv Google Maps.
+
+4. Design System
+Design system-ul definește limbajul vizual al brandului Holist Bella, asigurând consistență și o experiență de utilizare unitară pe întreg site-ul. Stilul "wellness energic" se traduce prin curățenie, spațiu aerisit, culori vibrante, dar calmante, și o tipografie modernă.
+
+4.1. Paletă Cromatică
+Paleta este inspirată de natură, încredere și vitalitate, cu un contrast ridicat pentru accesibilitate.
+
+Culoare Primară (Încredere, Profesionalism): Albastru închis - $#1A3A53$
+
+Culoare Secundară (Wellness, Energie, Acțiune): Verde-mentă/Teal - $#4FD1C5$
+
+Culoare de Accent (Căldură, Optimism): Auriu-nisipiu - $#FBD38D$
+
+Fundal Principal: Alb - $#FFFFFF$
+
+Fundal Secțiuni: Gri foarte deschis - $#F7FAFC$
+
+Text Principal: Gri-închis (aproape negru) - $#2D3748$
+
+Text Secundar/Subtil: Gri mediu - $#718096$
+
+Notificări Succes: Verde - $#48BB78$
+
+Notificări Eroare: Roșu - $#F56565$
+
+Notă: Toate combinațiile de culoare text/fundal vor fi verificate pentru a îndeplini cel puțin standardul de contrast WCAG 2.2 AA.
+
+4.2. Tipografie
+Alegerea fonturilor contribuie la personalitatea brandului: modern, accesibil și foarte lizibil.
+
+Font pentru Titluri (Headings H1-H4): Poppins
+
+Stil: Sans-serif geometric, prietenos și modern.
+
+Greutăți utilizate: Bold (700) pentru H1/H2, SemiBold (600) pentru H3/H4.
+
+Font pentru Text (Body, Paragrafe, Liste): Inter
+
+Stil: Sans-serif extrem de lizibil, optimizat pentru ecrane.
+
+Greutăți utilizate: Regular (400) pentru textul curent, Medium (500) pentru text accentuat.
+
+Ierarhie și Dimensiuni (Desktop):
+
+H1: 48px
+
+H2: 36px
+
+H3: 24px
+
+Body: 18px, cu un line-height de 1.7 pentru spațiere optimă.
+
+4.3. Grilă și Spațiere (Grid & Spacing)
+Grid: Sistem bazat pe 12 coloane, cu un container cu lățime maximă de 1280px.
+
+Spațiere: Se va folosi un sistem bazat pe un multiplu de 8px (8, 16, 24, 32, 48, 64px) pentru a asigura un ritm vertical consistent și un aspect aerisit.
+
+4.4. Componente UI
+Definim stările și aspectul componentelor reutilizabile.
+
+Butoane:
+
+Primar: Fundal verde-mentă ($#4FD1C5$), text albastru-închis ($#1A3A53$), padding generos, colțuri rotunjite (12px). La hover, o umbră subtilă și o ușoară ridicare (transform: translateY(-2px)).
+
+Secundar: Contur verde-mentă, fundal transparent, text verde-mentă. La hover, fundalul devine verde-mentă și textul albastru-închis.
+
+Carduri (Serviciu, Articol):
+
+Fundal alb ($#FFFFFF$), colțuri rotunjite (16px), umbră foarte discretă (box-shadow). La hover, umbra se accentuează și cardul se ridică ușor.
+
+Formulare (dacă e cazul):
+
+Câmpuri cu fundal gri-deschis ($#F7FAFC$), contur la focus de culoare verde-mentă. Etichete clare deasupra fiecărui câmp. Mesaje de eroare/succes vizibile.
+
+Acordeon (FAQ):
+
+Titlul întrebării vizibil, cu o iconiță + la dreapta. La click, iconița se transformă în - cu o rotație lină, iar conținutul apare cu o tranziție slide-down.
+
+4.5. Iconografie
+Stil: Se va utiliza un set de pictograme în stil "line-icon", subțire și elegant. Grosimea liniei va fi consistentă (ex: 1.5px).
+
+Utilizare: Pentru ilustrarea beneficiilor, pașilor dintr-un proces, caracteristici și în navigație.
+
+4.6. Imagistică
+Direcție artistică: Imagini luminoase, naturale, care evocă o stare de bine și energie. Se vor evita fotografiile de stoc generice și impersonale.
+
+Ghid pentru fotografii reale: Atunci când se vor realiza fotografiile reale, acestea trebuie să surprindă:
+
+Cabinetul: Spațiu luminos, curat, primitor.
+
+Aparatura: Prim-planuri curate, care arată tehnologia modernă.
+
+Interacțiune: Momente autentice (dar anonimizate) de terapie, cu acordul clienților, care să transmită grijă și profesionalism.
+
+5. Plan de Animații și Micro-interacțiuni (Motion Plan)
+Animațiile vor fi folosite strategic pentru a îmbunătăți experiența utilizatorului, a ghida atenția și a adăuga un strat de rafinament, fără a compromite performanța.
+
+Animații la Scroll (On-scroll Reveals):
+
+Efect: Elementele și secțiunile de conținut vor apărea subtil pe măsură ce utilizatorul derulează pagina. Se va folosi un efect combinat de opacity: 0 -> 1 și transform: translateY(20px) -> 0.
+
+Implementare: Se va utiliza Intersection Observer API pentru a declanșa animațiile eficient, doar atunci când elementul intră în viewport.
+
+Micro-interacțiuni pe Stări Interactive (Hover, Focus, Active):
+
+Butoane și Linkuri: Toate elementele interactive vor avea tranziții line (transition: all 200ms ease-in-out;) pentru schimbările de culoare, fundal sau umbră la hover și focus. Acest lucru oferă feedback vizual instantaneu și o senzație de fluiditate.
+
+Carduri: La hover, cardurile vor avea o tranziție lină pentru umbră și o ușoară scalare (transform: scale(1.02)), semnalând interactivitatea.
+
+Câmpuri de Formular: La focus, conturul și eticheta câmpului își vor schimba culoarea cu o tranziție lină.
+
+Animații de Încărcare (Loading States):
+
+Pentru conținutul care se încarcă dinamic (ex: articole de blog, testimoniale), se vor folosi "skeleton screens" (schelete de layout în tonuri de gri) pentru a îmbunătăți percepția vitezei de încărcare.
+
+Numărători Animați (Animated Counters):
+
+Pentru elementele de dovadă socială (ex: "Peste 500 de clienți"), numărul va crește animat de la 0 la valoarea finală atunci când intră în viewport, pentru a atrage atenția asupra cifrei.
+
+Accesibilitate și Performanță:
+
+prefers-reduced-motion: Toate animațiile vor fi dezactivate automat prin CSS media query (@media (prefers-reduced-motion: reduce)) pentru utilizatorii care au activat această opțiune în sistemul lor de operare.
+
+Optimizare: Se vor anima doar proprietăți CSS performante, care nu declanșează reflow-ul paginii (precum transform și opacity), asigurând o experiență fluidă chiar și pe dispozitive mai puțin performante.
+
+6. Blueprint de Conținut
+Această secțiune definește strategia verbală a brandului, asigurând un mesaj consistent, clar și convingător pe întreg site-ul.
+
+6.1. Tonul Vocii (Tone of Voice)
+Tonul vocii pentru Holist Bella va fi un amestec echilibrat de empatie competentă și optimism energic.
+
+Empatic și Înțelegător: Recunoaștem problemele și preocupările publicului (durere, stres, oboseală). Folosim un limbaj cald, de susținere. Exemplu: "Înțelegem cât de dificil poate fi să trăiești cu o durere constantă. Suntem aici pentru a te ghida către o soluție blândă și eficientă."
+
+Competent și Credibil: Comunicăm expertiza fără a fi distanți sau academici. Explicăm concepte complexe într-un limbaj simplu și clar. Ne bazăm afirmațiile pe dovezi și suntem transparenți în privința limitelor. Exemplu: "Terapia Andullation se bazează pe două principii biofizice: vibrațiile stocastice, care stimulează circulația, și căldura infraroșie, care relaxează țesuturile în profunzime."
+
+Optimist și Energic: Inspirăm încredere și motivăm acțiunea. Ne concentrăm pe beneficii și pe posibilitatea unei stări de bine îmbunătățite. Exemplu: "Redescoperă-ți vitalitatea și bucură-te din nou de o viață activă și plină de energie."
+
+Ce evităm: Jargonul medical excesiv, promisiunile miraculoase, limbajul ambiguu sau pseudo-științific ("energie cuantică", "vindecare miraculoasă").
+
+6.2. Mesaje Cheie pe Segmente de Public
+Pentru persoanele cu dureri cronice:
+
+Mesaj principal: "Regăsește-ți libertatea de mișcare și confortul zilnic prin terapii non-invazive."
+
+Sub-mesaje: "Abordări blânde pentru durerile de spate, gât și articulare.", "O alternativă eficientă la metodele convenționale."
+
+Pentru persoanele cu stres, anxietate și oboseală:
+
+Mesaj principal: "Resetează-ți sistemul nervos și reîncarcă-ți bateriile."
+
+Sub-mesaje: "Eliberează tensiunea acumulată și îmbunătățește calitatea somnului.", "Soluții naturale pentru a combate efectele oboselii cronice."
+
+Pentru persoanele proactive, orientate spre prevenție și optimizare:
+
+Mesaj principal: "Investește în cea mai valoroasă resursă: sănătatea ta."
+
+Sub-mesaje: "Programe personalizate pentru a-ți optimiza stilul de viață și a preveni afecțiunile.", "Descoperă cum poți funcționa la potențial maxim."
+
+6.3. Microcopy (Texte pentru Interfețe)
+Microcopy-ul se referă la textele scurte de pe butoane, formulare, mesaje de eroare etc. Acestea trebuie să fie clare, concise și aliniate cu tonul vocii.
+
+Butoane CTA:
+
+Primar: "Programează o ședință", "Află mai mult", "Vezi prețurile".
+
+Contact: "Programează-te pe WhatsApp", "Sună acum".
+
+Formular de contact (dacă va exista):
+
+Titlu: "Ai o întrebare? Scrie-ne."
+
+Placeholder câmp mesaj: "Mesajul tău..."
+
+Text sub butonul de trimitere: "Datele tale sunt în siguranță. Nu trimitem spam."
+
+Mesaje de confirmare/eroare:
+
+Succes: "Mesajul tău a fost trimis cu succes! Vom reveni cu un răspuns în cel mai scurt timp."
+
+Eroare: "A apărut o eroare. Te rugăm să încerci din nou sau să ne contactezi telefonic."
+
+Mesaj pre-umplut WhatsApp:
+
+"Bună! Aș dori să programez o ședință de la Holist Bella. Numele meu este [Nume] și mă puteți contacta la numărul." (Utilizatorul va completa numele și telefonul).
+
+7. Șabloane de Conținut pentru Pagini de Servicii
+Această secțiune este esențială și aplică strategia de transparență radicală. Fiecare pagină de serviciu va fi construită pe un șablon riguros, adaptat specificului terapiei, pentru a educa utilizatorul și a construi încredere.
+
+7.1. Șablon: Terapie Bowen
+H1: Terapie Bowen în Iași – Reechilibrare Neuromusculară Blândă
+
+Hero (paragraf introductiv): Redescoperă echilibrul natural al corpului tău printr-o tehnică manuală subtilă și profund relaxantă. Terapia Bowen este o abordare holistică non-invazivă, ideală pentru managementul durerilor musculo-scheletale și reducerea stresului cronic.
+
+Ce este și cum funcționează?
+
+Se va explica conceptul de mișcări delicate ("moves") aplicate pe puncte specifice ale corpului (mușchi, tendoane, nervi). Se va accentua importanța pauzelor dintre secvențele de mișcări, timp în care corpul procesează informația și inițiază procesul de auto-reglare. Se va menționa activarea sistemului nervos parasimpatic, responsabil pentru starea de "odihnă și vindecare".   
+
+Beneficii Posibile și Nivelul Dovezilor:
+
+Relaxare profundă și reducerea stresului: Ajută la calmarea sistemului nervos și la eliberarea tensiunilor acumulate. (Nivelul dovezilor: Experiență clinică larg acceptată și numeroase raportări anecdotice).
+
+Ameliorarea percepției durerii: Poate contribui la reducerea disconfortului în caz de dureri de spate, gât, umeri sau genunchi. (Nivelul dovezilor: Studii de caz și cercetări preliminare indică rezultate pozitive. Sunt necesare studii clinice la scară largă pentru confirmare ).   
+
+Îmbunătățirea mobilității și flexibilității: Prin relaxarea fasciei și a țesuturilor moi, poate contribui la o mai bună libertate de mișcare. (Nivelul dovezilor: Experiență clinică).
+
+Pentru cine este potrivit / Contraindicații:
+
+Potrivit pentru: Persoane de toate vârstele, sportivi, gravide, persoane cu un stil de viață sedentar, oricine caută o metodă de relaxare profundă.
+
+Contraindicații: Terapia Bowen este considerată sigură, fără contraindicații absolute. Se recomandă prudență și ajustarea procedurilor în anumite condiții, care vor fi discutate cu terapeutul.
+
+Cum decurge o ședință?
+
+Discuție inițială (10 min): Evaluarea stării de sănătate și a obiectivelor.
+
+Terapia (40-50 min): Clientul stă întins pe masa de masaj, îmbrăcat lejer. Terapeutul aplică secvențe de mișcări delicate, urmate de pauze de 2-5 minute.
+
+Recomandări post-terapie: Sfaturi despre hidratare și mișcare pentru a maximiza efectele ședinței.
+
+Întrebări Frecvente (FAQ):
+
+Terapia Bowen doare? (Nu, mișcările sunt blânde și non-invazive).
+
+Trebuie să mă dezbrac? (Nu, terapia se aplică peste haine lejere).
+
+De câte ședințe am nevoie? (Numărul variază; de obicei, se observă schimbări după primele 3-5 ședințe).
+
+Testimoniale Verificate & Disclaimer Medical & CTA Final.
+
+7.2. Șablon: Biorezonanță
+H1: Biorezonanță în Iași – Evaluare Energetică Funcțională
+
+Hero: Obține o perspectivă detaliată asupra stării tale de bine la nivel energetic. Biorezonanța este o metodă modernă, non-invazivă, de scanare a frecvențelor corpului pentru a identifica potențiale dezechilibre și surse de stres.
+
+Disclaimer Medical Proeminent: Această metodă este o formă de terapie complementară și nu înlocuiește diagnosticul, consultul sau tratamentul medical convențional. Nu este o metodă de diagnosticare a bolilor.
+
+Ce este și cum funcționează?
+
+Se va explica principiul conform căruia fiecare celulă și organ emite un spectru specific de frecvențe electromagnetice. Aparatul de biorezonanță măsoară aceste frecvențe și le compară cu un model de referință pentru a detecta deviațiile, interpretate ca dezechilibre energetice.   
+
+Beneficii Posibile și Nivelul Dovezilor:
+
+Identificarea surselor de stres pentru organism: Poate oferi indicii despre sensibilități la anumiți alergeni, prezența metalelor grele sau a altor factori de stres energetic. (Nivelul dovezilor: Principiu teoretic al metodei, validat în practica complementară).
+
+Crearea unui plan de echilibrare personalizat: Raportul generat servește ca bază pentru recomandări de stil de viață, dietă și suplimente. (Nivelul dovezilor: Experiență clinică).
+
+Monitorizarea progresului: Permite evaluarea periodică a impactului schimbărilor de stil de viață asupra echilibrului energetic. (Nivelul dovezilor: Aplicație practică a tehnologiei).
+
+Pentru cine este potrivit / Contraindicații:
+
+Potrivit pentru: Oricine dorește o abordare proactivă a sănătății, persoane cu afecțiuni cronice nerezolvate, sportivi care doresc optimizarea performanței.
+
+Contraindicații: Purtători de stimulator cardiac (pacemaker), femei însărcinate, persoane cu epilepsie.
+
+Cum decurge o ședință?
+
+Pregătire: Clientul se așează confortabil și ține în mână electrozi conectați la aparat.
+
+Scanare (60-90 min): Procesul este complet automatizat și nedureros. Aparatul scanează și înregistrează datele.
+
+Interpretare și Recomandări: Terapeutul interpretează raportul și oferă un plan de acțiune personalizat.
+
+Întrebări Frecvente (FAQ):
+
+Biorezonanța poate diagnostica cancerul? (Nu, categoric nu. Este o metodă de evaluare funcțională, nu de diagnostic medical).
+
+Ce primesc la finalul ședinței? (Un raport detaliat și un plan de recomandări personalizate).
+
+Testimoniale Verificate & Disclaimer Medical & CTA Final.
+
+7.3. Șablon: Terapie Healy
+H1: Terapie cu Microcurenți Healy în Iași – Armonizare și Vitalitate
+
+Hero: Explorează o nouă dimensiune a stării de bine cu Healy, un dispozitiv portabil de wellness ce utilizează programe de microcurenți și frecvențe pentru a-ți armoniza câmpul bioenergetic.
+
+Disclaimer Medical Proeminent: Healy este un dispozitiv medical clasa IIa în Uniunea Europeană pentru tratamentul durerii cronice, fibromialgiei, durerii osoase și migrenei, precum și pentru tratamentul de susținere a bolilor mintale precum depresia, anxietatea și tulburările de somn asociate. Toate celelalte aplicații ale Healy nu sunt recunoscute de medicina convențională din cauza lipsei de dovezi în sensul medicinei convenționale..   
+
+Ce este și cum funcționează?
+
+Se va descrie Healy ca un dispozitiv personal care, prin intermediul unor electrozi (adezivi, de ureche sau brățări), livrează microcurenți de joasă intensitate. Se va explica faptul că dispozitivul conține multiple programe, fiecare cu secvențe de frecvențe specifice, destinate diferitelor aspecte ale stării de bine (ex: Echilibru, Relaxare, Energie). Se va evita limbajul tehnic nefondat despre "tensiunea membranei celulare".   
+
+Beneficii Posibile și Nivelul Dovezilor:
+
+Managementul local al durerii: Utilizat ca dispozitiv TENS (Stimulare Nervoasă Electrică Transcutanată) pentru ameliorarea temporară a durerii. (Nivelul dovezilor: Recunoscut de autoritățile de reglementare, cum ar fi FDA, pentru această aplicație specifică ).   
+
+Susținerea stării de relaxare și echilibru: Mulți utilizatori raportează o senzație de calm și o stare de bine generală în timpul și după utilizarea programelor dedicate. (Nivelul dovezilor: Rapoarte de experiență ale utilizatorilor).
+
+Suport pentru somn, concentrare și fitness: Programele specializate pot fi integrate într-un stil de viață sănătos pentru a susține aceste obiective. (Nivelul dovezilor: Rapoarte de experiență ale utilizatorilor).
+
+Pentru cine este potrivit / Contraindicații:
+
+Potrivit pentru: Persoane care caută metode complementare de wellness, sportivi, persoane cu un stil de viață agitat.
+
+Contraindicații: Femei însărcinate, persoane cu stimulator cardiac sau alte implanturi electronice, persoane cu epilepsie. A nu se aplica pe răni deschise.
+
+Cum decurge o ședință?
+
+Selectarea programului: Împreună cu terapeutul, se alege programul potrivit din aplicația Healy.
+
+Aplicarea electrozilor: Se aplică electrozii conform instrucțiunilor (ex: brățări la încheieturi).
+
+Derularea programului (20-60 min): Clientul se relaxează în timp ce programul rulează. Intensitatea este ajustabilă pentru confort.
+
+Întrebări Frecvente (FAQ):
+
+Ce simt în timpul terapiei? (O ușoară furnicătură la nivelul electrozilor).
+
+Este sigur de folosit? (Da, când se respectă contraindicațiile și instrucțiunile).
+
+Testimoniale Verificate & Disclaimer Medical & CTA Final.
+
+7.4. Șablon: Apă Kangen
+H1: Apă Kangen în Iași – Optimizează-ți Hidratarea Zilnică
+
+Hero: Hidratarea este fundamentul sănătății. Descoperă beneficiile apei filtrate și ionizate Kangen și transformă un gest zilnic într-un ritual conștient pentru starea ta de bine.
+
+Disclaimer Medical Proeminent: Afirmațiile privind beneficiile medicale ale apei alcaline ionizate sunt un subiect de cercetare și dezbatere în comunitatea științifică și nu au fost evaluate de autoritățile medicale. Informațiile prezentate au scop educațional și nu constituie sfaturi medicale..   
+
+Ce este și cum funcționează?
+
+Se va explica faptul că "Apa Kangen" este marca înregistrată a companiei Enagic pentru apa produsă de ionizatoarele lor. Se va descrie procesul în doi pași: 1. Filtrarea apei de la robinet pentru a reduce clorul și impuritățile. 2. Electroliza, proces care separă apa în două fluxuri, unul alcalin (pentru băut) și unul acid (pentru uz extern). Se va pune accent pe funcționalitatea aparatului, nu pe promisiuni de vindecare.   
+
+Beneficii Posibile și Nivelul Dovezilor:
+
+Încurajarea unui consum optim de lichide: Apa are un gust proaspăt și plăcut, ceea ce poate stimula un consum adecvat de apă pe parcursul zilei. (Nivelul dovezilor: Beneficiu comportamental, raportat de utilizatori).
+
+Reducerea consumului de plastic: Utilizarea unui ionizator elimină necesitatea de a cumpăra apă îmbuteliată, contribuind la protejarea mediului. (Nivelul dovezilor: Beneficiu ecologic direct).
+
+Versatilitate în uz casnic: Aparatul produce apă cu diferite niveluri de pH, utilă pentru diverse scopuri: apă puternic alcalină pentru curățarea legumelor, apă neutră pentru medicamente, apă acidă pentru îngrijirea pielii și curățenie. (Nivelul dovezilor: Funcționalitate demonstrabilă a produsului).
+
+Pentru cine este potrivit / Contraindicații:
+
+Potrivit pentru: Familii, persoane preocupate de calitatea apei, oricine dorește să adopte obiceiuri de hidratare mai sănătoase și un stil de viață mai ecologic.
+
+Contraindicații: Persoanele cu afecțiuni renale ar trebui să consulte medicul înainte de a consuma în mod regulat apă alcalină.   
+
+Cum decurge o demonstrație?
+
+Se va oferi posibilitatea unei demonstrații la cabinet, unde clienții pot gusta apa și pot vedea cum funcționează aparatul.
+
+Întrebări Frecvente (FAQ):
+
+Care este diferența față de apa plată din comerț? (Filtrare, proces de ionizare, pH ajustabil).
+
+Aparatul necesită întreținere? (Da, necesită cicluri de curățare periodice).
+
+Testimoniale Verificate & Disclaimer Medical & CTA Final.
+
+7.5. Șablon: Terapie Andullation
+H1: Terapie Andullation în Iași – Relaxare Profundă prin Vibrații și Infraroșu
+
+Hero: Eliberează tensiunea musculară și stimulează regenerarea la nivel celular cu terapia Andullation. Această tehnologie germană inovatoare combină vibrațiile mecanice stocastice cu beneficiile căldurii infraroșii pentru o relaxare completă.
+
+Ce este și cum funcționează?
+
+Se va explica tehnologia ca având două componente active simultan: 1. Vibrații stocastice: micro-vibrații cu frecvență variabilă care pătrund în țesuturi, stimulând circulația sanguină și limfatică și relaxând musculatura. 2. Căldură infraroșie: căldură profundă care ameliorează durerea și sporește efectul vibrațiilor.   
+
+Beneficii Posibile și Nivelul Dovezilor:
+
+Ameliorarea percepției durerii: Contribuie la creșterea pragului de durere și la reducerea disconfortului muscular și articular. (Nivelul dovezilor: Studii clinice preliminare au arătat o scădere semnificativă a percepției subiective a durerii ).   
+
+Îmbunătățirea stării de bine și relaxare: Induce o stare de relaxare profundă și poate contribui la îmbunătățirea calității somnului. (Nivelul dovezilor: Studii clinice au raportat o creștere semnificativă a scorului de "well-being" ).   
+
+Stimularea circulației: Vibrațiile și căldura pot îmbunătăți fluxul sanguin local, contribuind la o mai bună oxigenare a țesuturilor. (Nivelul dovezilor: Principiu biofizic al metodei).
+
+Pentru cine este potrivit / Contraindicații:
+
+Potrivit pentru: Persoane cu dureri cronice (spate, articulații), fibromialgie, sportivi (pentru recuperare), persoane cu circulație periferică deficitară.
+
+Contraindicații: Tromboză acută, inflamații acute, sarcină, stimulator cardiac.
+
+Cum decurge o ședință?
+
+Instalare: Clientul se întinde pe salteaua de Andullation, complet îmbrăcat.
+
+Selectare program: Terapeutul alege unul dintre programele presetate, în funcție de obiective.
+
+Terapie (15-30 min): Clientul experimentează o senzație plăcută de vibrație și căldură pe tot corpul.
+
+Întrebări Frecvente (FAQ):
+
+Este similar cu un fotoliu de masaj? (Nu, tehnologia este diferită; Andullation folosește vibrații stocastice, nu role mecanice).
+
+Cât de des ar trebui să fac ședințe? (Se recomandă cure de 5-10 ședințe, în funcție de afecțiune).
+
+Testimoniale Verificate & Disclaimer Medical & CTA Final.
+
+7.6. Șablon: Nutriție Celulară (AplGo)
+H1: Suport pentru Nutriție Celulară cu AplGo în Iași
+
+Hero: Oferă-i corpului tău un suport nutritiv inovator și delicios. Drajeurile AplGo, bazate pe tehnologia Acumullit SA, concentrează puterea extractelor din plante, fructe și ierburi într-o formă rapid și ușor de asimilat.
+
+Disclaimer Medical Proeminent: Aceste produse sunt suplimente alimentare și sunt înregistrate ca atare, fără mențiuni terapeutice aprobate. Nu înlocuiesc o dietă variată, echilibrată și un stil de viață sănătos. Nu sunt destinate să diagnosticheze, trateze, vindece sau prevină nicio boală..   
+
+Ce este și cum funcționează?
+
+Se va prezenta AplGo ca o gamă de suplimente alimentare sub formă de drajeuri (lozenges) care se dizolvă în gură. Se va menționa tehnologia "Acumullit SA" ca fiind metoda patentată de producător pentru a extrage și a conserva fitonutrienții și a le spori biodisponibilitatea, conform materialelor companiei.   
+
+Beneficii Posibile și Nivelul Dovezilor:
+
+Suport pentru vitalitate și un stil de viață activ: Formulele conțin amestecuri de ingrediente cunoscute pentru proprietățile lor nutritive, precum vitamine și antioxidanți naturali. (Nivelul dovezilor: Bazat pe compoziția de ingrediente și literatura de specialitate pentru fiecare componentă în parte).
+
+Conveniență și gust plăcut: Reprezintă o alternativă ușor de administrat și cu gust bun la capsulele sau pulberile tradiționale. (Nivelul dovezilor: Beneficiu de utilizare).
+
+Gamă variată pentru nevoi specifice: Există produse formulate pentru a susține diferite aspecte ale stilului de viață, precum relaxarea (RLX), energia (GTS) sau imunitatea (GRW). (Nivelul dovezilor: Gama de produse a producătorului).
+
+Pentru cine este potrivit / Contraindicații:
+
+Potrivit pentru: Persoane care doresc să își completeze dieta cu fitonutrienți, persoane active, oricine caută o alternativă modernă la suplimentele clasice.
+
+Contraindicații: A se consulta eticheta fiecărui produs pentru posibile alergii. Femeile însărcinate sau care alăptează trebuie să consulte medicul.
+
+Cum decurge o consultație?
+
+Consultația nu se axează pe vânzarea produselor, ci pe integrarea lor, la nevoie, într-un plan holistic de stil de viață, discutat împreună cu terapeutul.
+
+Întrebări Frecvente (FAQ):
+
+Ce gust au drajeurile? (Fiecare produs are o aromă naturală de fructe).
+
+Înlocuiesc o masă sau vitaminele de la farmacie? (Nu, sunt suplimente și trebuie să completeze o dietă echilibrată).
+
+Testimoniale Verificate & Disclaimer Medical & CTA Final.
+
+8. Strategie SEO Completă (Tehnic, Conținut, Local)
+O strategie SEO robustă este esențială pentru a asigura vizibilitatea cabinetului în căutările relevante, în special la nivel local.
+
+8.1. On-Page SEO
+Optimizarea fiecărei pagini este fundamentală pentru a comunica relevanța către motoarele de căutare.   
+
+URL Slug	Cuvânt Cheie Principal	H1 Propus	Meta Title (Titlu SEO)	Meta Description (Descriere SEO)
+/	terapii alternative iasi	Terapii holistice non-invazive pentru o viață echilibrată	Holist Bella Iași – Cabinet de Terapii Alternative & Wellness	Descoperă la Holist Bella Iași terapii non-invazive pentru durere, stres și optimizarea stării de bine. Programează o evaluare!
+/servicii/terapie-bowen-iasi	terapie bowen iasi	Terapie Bowen în Iași – Reechilibrare Neuromusculară Blândă	Terapie Bowen Iași – Tehnică Non-Invazivă pentru Durere și Stres	Relaxează-te profund și ameliorează durerile de spate cu Terapia Bowen la Holist Bella Iași. O abordare blândă pentru corp și minte.
+/servicii/biorezonanta-iasi	biorezonanta iasi	Biorezonanță în Iași – Evaluare Energetică Funcțională	Biorezonanță Iași – Evaluare Energetică & Wellness	Află informații despre echilibrul tău energetic cu biorezonanța la Holist Bella Iași. O metodă non-invazivă de evaluare funcțională.
+/servicii/terapie-andullation-iasi	terapie andullation iasi	Terapie Andullation în Iași – Relaxare prin Vibrații & Infraroșu	Andullation Iași – Terapie cu Vibrații pentru Durere și Relaxare	Experimentează beneficiile terapiei Andullation la Holist Bella Iași: relaxare musculară, stimulare circulatorie și stare de bine.
+/despre-noi	terapeut holistic iasi	Misiunea noastră: Sănătate holistică și stare de bine durabilă	Despre Holist Bella – Terapeut Certificat & Cabinet Wellness Iași	Află mai multe despre filozofia Holist Bella, expertiza terapeutului nostru și cabinetul modern din Iași dedicat stării tale de bine.
+/preturi-si-abonamente	preturi terapii alternative iasi	Prețuri și Abonamente – Terapii Holist Bella Iași	Prețuri Terapii Alternative Iași – Bowen, Biorezonanță, Andullation	Consultă lista de prețuri transparente pentru ședințe individuale și pachete de abonament la Holist Bella Iași. Investește în sănătatea ta.
+
+Exportă în Foi de calcul
+Structura de Heading-uri (H1-H3): Fiecare pagină va avea un singur H1. Subtitlurile (H2) vor corespunde secțiunilor principale (ex: "Ce este și cum funcționează?"), iar H3-urile vor fi folosite pentru sub-puncte, integrând natural cuvinte cheie secundare.
+
+Optimizare Imagini: Toate imaginile vor fi comprimate și servite în formate moderne (WebP/AVIF). Numele fișierelor și atributele alt vor fi descriptive (ex: alt="Terapie Andullation la cabinetul Holist Bella din Iasi").
+
+Internal Linking: Se va crea o rețea logică de linkuri interne. De exemplu, un articol de blog despre "managementul durerilor de spate" va avea linkuri către paginile de servicii Bowen și Andullation.
+
+8.2. Schema.org JSON-LD
+Implementarea datelor structurate ajută Google să înțeleagă mai bine conținutul și contextul site-ului, ceea ce poate duce la afișări îmbogățite (rich results).
+
+Alegerea strategică a tipului de schemă: Natura hibridă a serviciilor (unele cu aplicabilitate medicală, altele pur wellness) face ca tipuri precum MedicalClinic sau HealthAndBeautyBusiness să fie fie prea restrictive, fie prea generice. Abordarea optimă este utilizarea tipului de bază    
+
+LocalBusiness, completat de tipuri adiționale care reflectă mai bine specificul activității.
+
+Recomandare:
+"@type": "LocalBusiness"
+"additionalType":
+
+Această structură comunică o activitate locală, cu o componentă în domeniul medical/sănătății și o componentă de wellness/spa, fiind cea mai onestă și precisă reprezentare.
+
+Snippete JSON-LD de implementat:
+
+Global (pe toate paginile): Organization, WebSite, BreadcrumbList.
+
+Pe pagina Acasă și Contact: LocalBusiness (cu toate detaliile: name, address cu GeoCoordinates, telephone, openingHours, priceRange).
+
+Pe paginile de servicii și resurse: WebPage.
+
+Pe paginile de servicii cu secțiune FAQ: FAQPage (pentru a obține rich results cu întrebări și răspunsuri direct în SERP).
+
+Pe articolele de blog: Article (sau BlogPosting), cu author, datePublished, dateModified.
+
+8.3. Local SEO (Iași)
+Optimizarea pentru căutările locale este critică pentru un cabinet fizic.
+
+Google Business Profile (GBP) Optimization: Profilul GBP va fi completat 100% și optimizat continuu, conform ghidurilor actuale :   
+
+Categorie primară: "Clinică de medicină alternativă" sau "Terapeut".
+
+Servicii: Toate cele 6 servicii vor fi adăugate individual, cu descrieri și prețuri (dacă este posibil).
+
+Fotografii: Se vor încărca constant fotografii de înaltă calitate: exterior, interior, echipamente, echipă.
+
+Postări (Posts): Se va publica săptămânal conținut relevant (oferte, articole noi de pe blog, noutăți).
+
+Recenzii: Se va implementa un proces activ de a solicita recenzii de la clienții mulțumiți. Se va răspunde la toate recenziile (pozitive și negative) în mod profesionist.
+
+Q&A: Se vor adăuga proactiv cele mai frecvente întrebări și răspunsurile la ele.
+
+NAP Consistency: Numele, adresa și numărul de telefon vor fi identice pe site, pe GBP și în orice alt director local unde cabinetul ar putea fi listat.
+
+Conținut Localizat: Paginile de servicii vor fi optimizate cu termeni geografici (ex: "în Iași", "cartierul Copou"). Se va crea o pagină de contact detaliată cu hartă embed și indicații de orientare.
+
+8.4. Core Web Vitals (CWV) & Performanță
+Pentru un site YMYL, o experiență tehnică impecabilă este un semnal indirect de încredere și profesionalism. Un site rapid și stabil arată respect pentru timpul utilizatorului și consolidează imaginea unui brand riguros.
+
+Ținte de performanță:
+
+LCP (Largest Contentful Paint): sub 2.5 secunde.
+
+CLS (Cumulative Layout Shift): sub 0.1.
+
+INP (Interaction to Next Paint): sub 200 milisecunde.
+
+Măsuri tehnice:
+
+Lazy Loading: Imaginile și elementele iframe (ex: Google Maps) vor fi încărcate doar atunci când intră în viewport.
+
+Optimizare Media: Utilizarea formatelor de imagine next-gen (WebP, AVIF) și compresie eficientă.
+
+Fonturi Optimizate: Fonturile web vor fi auto-găzduite (self-hosted) și încărcate cu proprietatea font-display: swap pentru a evita blocarea redării textului.
+
+Minimizare CSS/JS: Codul va fi minimizat și se va încărca doar CSS-ul critic necesar pentru afișarea "above the fold".
+
+9. Conversie (CRO) & Analytics
+Obiectivul principal al site-ului este generarea de programări. Toate elementele de design și conținut sunt subordonate acestui scop.
+
+Fluxul de Conversie:
+
+Canale principale: WhatsApp și Telefon. Se exclude intenționat un sistem de calendar online pentru a menține o interacțiune umană și personalizată încă de la primul contact.
+
+CTA Primar: "Programează-te pe WhatsApp". La click, se va deschide aplicația WhatsApp cu un mesaj pre-completat: Bună! Aș dori o programare pentru. Mă puteți contacta la numărul... Acest lucru reduce fricțiunea și crește șansele de inițiere a conversației.
+
+CTA Secundar: "Sună acum: +40 744 922 305". La click pe mobil, va iniția direct apelul.
+
+CTA-uri Persistente: Pe mobil, se va afișa un banner fix în partea de jos a ecranului cu butoanele pentru WhatsApp și Telefon.
+
+Urmărire Evenimente (Google Analytics 4):
+
+Se vor configura evenimente personalizate pentru a măsura acțiunile cheie:
+
+click_to_whatsapp
+
+click_to_call
+
+lead_magnet_signup (pentru descărcarea ghidului PDF)
+
+scroll_depth (25%, 50%, 75%, 90%) pe paginile de servicii pentru a analiza nivelul de interes.
+
+Plan de Testare A/B (Ipoteze):
+
+Test A/B pe CTA Hero: Se va testa textul butonului principal de pe homepage: Varianta A: "Programează o evaluare" vs. Varianta B: "Descoperă terapiile". Se va măsura care variantă generează mai multe click-uri către paginile de servicii.
+
+Test A/B pe textul linkului de contact: Varianta A: "Sună acum" vs. Varianta B: "Vorbește cu un terapeut". Se va măsura rata de click pe link-urile tel:.
+
+Lead Magnet:
+
+Ofertă: Un ghid PDF gratuit intitulat "5 Tehnici simple de relaxare și management al durerii pe care le poți face acasă".
+
+Mecanism: Oferit la schimbul adresei de e-mail, printr-un formular plasat la finalul articolelor de blog relevante și, eventual, printr-un pop-up de tip "exit-intent".
+
+10. Legal, Etică și Accesibilitate
+Respectarea normelor legale și etice este non-negociabilă pentru un business în domeniul sănătății.
+
+Disclaimer Medical:
+
+Un disclaimer clar, inspirat din bunele practici internaționale , va fi prezent în footer și pe fiecare pagină de serviciu.   
+
+Text propus: "Informațiile și materialele prezentate pe acest site au un scop pur informativ și educațional și nu sunt destinate să înlocuiască sfatul medical profesionist, diagnosticul sau tratamentul. Solicitați întotdeauna sfatul medicului dumneavoastră sau al altui furnizor de servicii medicale calificat pentru orice întrebări legate de o afecțiune medicală. Nu ignorați niciodată sfatul medical profesionist și nu amânați solicitarea acestuia din cauza a ceva ce ați citit pe acest site. Utilizarea acestui site nu creează o relație terapeut-pacient."
+
+Conformitate GDPR și Cookies:
+
+Se vor crea pagini dedicate pentru Politică de Confidențialitate și Politică de Cookies, explicând ce date se colectează și în ce scop.
+
+Se va implementa un banner de consimțământ pentru cookies, care să permită utilizatorului să accepte sau să respingă categoriile de cookies non-esențiale (ex: analytics, marketing).   
+
+Accesibilitate (WCAG 2.2 Nivel AA):
+
+Site-ul va fi dezvoltat pentru a fi accesibil tuturor utilizatorilor, inclusiv celor cu dizabilități. Se va respecta un checklist de conformitate:
+
+Contrast: Toate textele vor avea un raport de contrast de cel puțin 4.5:1 față de fundal.
+
+Alternative text: Toate imaginile informative vor avea atribute alt descriptive.
+
+Navigare de la tastatură: Site-ul va fi complet navigabil folosind doar tasta "Tab". Starea :focus va fi clar vizibilă.
+
+Semantică HTML: Se va folosi HTML semantic corect (<nav>, <main>, <article>, <aside>, etc.).
+
+Etichete de formular: Toate câmpurile de formular vor avea etichete (<label>) asociate corect.
+
+Limbă: Atributul lang="ro" va fi setat pe elementul <html>.
+
+11. Livrabile Tehnice și Recomandări de Stack
+Această secțiune oferă resurse direct utilizabile pentru echipa de dezvoltare și argumentează alegerea tehnologiilor.
+
+11.1. Snippete de Cod
+robots.txt
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.holistbella.ro/sitemap.xml
+Structură sitemap.xml (exemplu)
+
+XML
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.holistbella.ro/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.holistbella.ro/servicii/terapie-bowen-iasi</loc>
+    <lastmod>2024-09-15</lastmod>
+    <priority>0.9</priority>
+  </url>
+  </urlset>
+Exemple Meta OG & Twitter Cards (pentru o pagină de serviciu)
+
+HTML
+
+<meta property="og:title" content="Terapie Bowen Iași – Tehnică Non-Invazivă | Holist Bella" />
+<meta property="og:description" content="Relaxează-te profund și ameliorează durerile de spate cu Terapia Bowen la Holist Bella Iași. O abordare blândă pentru corp și minte." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.holistbella.ro/servicii/terapie-bowen-iasi" />
+<meta property="og:image" content="https://www.holistbella.ro/images/og-bowen.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+manifest.webmanifest (pentru funcționalități PWA de bază)
+
+JSON
+
+{
+  "name": "Holist Bella Iași",
+  "short_name": "Holist Bella",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#1A3A53",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+Exemplu JSON-LD pentru LocalBusiness (Pagina Acasă/Contact)
+
+HTML
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "additionalType":,
+  "name": "Holist Bella",
+  "image": "https://www.holistbella.ro/images/logo.png",
+  "@id": "https://www.holistbella.ro/",
+  "url": "https://www.holistbella.ro/",
+  "telephone": "+40744922305",
+  "priceRange": "RON",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Str. Vasile Lupu 78",
+    "addressLocality": "Iași",
+    "postalCode": "700309",
+    "addressCountry": "RO"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 47.1732,
+    "longitude": 27.5801
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek":,
+    "opens": "09:00",
+    "closes": "20:00"
+  }
+}
+</script>
+11.2. Recomandări de Stack Tehnologic
+Alegerea stack-ului tehnologic este o decizie strategică ce influențează direct performanța, mentenabilitatea și costurile pe termen lung.
+
+Recomandare Primară: Astro (Frontend) + Sanity (CMS Headless) + Vercel (Hosting)
+
+Argumentație: Pentru un site-portofoliu unde viteza de încărcare și SEO sunt priorități absolute, Astro este alegerea superioară. Arhitectura sa "zero-JS-by-default" asigură că paginile sunt livrate ca HTML static, ultra-rapid, cu JavaScript adăugat doar pentru componentele interactive ("islands"). Acest lucru garantează scoruri excelente la Core Web Vitals.    
+
+Sanity este un CMS headless care oferă o flexibilitate excepțională în modelarea conținutului și o experiență de editare colaborativă în timp real, ideală pentru gestionarea conținutului medical care necesită rigoare.   
+
+Vercel oferă o platformă de hosting optimizată pentru framework-uri moderne, cu deployment continuu și performanță de top la nivel global.
+
+Pro: Performanță de top, SEO excelent, experiență de dezvoltare modernă, flexibilitate maximă a conținutului.
+
+Contra: Ecosistem mai nou decât cel al Next.js.
+
+Alternativa 1: Next.js (Frontend) + Sanity (CMS) + Vercel (Hosting)
+
+Argumentație: Next.js este un framework React extrem de matur și puternic, excelent pentru aplicații web complexe. Oferă performanțe foarte bune prin SSG și SSR. Pentru un site-portofoliu, poate fi considerat un "overkill", aducând un overhead de JavaScript mai mare decât Astro.   
+
+Pro: Ecosistem foarte matur, suport comunitar vast.
+
+Contra: Bundle de JavaScript inițial mai mare, potențial mai complex decât este necesar pentru acest proiect.
+
+Alternativa 2: WordPress (Headless CMS)
+
+Argumentație: WordPress poate fi folosit ca un CMS headless, expunând conținutul printr-un API REST.
+
+Pro: Interfață de administrare familiară pentru mulți utilizatori.
+
+Contra: Mai lent și mai puțin flexibil decât CMS-urile native headless precum Sanity sau Strapi. Necesită mai multă mentenanță și securizare.   
+
+Concluzie: Stack-ul Astro + Sanity + Vercel este recomandat ca fiind soluția optimă, care aliniază perfect obiectivele de performanță, SEO și calitate ale proiectului Holist Bella.
+
+12. Setări Confirmate
+Acest blueprint a fost elaborat pe baza următoarelor premise confirmate, care nu necesită revalidare:
+
+USP: Terapii non-invazive, terapeut cu experiență, abordare bazată pe dovezi (cu transparență), portofoliu variat.
+
+Ton & Stil Vizual: Wellness energic.
+
+Prețuri & Abonamente: Vor fi afișate public și gestionate din CMS.
+
+Programări: Exclusiv prin WhatsApp și telefon.
+
+Testimoniale: Se vor colecta și utiliza cu acordul clienților.
+
+Limitări Legale: Se vor aplica standardele E-E-A-T și disclaimerele medicale.
+
+Fotografii: Se va începe cu imagini de stoc de înaltă calitate, cu un plan de înlocuire cu fotografii reale.
+
+Limbă: Exclusiv limba română.
+
+KPIs: Se vor urmări indicatori de lead-uri, conversie, SEO și engagement.
+
+Competiție: Analiza a fost realizată conform secțiunii 1.2.
+
+13. Formatul Livrării
+Acest document master constituie livrabilul principal. El este completat de anexele menționate, precum snippetele de cod, care vor fi furnizate separat pentru a facilita implementarea. Documentul servește ca o sursă unică de adevăr ("single source of truth") pentru toate etapele proiectului, de la design la dezvoltare și lansare.
+
+14. Roadmap de Implementare
+Se propune un plan de implementare agil, structurat în 4 sprinturi a câte 2 săptămâni, pentru un total de 8 săptămâni de la start la lansare.
+
+Sprint 1: Fundamentare și Design (Săptămânile 1-2)
+
+Activități: Finalizarea și validarea Design System-ului și a wireframe-urilor detaliate. Configurarea proiectului tehnic (repository Git, setup CMS Sanity, conectare la Vercel).
+
+Efort estimat: 40 ore (UX/UI Designer), 20 ore (Developer).
+
+Sprint 2: Dezvoltare Componente și Pagini Statice (Săptămânile 3-4)
+
+Activități: Dezvoltarea în cod a tuturor componentelor reutilizabile (butoane, carduri, header, footer). Construirea paginilor cu conținut static: Acasă, Despre Noi, Prețuri, Contact.
+
+Efort estimat: 60 ore (Developer), 20 ore (Copywriter pentru conținutul static).
+
+Sprint 3: Integrare CMS și Conținut Dinamic (Săptămânile 5-6)
+
+Activități: Crearea schemelor de conținut în Sanity. Conectarea frontend-ului Astro la CMS. Crearea șabloanelor dinamice pentru paginile de Servicii și articolele de Blog. Popularea conținutului pentru cele 6 servicii și 2-3 articole de blog inițiale.
+
+Efort estimat: 60 ore (Developer), 40 ore (Copywriter/Content Manager).
+
+Sprint 4: Optimizare, Testare și Lansare (Săptămânile 7-8)
+
+Activități: Implementarea finală a strategiei SEO (Schema.org, meta-taguri, sitemap). Optimizarea performanței (CWV). Testare cross-browser și pe diverse dispozitive. Asigurarea calității (QA). Configurarea domeniului și lansarea oficială.
+
+Efort estimat: 40 ore (Developer), 20 ore (Specialist SEO/QA).
+
+15. Micro-exemple de Componente (Recapitulare)
+Această listă servește ca referință rapidă pentru a asigura consistența în timpul implementării.
+
+CTA Primar: "Programează-te pe WhatsApp"
+
+CTA Secundar: "Sună la +40 744 922 305"
+
+Mesaj WhatsApp pre-umplut: "Bună! Aș dori o programare pentru la Holist Bella. Mă puteți contacta la [telefon]?"
+
+Microcopy Confidențialitate (sub formular): "Îți protejăm datele. Nu trimitem spam. Poți solicita ștergerea în orice moment."
+
+Breadcrumb: Acasă › Servicii › Terapie Andullation
+
+Disclaimer Medical (variantă scurtă, footer): "Informațiile de pe acest site au scop informativ și nu înlocuiesc consultul medical."

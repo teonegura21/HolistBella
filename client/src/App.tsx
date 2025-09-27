@@ -15,8 +15,8 @@ import ApaKangenPage from "@/pages/apa-kangen";
 import BiorezonantaPage from "@/pages/biorezonanta";
 import TerapieBowenPage from "@/pages/terapie-bowen";
 import NutritieCelularaPage from "@/pages/nutritie-celulara";
-import TerapieReikiPage from "@/pages/terapie-reiki";
-import DetoxifiereNaturalaPage from "@/pages/detoxifiere-naturala";
+
+
 import AndullationPage from "@/pages/andullation";
 import HealyPage from "@/pages/healy";
 import AlteServiciiPage from "@/pages/alte-servicii";
@@ -42,8 +42,8 @@ function Router() {
       <Route path="/biorezonanta" component={BiorezonantaPage} />
       <Route path="/terapie-bowen" component={TerapieBowenPage} />
       <Route path="/nutritie-celulara" component={NutritieCelularaPage} />
-      <Route path="/terapie-reiki" component={TerapieReikiPage} />
-      <Route path="/detoxifiere-naturala" component={DetoxifiereNaturalaPage} />
+
+
       <Route path="/andullation" component={AndullationPage} />
       <Route path="/healy" component={HealyPage} />
       <Route path="/drenaj-limfatic" component={DrenajaLimfaticPage} />

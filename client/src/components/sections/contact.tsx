@@ -1,102 +1,17 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useToast } from "@/hooks/use-toast";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { 
   MapPin, 
   Phone, 
   Mail, 
   Clock, 
-  Send, 
   Heart, 
   Sparkles,
   CheckCircle
 } from "lucide-react";
 import { CONTACT_INFO } from "@/lib/constants";
 
-interface ContactForm {
-  nume: string;
-  prenume: string;
-  email: string;
-  telefon: string;
-  serviciu: string;
-  mesaj: string;
-}
-
 export default function Contact() {
-  const [formData, setFormData] = useState<ContactForm>({
-    nume: "",
-    prenume: "",
-    email: "",
-    telefon: "",
-    serviciu: "",
-    mesaj: ""
-  });
-
-  const { toast } = useToast();
-  const queryClient = useQueryClient();
-
-  const submitMutation = useMutation({
-    mutationFn: async (data: ContactForm) => {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-      
-      if (!response.ok) {
-        throw new Error("Eroare la trimiterea formularului");
-      }
-      
-      return response.json();
-    },
-    onSuccess: () => {
-      toast({
-        title: "Mesaj trimis cu succes!",
-        description: "Vă vom contacta în cel mai scurt timp posibil.",
-      });
-      setFormData({
-        nume: "",
-        prenume: "",
-        email: "",
-        telefon: "",
-        serviciu: "",
-        mesaj: ""
-      });
-      queryClient.invalidateQueries({ queryKey: ["/api/contact"] });
-    },
-    onError: () => {
-      toast({
-        title: "Eroare",
-        description: "A apărut o problemă la trimiterea mesajului. Vă rugăm să încercați din nou.",
-        variant: "destructive",
-      });
-    },
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    submitMutation.mutate(formData);
-  };
-
-  const handleInputChange = (field: keyof ContactForm, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
-  };
-
-  const servicii = [
-    "Apă Kangen",
-    "Biorezonanță Magnetică", 
-    "Andullation",
-    "Healy",
-    "Terapie Bowen",
-    "Reiki",
-    "Nutriție Celulară",
-    "Consultație generală"
-  ];
 
   return (
     <section id="contact" className="py-24 bg-gradient-to-br from-soft-cream to-white relative overflow-hidden">
@@ -126,189 +41,63 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {/* Contact Form */}
-          <div className="lg:col-span-2">
-            <Card className="holistic-card border-0 shadow-2xl">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-healing-green/10 rounded-full flex items-center justify-center mr-4">
-                    <Send className="text-healing-green text-xl" />
-                  </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Contact Details */}
+          <Card className="holistic-card border-0 shadow-xl">
+            <CardContent className="p-8">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-wellness-blue/10 rounded-full flex items-center justify-center mr-4">
+                  <Phone className="text-wellness-blue text-xl" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Informații de Contact</h3>
+              </div>
+
+              <div className="space-y-6">
+                <div className="flex items-start">
+                  <MapPin className="text-healing-green mr-3 mt-1 w-5 h-5 flex-shrink-0" />
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-900">Trimite-ne un Mesaj</h3>
-                    <p className="text-gray-600">Completează formularul și te vom contacta în 24h</p>
+                    <div className="font-semibold text-gray-900">Adresa</div>
+                    <div className="text-gray-600">{CONTACT_INFO.address}</div>
                   </div>
                 </div>
 
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Nume *
-                      </label>
-                      <Input
-                        required
-                        value={formData.nume}
-                        onChange={(e) => handleInputChange("nume", e.target.value)}
-                        className="w-full rounded-lg border-gray-200 focus:border-healing-green focus:ring-healing-green"
-                        placeholder="Introduceți numele"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Prenume *
-                      </label>
-                      <Input
-                        required
-                        value={formData.prenume}
-                        onChange={(e) => handleInputChange("prenume", e.target.value)}
-                        className="w-full rounded-lg border-gray-200 focus:border-healing-green focus:ring-healing-green"
-                        placeholder="Introduceți prenumele"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Email *
-                      </label>
-                      <Input
-                        type="email"
-                        required
-                        value={formData.email}
-                        onChange={(e) => handleInputChange("email", e.target.value)}
-                        className="w-full rounded-lg border-gray-200 focus:border-healing-green focus:ring-healing-green"
-                        placeholder="exemplu@email.com"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Telefon *
-                      </label>
-                      <Input
-                        type="tel"
-                        required
-                        value={formData.telefon}
-                        onChange={(e) => handleInputChange("telefon", e.target.value)}
-                        className="w-full rounded-lg border-gray-200 focus:border-healing-green focus:ring-healing-green"
-                        placeholder="+40 XXX XXX XXX"
-                      />
-                    </div>
-                  </div>
-
+                <div className="flex items-start">
+                  <Phone className="text-healing-green mr-3 mt-1 w-5 h-5 flex-shrink-0" />
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Serviciu de interes
-                    </label>
-                    <Select value={formData.serviciu} onValueChange={(value) => handleInputChange("serviciu", value)}>
-                      <SelectTrigger className="w-full rounded-lg border-gray-200 focus:border-healing-green focus:ring-healing-green">
-                        <SelectValue placeholder="Selectați serviciul dorit" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {servicii.map((serviciu) => (
-                          <SelectItem key={serviciu} value={serviciu}>
-                            {serviciu}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
+                    <div className="font-semibold text-gray-900">Telefon</div>
+                    <a href={`tel:${CONTACT_INFO.phone}`} className="text-gray-600 hover:text-healing-green transition-colors">
+                      {CONTACT_INFO.phone}
+                    </a>
                   </div>
+                </div>
 
+                <div className="flex items-start">
+                  <Mail className="text-healing-green mr-3 mt-1 w-5 h-5 flex-shrink-0" />
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Mesaj *
-                    </label>
-                    <Textarea
-                      required
-                      rows={5}
-                      value={formData.mesaj}
-                      onChange={(e) => handleInputChange("mesaj", e.target.value)}
-                      className="w-full rounded-lg border-gray-200 focus:border-healing-green focus:ring-healing-green resize-none"
-                      placeholder="Descrieți simptomele, întrebările sau preocupările dvs..."
-                    />
+                    <div className="font-semibold text-gray-900">Email</div>
+                    <a href={`mailto:${CONTACT_INFO.email}`} className="text-gray-600 hover:text-healing-green transition-colors">
+                      {CONTACT_INFO.email}
+                    </a>
                   </div>
+                </div>
 
-                  <Button
-                    type="submit"
-                    disabled={submitMutation.isPending}
-                    className="w-full btn-holistic py-4 text-lg"
-                  >
-                    {submitMutation.isPending ? (
-                      <>
-                        <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
-                        Se trimite...
-                      </>
-                    ) : (
-                      <>
-                        <Send className="mr-2 h-5 w-5" />
-                        Trimite Mesajul
-                      </>
-                    )}
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
-          </div>
+                <div className="flex items-start">
+                  <Clock className="text-healing-green mr-3 mt-1 w-5 h-5 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold text-gray-900">Program</div>
+                    <div className="text-gray-600">
+                      <div>Luni - Vineri: 9:00 - 18:00</div>
+                      <div>Sâmbătă: 9:00 - 14:00</div>
+                      <div>Duminică: Închis</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
 
-          {/* Contact Info */}
+          {/* Quick Actions & Trust Indicators */}
           <div className="space-y-8">
-            {/* Contact Details */}
-            <Card className="holistic-card border-0 shadow-xl">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-wellness-blue/10 rounded-full flex items-center justify-center mr-4">
-                    <Phone className="text-wellness-blue text-xl" />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900">Informații Contact</h3>
-                </div>
-
-                <div className="space-y-6">
-                  <div className="flex items-start">
-                    <MapPin className="text-healing-green mr-3 mt-1 w-5 h-5 flex-shrink-0" />
-                    <div>
-                      <div className="font-semibold text-gray-900">Adresa</div>
-                      <div className="text-gray-600">{CONTACT_INFO.address}</div>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start">
-                    <Phone className="text-healing-green mr-3 mt-1 w-5 h-5 flex-shrink-0" />
-                    <div>
-                      <div className="font-semibold text-gray-900">Telefon</div>
-                      <a href={`tel:${CONTACT_INFO.phone}`} className="text-gray-600 hover:text-healing-green transition-colors">
-                        {CONTACT_INFO.phone}
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start">
-                    <Mail className="text-healing-green mr-3 mt-1 w-5 h-5 flex-shrink-0" />
-                    <div>
-                      <div className="font-semibold text-gray-900">Email</div>
-                      <a href={`mailto:${CONTACT_INFO.email}`} className="text-gray-600 hover:text-healing-green transition-colors">
-                        {CONTACT_INFO.email}
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start">
-                    <Clock className="text-healing-green mr-3 mt-1 w-5 h-5 flex-shrink-0" />
-                    <div>
-                      <div className="font-semibold text-gray-900">Program</div>
-                      <div className="text-gray-600">
-                        <div>Luni - Vineri: 9:00 - 18:00</div>
-                        <div>Sâmbătă: 9:00 - 14:00</div>
-                        <div>Duminică: Închis</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Quick Actions */}
             <Card className="holistic-card border-0 shadow-xl">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
@@ -371,6 +160,42 @@ export default function Contact() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Google Maps Section */}
+        <div className="mt-16">
+          <Card className="holistic-card border-0 shadow-xl">
+            <CardContent className="p-0">
+              <div className="p-6 border-b">
+                <div className="flex items-center justify-center">
+                  <div className="w-12 h-12 bg-healing-green/10 rounded-full flex items-center justify-center mr-4">
+                    <MapPin className="text-healing-green text-xl" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900">Locația Cabinetului</h3>
+                </div>
+              </div>
+              <div className="aspect-video">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2712.8583871572743!2d27.57726!3d47.16587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cafb3c84b8de53%3A0x48e3d8fb69cd3f2e!2sStrada%20Soficu%201%2C%20Ia%C8%99i%20700497%2C%20Romania!5e0!3m2!1sen!2sus!4v1699123456789!5m2!1sen!2sus"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Locația Holist Bella Cabinet"
+                  className="rounded-b-lg"
+                ></iframe>
+              </div>
+              <div className="p-4 bg-gray-50 rounded-b-lg">
+                <p className="text-sm text-gray-600 text-center">
+                  <strong>{CONTACT_INFO.address}</strong>
+                  <br />
+                  {CONTACT_INFO.addressDetails}
+                </p>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holist Bella - Centrul de Sănătate Holistică | Iași</title>
+    <meta name="description" content="Centrul de sănătate holistică Holist Bella din Iași oferă terapii alternative: Bowen, Biorezonanță, Reiki, Nutriție Celulară. Programări online sau WhatsApp.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2D7D32',
+                        secondary: '#1976D2',
+                        accent: '#FF8F00',
+                        success: '#4CAF50',
+                        warning: '#FF9800',
+                        error: '#F44336'
+                    },
+                    fontFamily: {
+                        'heading': ['Inter', 'sans-serif'],
+                        'body': ['Open Sans', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'scale-in': 'scaleIn 0.4s ease-out'
+                    }
+                }
+            }
+        };
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #2D7D32 0%, #388E3C 50%, #4CAF50 100%);
+        }
+        
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.9);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+
+<body class="font-body bg-gray-50">
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/40744922305" target="_blank" class="whatsapp-float flex items-center justify-center hover:bg-green-600 transition-colors">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-lg z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-heading font-bold text-primary">Holist Bella</h1>
+                    </div>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Acasă</a>
+                        <a href="#servicii" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Servicii</a>
+                        <a href="#despre" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Despre</a>
+                        <a href="#contact" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                        <a href="tel:+40744922305" class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-700 transition-colors">
+                            <i class="fas fa-phone mr-2"></i>Sună Acum
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-primary">Acasă</a>
+                <a href="#servicii" class="block px-3 py-2 text-gray-700 hover:text-primary">Servicii</a>
+                <a href="#despre" class="block px-3 py-2 text-gray-700 hover:text-primary">Despre</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-primary">Contact</a>
+                <a href="tel:+40744922305" class="block bg-primary text-white px-3 py-2 rounded-lg text-center mt-3">
+                    <i class="fas fa-phone mr-2"></i>Sună Acum
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20 md:py-32 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <!-- Serene wellness center interior with natural lighting and plants -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080'); mix-blend-mode: overlay;"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="animate-fade-in">
+                <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">
+                    Centrul de Sănătate<br>
+                    <span class="text-yellow-300">Holist Bella</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Cea mai mare bogăție este sănătatea. Descoperă puterea medicinii holistische 
+                    pentru echilibrul trup, minte și suflet.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="#servicii" class="bg-white text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg">
+                        <i class="fas fa-leaf mr-2"></i>Vezi Serviciile
+                    </a>
+                    <a href="#contact" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-primary transition-all">
+                        <i class="fas fa-calendar-alt mr-2"></i>Programează Consultația
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 animate-slide-up">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heart text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3">Abordare Holistică</h3>
+                    <p class="text-gray-600">Tratăm omul ca întreg - trup, minte și suflet, nu doar simptomele fizice.</p>
+                </div>
+                
+                <div class="text-center p-6 animate-slide-up">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user-md text-secondary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3">Experiență Dovedită</h3>
+                    <p class="text-gray-600">Ani de experiență în medicina alternativă și terapii naturale de vindecare.</p>
+                </div>
+                
+                <div class="text-center p-6 animate-slide-up">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-leaf text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3">Metode Naturale</h3>
+                    <p class="text-gray-600">Folosim doar tehnici și tratamente naturale, non-invazive pentru sănătatea ta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicii" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-heading font-bold text-gray-900 mb-4">Serviciile Noastre</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Oferim o gamă variată de terapii și tratamente holistische, personalizate pentru nevoile tale unice.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Terapie Bowen -->
+                <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <!-- Peaceful holistic therapy session with natural elements -->
+                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" alt="Terapie Bowen" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-heading font-semibold mb-3 text-primary">Terapie Bowen</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Terapia Bowen prezintă unul dintre cele mai profunde concepte terapeutice existente. 
+                            Se bazează pe relaxarea totală a corpului pentru activarea abilității proprii de vindecare.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-primary font-semibold">Relaxare • Echilibru • Armonie</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors">
+                                Află Mai Multe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Biorezonanta Magnetica -->
+                <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <!-- Modern medical equipment for health analysis -->
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" alt="Biorezonanta Magnetica" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-heading font-semibold mb-3 text-secondary">Biorezonanță Magnetică</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Metodă non-invazivă de evaluare a stării de sănătate. Analize complete pentru 
+                            funcționarea organismului: cardiovascular, digestiv, hormonal și multe altele.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-secondary font-semibold">Non-invaziv • Complet • Precis</span>
+                            <button class="bg-secondary text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition-colors">
+                                Află Mai Multe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nutritie Celulara -->
+                <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <!-- Fresh organic vegetables and healthy nutrition setup -->
+                    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" alt="Nutritie Celulara" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-heading font-semibold mb-3 text-accent">Nutriție Celulară</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Combinație echilibrată de vitamine, minerale, enzime și proteine pentru fundamentul 
+                            unei nutriții celulare optime și sănătate pe termen lung.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-accent font-semibold">Echilibrat • Natural • Eficient</span>
+                            <button class="bg-accent text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors">
+                                Află Mai Multe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terapie Reiki -->
+                <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <!-- Serene meditation and energy healing environment -->
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" alt="Terapie Reiki" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-heading font-semibold mb-3 text-purple-600">Terapie Reiki</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Tehnică japoneză de vindecare prin energie pentru tratarea durerii fizice și emoționale. 
+                            Sistem pentru echilibru și armonizarea tuturor dimensiunilor ființei.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-purple-600 font-semibold">Sigur • Plăcut • Armonizant</span>
+                            <button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors">
+                                Află Mai Multe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Apa Kangen Section -->
+            <div class="mt-16 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div class="p-8 lg:p-12 text-white">
+                        <h3 class="text-3xl font-heading font-bold mb-6">Apa Kangen</h3>
+                        <p class="text-lg mb-6 leading-relaxed">
+                            Descoperă beneficiile apei alcaline ionizate pentru sănătatea ta!
+                        </p>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                <span>Apa alcalină ionizată cu pH 8,5-9,5 pentru sănătatea organismului</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                <span>Proprietăți antioxidante pentru reducerea radicalilor liberi</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                <span>Microstructurată pentru hidratare superioară</span>
+                            </div>
+                        </div>
+                        
+                        <button class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                            Află Mai Multe despre Apa Kangen
+                        </button>
+                    </div>
+                    
+                    <div class="h-64 lg:h-full">
+                        <!-- Clear water droplets and hydration concept -->
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Apa Kangen" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="despre" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-heading font-bold text-gray-900 mb-6">
+                        Medicina Holistică<br>
+                        <span class="text-primary">Pentru Echilibrul Perfect</span>
+                    </h2>
+                    
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Medicina alternativă este o medicină holistică care se adresează omului văzut ca întreg - 
+                        trup, minte și suflet, nu doar corpului și bolilor fizice.
+                    </p>
+                    
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Această abordare holistică, această empatizare cu pacientul îl determină să vină ca la 
+                        un psihoterapeut, să-și pună încrederea în mâinile lui. <em>Încrederea este lucrul cel 
+                        mai important în medicină.</em>
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="text-center p-4 bg-primary/5 rounded-lg">
+                            <div class="text-3xl font-bold text-primary mb-2">15+</div>
+                            <div class="text-sm text-gray-600">Ani Experiență</div>
+                        </div>
+                        <div class="text-center p-4 bg-secondary/5 rounded-lg">
+                            <div class="text-3xl font-bold text-secondary mb-2">1000+</div>
+                            <div class="text-sm text-gray-600">Pacienți Mulțumiți</div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors inline-block">
+                        <i class="fas fa-calendar-check mr-2"></i>Programează o Consultație
+                    </a>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- Professional medical consultation in wellness setting -->
+                    <img src="https://pixabay.com/get/gc05f268f86c54a7b91ae77577ec783bd338a91c5339239d435c73d046114a40169d662e3301bb2a3848f4760ea2da6c57f46758b8d9e1a97468ed1538c38213c_1280.jpg" alt="Consultatie medicala" class="rounded-lg shadow-lg">
+                    <!-- Natural healing therapy with herbs and wellness elements -->
+                    <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Terapii naturale" class="rounded-lg shadow-lg mt-8">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-heading font-bold text-gray-900 mb-4">Ce Spun Pacienții Noștri</h2>
+                <p class="text-xl text-gray-600">Încrederea și rezultatele vorbesc de la sine</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">
+                        "Terapia Bowen mi-a schimbat viața. Durerile cronice de spate au dispărut 
+                        complet după doar câteva ședințe. Recomand cu încredere!"
+                    </p>
+                    <div class="font-semibold text-gray-900">Maria T.</div>
+                    <div class="text-sm text-gray-500">Iași</div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">
+                        "Biorezonanța m-a ajutat să înțeleg problemele mele de sănătate. 
+                        Abordarea holistică face diferența în tratament."
+                    </p>
+                    <div class="font-semibold text-gray-900">Alexandru R.</div>
+                    <div class="text-sm text-gray-500">Iași</div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">
+                        "Terapia Reiki mi-a adus echilibrul de care aveam nevoie. 
+                        Mă simt mult mai energică și în pace cu mine."
+                    </p>
+                    <div class="font-semibold text-gray-900">Elena M.</div>
+                    <div class="text-sm text-gray-500">Iași</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-heading font-bold text-gray-900 mb-4">Programează o Consultație</h2>
+                <p class="text-xl text-gray-600">Primul pas către o sănătate optimă începe cu o consultație personalizată</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <h3 class="text-2xl font-heading font-semibold mb-6">Formular de Contact</h3>
+                    
+                    <form class="space-y-6" data-implementation="Should validate and submit form data">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="nume" class="block text-sm font-medium text-gray-700 mb-2">Nume *</label>
+                                <input type="text" id="nume" name="nume" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                                       placeholder="Numele tău">
+                            </div>
+                            <div>
+                                <label for="prenume" class="block text-sm font-medium text-gray-700 mb-2">Prenume *</label>
+                                <input type="text" id="prenume" name="prenume" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                                       placeholder="Prenumele tău">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                                   placeholder="adresa@email.com">
+                        </div>
+                        
+                        <div>
+                            <label for="telefon" class="block text-sm font-medium text-gray-700 mb-2">Telefon *</label>
+                            <input type="tel" id="telefon" name="telefon" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                                   placeholder="0744 922 305">
+                        </div>
+                        
+                        <div>
+                            <label for="serviciu" class="block text-sm font-medium text-gray-700 mb-2">Serviciu de Interes</label>
+                            <select id="serviciu" name="serviciu" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors">
+                                <option value="">Selectează serviciul</option>
+                                <option value="terapie-bowen">Terapie Bowen</option>
+                                <option value="biorezonanta">Biorezonanță Magnetică</option>
+                                <option value="nutritie-celulara">Nutriție Celulară</option>
+                                <option value="reiki">Terapie Reiki</option>
+                                <option value="apa-kangen">Apa Kangen</option>
+                                <option value="consultatie-generala">Consultație Generală</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="mesaj" class="block text-sm font-medium text-gray-700 mb-2">Mesaj</label>
+                            <textarea id="mesaj" name="mesaj" rows="4" 
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors resize-none"
+                                      placeholder="Descrie simptomele sau problemele pentru care dorești consultația..."></textarea>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <input type="checkbox" id="gdpr" name="gdpr" required 
+                                   class="mt-1 h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded">
+                            <label for="gdpr" class="ml-3 text-sm text-gray-600">
+                                Sunt de acord cu prelucrarea datelor personale în conformitate cu 
+                                <a href="#" class="text-primary hover:underline">Politica de Confidențialitate</a> *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="w-full bg-primary text-white py-4 px-6 rounded-lg font-semibold hover:bg-green-700 transition-colors transform hover:scale-105">
+                            <i class="fas fa-paper-plane mr-2"></i>Trimite Solicitarea
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-2xl font-heading font-semibold mb-6">Informații de Contact</h3>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Adresa</h4>
+                                <p class="text-gray-600">Strada Soficu nr 1, Iași<br>la intersecție cu Str. Vantu nr 6</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-phone text-secondary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Telefon</h4>
+                                <a href="tel:+40744922305" class="text-secondary hover:underline text-lg font-medium">
+                                    +40 744 922 305
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-envelope text-accent text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Email</h4>
+                                <a href="mailto:angelicanegura@yahoo.com" class="text-accent hover:underline">
+                                    angelicanegura@yahoo.com
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fab fa-whatsapp text-green-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">WhatsApp</h4>
+                                <a href="https://wa.me/40744922305" target="_blank" class="text-green-500 hover:underline">
+                                    Trimite mesaj pe WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Actions -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <a href="tel:+40744922305" 
+                           class="bg-secondary text-white p-4 rounded-lg text-center font-semibold hover:bg-blue-700 transition-colors">
+                            <i class="fas fa-phone mr-2"></i>Sună Acum
+                        </a>
+                        <a href="https://wa.me/40744922305" target="_blank"
+                           class="bg-green-500 text-white p-4 rounded-lg text-center font-semibold hover:bg-green-600 transition-colors">
+                            <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                        </a>
+                    </div>
+                    
+                    <!-- Office Hours -->
+                    <div class="mt-8 p-6 bg-gray-50 rounded-lg">
+                        <h4 class="font-semibold text-gray-900 mb-4">Program de Lucru</h4>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span>Luni - Vineri:</span>
+                                <span class="font-medium">09:00 - 18:00</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Sâmbătă:</span>
+                                <span class="font-medium">09:00 - 14:00</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Duminică:</span>
+                                <span class="text-red-500 font-medium">Închis</span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-3">
+                            * Programări disponibile și în afara orelor de program, la cerere
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-heading font-bold mb-4">Holist Bella</h3>
+                    <p class="text-gray-400 mb-4 leading-relaxed">
+                        Centrul de sănătate holistică din Iași, dedicat echilibrului și vindecării naturale 
+                        prin medicina alternativă.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/angelica.negura" target="_blank" 
+                           class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/40744922305" target="_blank"
+                           class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Servicii</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#servicii" class="hover:text-white transition-colors">Terapie Bowen</a></li>
+                        <li><a href="#servicii" class="hover:text-white transition-colors">Biorezonanță Magnetică</a></li>
+                        <li><a href="#servicii" class="hover:text-white transition-colors">Nutriție Celulară</a></li>
+                        <li><a href="#servicii" class="hover:text-white transition-colors">Terapie Reiki</a></li>
+                        <li><a href="#servicii" class="hover:text-white transition-colors">Apa Kangen</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Rapid</h4>
+                    <div class="space-y-3 text-gray-400">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>Strada Soficu nr 1, Iași</p>
+                        <p><a href="tel:+40744922305" class="hover:text-white transition-colors">
+                            <i class="fas fa-phone mr-2"></i>+40 744 922 305
+                        </a></p>
+                        <p><a href="mailto:angelicanegura@yahoo.com" class="hover:text-white transition-colors">
+                            <i class="fas fa-envelope mr-2"></i>angelicanegura@yahoo.com
+                        </a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Holist Bella. Toate drepturile rezervate. | 
+                   <a href="#" class="hover:text-white transition-colors">Politica de Confidențialitate</a> | 
+                   <a href="#" class="hover:text-white transition-colors">Cookie Policy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        (function() {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        })();
+
+        // Smooth scrolling for navigation links
+        (function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        const offsetTop = targetElement.offsetTop - 80; // Account for fixed nav
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        })();
+
+        // Form submission handling
+        (function() {
+            const contactForm = document.querySelector('form');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Form validation
+                    const requiredFields = this.querySelectorAll('input[required], textarea[required]');
+                    let isValid = true;
+                    
+                    requiredFields.forEach(field => {
+                        if (!field.value.trim()) {
+                            isValid = false;
+                            field.classList.add('border-red-500');
+                        } else {
+                            field.classList.remove('border-red-500');
+                        }
+                    });
+                    
+                    if (isValid) {
+                        // TODO: Implement actual form submission logic
+                        alert('Formularul a fost trimis cu succes! Vă vom contacta în cel mai scurt timp.');
+                        this.reset();
+                    } else {
+                        alert('Vă rugăm să completați toate câmpurile obligatorii.');
+                    }
+                });
+            }
+        })();
+
+        // Intersection Observer for animations
+        (function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe elements with animation classes
+            const animatedElements = document.querySelectorAll('.animate-slide-up, .animate-fade-in, .animate-scale-in');
+            animatedElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'all 0.6s ease-out';
+                observer.observe(el);
+            });
+        })();
+
+        // Navbar background change on scroll
+        (function() {
+            const navbar = document.querySelector('nav');
+            
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    navbar.classList.add('bg-white/98', 'shadow-lg');
+                    navbar.classList.remove('bg-white/95');
+                } else {
+                    navbar.classList.add('bg-white/95');
+                    navbar.classList.remove('bg-white/98', 'shadow-lg');
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

@@ -101,8 +101,6 @@ export default function TerapieBowen() {
         url={`https://holistbella.ro${window.location.pathname}`}
       />
       
-      <Navbar />
-      
       {/* Hero Section */}
       <section className="pt-20 pb-16 bg-gradient-to-br from-emerald-600 via-teal-600 to-emerald-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -115,7 +115,7 @@ export default function Hero() {
             <Button
               size="lg"
               variant="outline"
-              className="border-2 border-white/30 text-white hover:bg-white hover:text-healing-green backdrop-blur-sm px-10 py-5 text-lg transition-all duration-300"
+              className="border-2 border-healing-green text-healing-green bg-white/90 hover:bg-healing-green hover:text-white backdrop-blur-sm px-10 py-5 text-lg transition-all duration-300 font-semibold"
               asChild
             >
               <a href={`tel:${CONTACT_INFO.phone}`}>

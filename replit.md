@@ -4,10 +4,6 @@
 
 This is a full-stack web application for "Holist Bella", a holistic wellness center in Iași, Romania. The application serves as a professional website showcasing various alternative medicine services including Bowen Therapy, Magnetic Bioresonance, Cellular Nutrition, and Reiki Therapy. The site features a modern, responsive design with a contact form system for patient inquiries and appointment scheduling.
 
-## User Preferences
-
-Preferred communication style: Simple, everyday language.
-
 ## System Architecture
 
 ### Frontend Architecture
@@ -65,7 +61,6 @@ Preferred communication style: Simple, everyday language.
 ### Development Tools
 - **tsx**: TypeScript execution environment for development
 - **wouter**: Lightweight routing library for React applications
-- **@replit/***: Replit-specific development tools and runtime error handling
 
 ### Notable Integrations
 - **WhatsApp Business**: Direct messaging integration for instant patient communication

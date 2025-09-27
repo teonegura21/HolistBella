@@ -12,8 +12,10 @@ import {
   Zap,
   Star,
   Clock,
-  Calendar
+  Calendar,
+  Phone
 } from "lucide-react";
+import { CONTACT_INFO } from "@/lib/constants";
 
 export default function Features() {
   const [isVisible, setIsVisible] = useState(false);
@@ -184,50 +186,7 @@ export default function Features() {
           </div>
         </div>
 
-        {/* CTA Section */}
-        <div className={`text-center mt-16 ${isVisible ? 'fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.8s' }}>
-          <div className="bg-gradient-to-r from-healing-green to-tranquil-teal rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
-            {/* Background Pattern */}
-            <div className="absolute inset-0 opacity-10">
-              <Leaf className="absolute top-4 right-4 w-16 h-16 rotate-12" />
-              <Heart className="absolute bottom-4 left-4 w-12 h-12 -rotate-12" />
-              <Sparkles className="absolute top-1/2 left-1/4 w-8 h-8" />
-            </div>
 
-            <div className="relative">
-              <h3 className="text-3xl md:text-4xl font-bold mb-4">
-                Începe Călătoria Spre Wellness Astăzi
-              </h3>
-              <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-                Programează o consultație gratuită și descoperă cum putem să-ți transformăm 
-                viața prin puterea medicinei holiste.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button
-                  size="lg"
-                  onClick={scrollToContact}
-                  className="bg-white text-healing-green hover:bg-gray-50 px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
-                >
-                  <Calendar className="mr-2 h-5 w-5" />
-                  Consultație Gratuită
-                </Button>
-                
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-8 py-4 text-lg font-semibold"
-                  asChild
-                >
-                  <a href="tel:+40123456789">
-                    <Heart className="mr-2 h-5 w-5" />
-                    Sună Acum
-                  </a>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

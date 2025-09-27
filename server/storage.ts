@@ -1,6 +1,5 @@
-import { type ContactSubmission, type InsertContactSubmission, contactSubmissions, type Appointment, type InsertAppointment, appointments } from "@shared/schema";
-import { db } from "./db";
-import { eq } from "drizzle-orm";
+import { type ContactSubmission, type InsertContactSubmission, type Appointment, type InsertAppointment } from "@shared/schema";
+import { nanoid } from "nanoid";
 
 export interface IStorage {
   createContactSubmission(submission: InsertContactSubmission): Promise<ContactSubmission>;
@@ -13,21 +12,28 @@ export interface IStorage {
   updateAppointmentStatus(id: string, status: string): Promise<Appointment>;
 }
 
-export class DatabaseStorage implements IStorage {
+export class MemoryStorage implements IStorage {
+  private contactSubmissions: ContactSubmission[] = [];
+  private appointments: Appointment[] = [];
+
   async createContactSubmission(insertSubmission: InsertContactSubmission): Promise<ContactSubmission> {
-    const [submission] = await db
-      .insert(contactSubmissions)
-      .values(insertSubmission)
-      .returning();
+    const submission: ContactSubmission = {
+      id: nanoid(),
+      nume: insertSubmission.nume,
+      prenume: insertSubmission.prenume,
+      email: insertSubmission.email,
+      telefon: insertSubmission.telefon,
+      serviciu: insertSubmission.serviciu || null,
+      mesaj: insertSubmission.mesaj || null,
+      createdAt: new Date(),
+    };
+    
+    this.contactSubmissions.push(submission);
     return submission;
   }
 
   async getContactSubmissions(): Promise<ContactSubmission[]> {
-    const submissions = await db
-      .select()
-      .from(contactSubmissions)
-      .orderBy(contactSubmissions.createdAt);
-    return submissions.reverse();
+    return [...this.contactSubmissions].reverse(); // Return most recent first
   }
 
   // Appointment methods
@@ -39,43 +45,55 @@ export class DatabaseStorage implements IStorage {
       throw new Error('Invalid appointment date provided');
     }
     
-    const appointmentData = {
-      ...insertAppointment,
+    const appointment: Appointment = {
+      id: nanoid(),
+      nume: insertAppointment.nume,
+      prenume: insertAppointment.prenume,
+      email: insertAppointment.email,
+      telefon: insertAppointment.telefon,
+      varsta: insertAppointment.varsta || null,
+      serviciu: insertAppointment.serviciu,
       dataOra: appointmentDate,
-      consentTimestamp: new Date(), // Record when consent was given
+      durata: insertAppointment.durata || 60,
+      conditieMedicala: insertAppointment.conditieMedicala || null,
+      medicatie: insertAppointment.medicatie || null,
+      alergii: insertAppointment.alergii || null,
+      notaSpeciala: insertAppointment.notaSpeciala || null,
+      status: insertAppointment.status || 'pending',
+      confirmareClient: insertAppointment.confirmareClient || false,
+      gdprConsent: insertAppointment.gdprConsent,
+      consentTimestamp: new Date(),
+      createdAt: new Date(),
+      updatedAt: new Date(),
     };
 
-    const [appointment] = await db
-      .insert(appointments)
-      .values(appointmentData)
-      .returning();
+    this.appointments.push(appointment);
     return appointment;
   }
 
   async getAppointments(): Promise<Appointment[]> {
-    const appointmentList = await db
-      .select()
-      .from(appointments)
-      .orderBy(appointments.dataOra);
-    return appointmentList;
+    return [...this.appointments].sort((a, b) => a.dataOra.getTime() - b.dataOra.getTime());
   }
 
   async getAppointmentById(id: string): Promise<Appointment | null> {
-    const [appointment] = await db
-      .select()
-      .from(appointments)
-      .where(eq(appointments.id, id));
+    const appointment = this.appointments.find(app => app.id === id);
     return appointment || null;
   }
 
   async updateAppointmentStatus(id: string, status: string): Promise<Appointment> {
-    const [appointment] = await db
-      .update(appointments)
-      .set({ status, updatedAt: new Date() })
-      .where(eq(appointments.id, id))
-      .returning();
-    return appointment;
+    const appointmentIndex = this.appointments.findIndex(app => app.id === id);
+    if (appointmentIndex === -1) {
+      throw new Error('Appointment not found');
+    }
+    
+    this.appointments[appointmentIndex] = {
+      ...this.appointments[appointmentIndex],
+      status,
+      updatedAt: new Date(),
+    };
+    
+    return this.appointments[appointmentIndex];
   }
 }
 
-export const storage = new DatabaseStorage();
+export const storage = new MemoryStorage();

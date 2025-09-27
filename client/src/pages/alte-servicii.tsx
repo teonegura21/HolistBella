@@ -49,7 +49,7 @@ export default function AlteServiciiPage() {
       titlu: "Programul Antistres Integral",
       descriere: "Abordare holistică pentru gestionarea stresului prin multiple modalități terapeutice",
       durata: "6-8 săptămâni",
-      terapii: ["Terapie Reiki", "Aromaterapie", "Reflexologie", "Haloterapie"],
+      terapii: ["Aromaterapie", "Reflexologie", "Haloterapie"],
       beneficii: ["Reducerea anxietății", "Îmbunătățirea somnului", "Echilibru emoțional", "Relaxare profundă"],
       aplicatii: ["Stres cronic", "Burnout", "Anxietate", "Tulburări de somn"],
       pret: "Pachet optimizat pentru rezultate maxime"
@@ -69,7 +69,7 @@ export default function AlteServiciiPage() {
       titlu: "Echilibrul Feminin",
       descriere: "Terapii adaptate nevoilor specifice ale femeilor în diferite etape ale vieții",
       durata: "6-12 săptămâni",
-      terapii: ["Nutriție Celulară", "Aromaterapie", "Reflexologie", "Terapie Reiki"],
+      terapii: ["Nutriție Celulară", "Aromaterapie", "Reflexologie"],
       beneficii: ["Echilibru hormonal", "Reducerea simptomelor menopauză", "Energie optimă", "Bunăstare generală"],
       aplicatii: ["Sindrom premenstrual", "Menopauză", "Fertilitate", "Stres maternal"],
       pret: "Consultație gratuită pentru personalizare"
@@ -119,13 +119,7 @@ export default function AlteServiciiPage() {
       evidenta: "limitat",
       link: "/reflexologie"
     },
-    {
-      icon: Sparkles,
-      titlu: "Terapie Reiki",
-      descriere: "Tehnică japoneză de vindecare energetică prin transfer de energie universală",
-      evidenta: "limitat",
-      link: "/terapie-reiki"
-    },
+
     {
       icon: Wind,
       titlu: "Terapie Bowen",

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
-import { Menu, Phone, ChevronDown } from "lucide-react";
+import { Menu, Phone, ChevronDown, Leaf, Heart, Sparkles } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import { CONTACT_INFO } from "@/lib/constants";
 
@@ -40,41 +40,68 @@ export default function Navbar() {
         Acasă
       </Link>
       
-      <Link href="/programare" className={`${mobile ? "block px-3 py-2" : "px-3 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"} transition-colors`} data-testid="nav-link-programare">
-        {mobile ? "Programare" : "📅 Programare"}
-      </Link>
+
       
       {/* Services Dropdown */}
       {!mobile ? (
         <DropdownMenu>
-          <DropdownMenuTrigger className="px-3 py-2 text-gray-700 hover:text-primary transition-colors flex items-center">
+          <DropdownMenuTrigger className="px-3 py-2 text-gray-700 hover:text-primary transition-colors flex items-center font-medium">
             Servicii <ChevronDown className="ml-1 h-4 w-4" />
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="w-56">
-            <DropdownMenuItem>
-              <Link href="/terapie-bowen" className="w-full" data-testid="nav-link-terapie-bowen">Terapie Bowen</Link>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              <Link href="/nutritie-celulara" className="w-full" data-testid="nav-link-nutritie-celulara">Nutriție Celulară</Link>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              <Link href="/terapie-reiki" className="w-full" data-testid="nav-link-terapie-reiki">Terapie Reiki</Link>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              <Link href="/detoxifiere-naturala" className="w-full" data-testid="nav-link-detoxifiere-naturala">Detoxifiere Naturală</Link>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              <Link href="/apa-kangen" className="w-full" data-testid="nav-link-apa-kangen">Apa Kangen</Link>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              <Link href="/biorezonanta" className="w-full" data-testid="nav-link-biorezonanta">Biorezonanță</Link>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              <Link href="/andullation" className="w-full" data-testid="nav-link-andullation">Andullation</Link>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              <Link href="/healy" className="w-full" data-testid="nav-link-healy">Healy</Link>
-            </DropdownMenuItem>
+          <DropdownMenuContent className="w-72 p-2">
+            <div className="grid gap-1">
+              <DropdownMenuItem className="p-0">
+                <Link href="/terapie-bowen" className="w-full px-3 py-2 rounded-md hover:bg-green-50 transition-colors flex items-center" data-testid="nav-link-terapie-bowen">
+                  <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                    <Leaf className="w-4 h-4 text-green-600" />
+                  </div>
+                  <span className="font-medium text-gray-900">Terapie Bowen</span>
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="p-0">
+                <Link href="/nutritie-celulara" className="w-full px-3 py-2 rounded-md hover:bg-orange-50 transition-colors flex items-center" data-testid="nav-link-nutritie-celulara">
+                  <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mr-3">
+                    <Heart className="w-4 h-4 text-orange-600" />
+                  </div>
+                  <span className="font-medium text-gray-900">Nutriție Celulară</span>
+                </Link>
+              </DropdownMenuItem>
+
+              <DropdownMenuItem className="p-0">
+                <Link href="/apa-kangen" className="w-full px-3 py-2 rounded-md hover:bg-blue-50 transition-colors flex items-center" data-testid="nav-link-apa-kangen">
+                  <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                    <div className="w-4 h-4 bg-blue-600 rounded-full" />
+                  </div>
+                  <span className="font-medium text-gray-900">Apa Kangen</span>
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="p-0">
+                <Link href="/biorezonanta" className="w-full px-3 py-2 rounded-md hover:bg-indigo-50 transition-colors flex items-center" data-testid="nav-link-biorezonanta">
+                  <div className="w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center mr-3">
+                    <div className="w-4 h-4 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full" />
+                  </div>
+                  <span className="font-medium text-gray-900">Biorezonanță</span>
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="p-0">
+                <Link href="/andullation" className="w-full px-3 py-2 rounded-md hover:bg-teal-50 transition-colors flex items-center" data-testid="nav-link-andullation">
+                  <div className="w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center mr-3">
+                    <div className="w-4 h-4 bg-teal-600 rounded-sm transform rotate-45" />
+                  </div>
+                  <span className="font-medium text-gray-900">Andullation</span>
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="p-0">
+                <Link href="/healy" className="w-full px-3 py-2 rounded-md hover:bg-emerald-50 transition-colors flex items-center" data-testid="nav-link-healy">
+                  <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center mr-3">
+                    <div className="w-3 h-3 bg-emerald-600 rounded-full relative">
+                      <div className="absolute inset-0 bg-emerald-400 rounded-full animate-ping opacity-75" />
+                    </div>
+                  </div>
+                  <span className="font-medium text-gray-900">Healy</span>
+                </Link>
+              </DropdownMenuItem>
+            </div>
           </DropdownMenuContent>
         </DropdownMenu>
       ) : (
@@ -85,12 +112,8 @@ export default function Navbar() {
           <Link href="/nutritie-celulara" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
             Nutriție Celulară
           </Link>
-          <Link href="/terapie-reiki" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
-            Terapie Reiki
-          </Link>
-          <Link href="/detoxifiere-naturala" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
-            Detoxifiere Naturală
-          </Link>
+
+
           <Link href="/apa-kangen" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
             Apa Kangen
           </Link>

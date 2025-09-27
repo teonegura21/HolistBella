@@ -1,75 +1,72 @@
-import { sql } from "drizzle-orm";
-import { pgTable, text, varchar, timestamp, integer, decimal, boolean } from "drizzle-orm/pg-core";
-import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
-export const contactSubmissions = pgTable("contact_submissions", {
-  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
-  nume: text("nume").notNull(),
-  prenume: text("prenume").notNull(),
-  email: text("email").notNull(),
-  telefon: text("telefon").notNull(),
-  serviciu: text("serviciu"),
-  mesaj: text("mesaj"),
-  createdAt: timestamp("created_at").defaultNow().notNull(),
+// Contact Submission Schema
+export const insertContactSubmissionSchema = z.object({
+  nume: z.string().min(1, "Numele este obligatoriu"),
+  prenume: z.string().min(1, "Prenumele este obligatoriu"),
+  email: z.string().email("Email invalid"),
+  telefon: z.string().min(1, "Telefonul este obligatoriu"),
+  serviciu: z.string().optional(),
+  mesaj: z.string().optional(),
 });
 
-export const insertContactSubmissionSchema = createInsertSchema(contactSubmissions).omit({
-  id: true,
-  createdAt: true,
+export const contactSubmissionSchema = z.object({
+  id: z.string(),
+  nume: z.string(),
+  prenume: z.string(),
+  email: z.string(),
+  telefon: z.string(),
+  serviciu: z.string().nullable(),
+  mesaj: z.string().nullable(),
+  createdAt: z.date(),
 });
 
 export type InsertContactSubmission = z.infer<typeof insertContactSubmissionSchema>;
-export type ContactSubmission = typeof contactSubmissions.$inferSelect;
+export type ContactSubmission = z.infer<typeof contactSubmissionSchema>;
 
-// Appointments table for booking system
-export const appointments = pgTable("appointments", {
-  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
-  // Patient Information
-  nume: text("nume").notNull(),
-  prenume: text("prenume").notNull(),
-  email: text("email").notNull(),
-  telefon: text("telefon").notNull(),
-  varsta: integer("varsta"),
-  
-  // Appointment Details
-  serviciu: text("serviciu").notNull(),
-  dataOra: timestamp("data_ora").notNull(),
-  durata: integer("durata").default(60), // minutes
-  
-  // Medical Information
-  conditieMedicala: text("conditie_medicala"),
-  medicatie: text("medicatie"),
-  alergii: text("alergii"),
-  notaSpeciala: text("nota_speciala"),
-  
-  // Booking Status
-  status: text("status").default('pending').notNull(), // pending, confirmed, completed, cancelled
-  confirmareClient: boolean("confirmare_client").default(false),
-  
-  
-  // GDPR Compliance
-  gdprConsent: boolean("gdpr_consent").notNull().default(false),
-  consentTimestamp: timestamp("consent_timestamp").defaultNow().notNull(),
-  
-  // Timestamps
-  createdAt: timestamp("created_at").defaultNow().notNull(),
-  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+// Appointment Schemas
+export const insertAppointmentSchema = z.object({
+  nume: z.string().min(1, "Numele este obligatoriu"),
+  prenume: z.string().min(1, "Prenumele este obligatoriu"),
+  email: z.string().email("Email invalid"),
+  telefon: z.string().min(1, "Telefonul este obligatoriu"),
+  varsta: z.number().min(1).max(120).optional(),
+  serviciu: z.string().min(1, "Serviciul este obligatoriu"),
+  dataOra: z.string().min(1, "Data și ora sunt obligatorii"),
+  durata: z.number().optional(),
+  conditieMedicala: z.string().optional(),
+  medicatie: z.string().optional(),
+  alergii: z.string().optional(),
+  notaSpeciala: z.string().optional(),
+  status: z.string().optional(),
+  confirmareClient: z.boolean().optional(),
+  gdprConsent: z.literal(true, { errorMap: () => ({ message: "Consimțământul GDPR este obligatoriu" }) }),
 });
 
-export const insertAppointmentSchema = createInsertSchema(appointments, {
-  dataOra: z.string().min(1, "Data și ora sunt obligatorii"), // Accept ISO string from frontend
-  varsta: z.number().min(1).max(120).optional(),
-  gdprConsent: z.literal(true, { errorMap: () => ({ message: "Consimțământul GDPR este obligatoriu" }) }),
-}).omit({
-  id: true,
-  createdAt: true,
-  updatedAt: true,
-  consentTimestamp: true, // Set automatically by server
+export const appointmentSchema = z.object({
+  id: z.string(),
+  nume: z.string(),
+  prenume: z.string(),
+  email: z.string(),
+  telefon: z.string(),
+  varsta: z.number().nullable(),
+  serviciu: z.string(),
+  dataOra: z.date(),
+  durata: z.number().nullable(),
+  conditieMedicala: z.string().nullable(),
+  medicatie: z.string().nullable(),
+  alergii: z.string().nullable(),
+  notaSpeciala: z.string().nullable(),
+  status: z.string(),
+  confirmareClient: z.boolean(),
+  gdprConsent: z.boolean(),
+  consentTimestamp: z.date(),
+  createdAt: z.date(),
+  updatedAt: z.date(),
 });
 
 export type InsertAppointment = z.infer<typeof insertAppointmentSchema>;
-export type Appointment = typeof appointments.$inferSelect;
+export type Appointment = z.infer<typeof appointmentSchema>;
 
 // Service definitions with pricing
 export const SERVICII_DISPONIBILE = {
@@ -83,16 +80,8 @@ export const SERVICII_DISPONIBILE = {
     durata: 90,
     descriere: 'Consultație nutrițională personalizată cu plan de suplimente'
   },
-  'terapie-reiki': {
-    nume: 'Terapie Reiki',
-    durata: 60,
-    descriere: 'Vindecare energetică pentru echilibru emoțional și spiritual'
-  },
-  'detoxifiere-naturala': {
-    nume: 'Detoxifiere Naturală',
-    durata: 120,
-    descriere: 'Protocol complet de detoxifiere cu monitorizare personalizată'
-  },
+
+
   'consultatie-initiala': {
     nume: 'Consultație Inițială',
     durata: 45,

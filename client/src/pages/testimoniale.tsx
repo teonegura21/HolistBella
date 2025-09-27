@@ -78,26 +78,7 @@ const testimonials: Testimonial[] = [
     ],
     verified: true
   },
-  {
-    id: "t3",
-    name: "Elena R.",
-    initials: "ER", 
-    age: 52,
-    location: "Cluj-Napoca",
-    service: "Terapie Reiki",
-    rating: 5,
-    date: "2024-07-22",
-    condition: "Stres și anxietate severă",
-    improvement: "Reducerea anxietății cu 85% și echilibru emoțional",
-    quote: "Reiki-ul m-a ajutat să-mi regăsesc pacea interioară. Anxietatea care mă macina de ani s-a redus dramatic, iar acum pot să mă bucur din nou de viață.",
-    results: [
-      "Anxietate redusă cu 85%",
-      "Somn profund și odihnitor",
-      "Echilibru emoțional stabil",
-      "Relații îmbunătățite cu familia"
-    ],
-    verified: true
-  },
+
   {
     id: "t4",
     name: "Călin D.",

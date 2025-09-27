@@ -4,7 +4,7 @@ import { Star } from "lucide-react";
 export default function Testimonials() {
   const testimonials = [
     {
-      name: "Maria T.",
+      name: "Ana M.",
       location: "Iași",
       text: "Terapia Bowen mi-a schimbat viața. Durerile cronice de spate au dispărut complet după doar câteva ședințe. Recomand cu încredere!"
     },
@@ -16,7 +16,22 @@ export default function Testimonials() {
     {
       name: "Elena M.",
       location: "Iași",
-      text: "Terapia Reiki mi-a adus echilibrul de care aveam nevoie. Mă simt mult mai energică și în pace cu mine."
+      text: "Nutriția celulară mi-a adus echilibrul de care aveam nevoie. Mă simt mult mai energică și în pace cu mine."
+    },
+    {
+      name: "Cristina P.",
+      location: "Iași",
+      text: "Apa Kangen a fost o revelație pentru mine. Nivelul meu de energie s-a îmbunătățit semnificativ și mă simt mult mai hidratată."
+    },
+    {
+      name: "Mihai S.",
+      location: "Iași", 
+      text: "Andullation m-a ajutat să recuperez după o accidentare sportivă. Durerile au dispărut rapid și mobilitatea s-a îmbunătățit."
+    },
+    {
+      name: "Ioana D.",
+      location: "Iași",
+      text: "Healy mi-a oferit o nouă perspectivă asupra sănătății. Echilibrul energetic pe care l-am obținut este remarcabil."
     }
   ];
 
