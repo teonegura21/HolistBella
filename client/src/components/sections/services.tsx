@@ -8,11 +8,7 @@ import {
   Zap, 
   Heart, 
   Sparkles, 
-  ChevronRight,
-  Shield,
-  Star,
-  Clock,
-  Users
+  ChevronRight
 } from "lucide-react";
 
 export default function Services() {
@@ -39,85 +35,76 @@ export default function Services() {
 
   const services = [
     {
+      id: "terapie-bowen",
+      icon: Heart,
+      title: "Terapie Bowen",
+      subtitle: "Reechilibrare Neuromusculară Blândă",
+      description: "Tehnică manuală subtilă care activează procesul natural de auto-vindecare prin mișcări delicate pe mușchi și tendoane.",
+      benefits: ["Relaxare profundă", "Ameliorarea durerii", "Îmbunătățirea mobilității"],
+      image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      color: "from-green-400 to-emerald-500",
+      price: "De la 150 RON",
+      duration: "50-60 min"
+    },
+    {
+      id: "biorezonanta",
+      icon: Activity,
+      title: "Biorezonanță",
+      subtitle: "Evaluare Energetică Funcțională",
+      description: "Metodă non-invazivă de scanare a frecvențelor corpului pentru identificarea dezechilibrelor energetice și crearea unui plan personalizat.",
+      benefits: ["Identificare stresori", "Plan de echilibrare", "Monitorizare progres"],
+      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      color: "from-purple-400 to-violet-500",
+      price: "De la 200 RON",
+      duration: "60-90 min"
+    },
+    {
+      id: "terapie-healy",
+      icon: Zap,
+      title: "Terapie Healy",
+      subtitle: "Armonizare și Vitalitate",
+      description: "Dispozitiv portabil cu microcurenți și frecvențe pentru susținerea echilibrului bioenergetic și managementul durerii.",
+      benefits: ["Management durere", "Susținere relaxare", "Suport somn și concentrare"],
+      image: "https://images.unsplash.com/photo-1559757195-3d4a6b2c6c1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      color: "from-yellow-400 to-orange-500",
+      price: "De la 180 RON",
+      duration: "20-60 min"
+    },
+    {
       id: "apa-kangen",
       icon: Droplets,
       title: "Apă Kangen",
-      subtitle: "Hidratare Alcalină",
-      description: "Apa cu structură moleculară modificată care ajută la echilibrul pH-ului corpului și detoxifierea naturală.",
-      benefits: ["Detoxifiere profundă", "Echilibru pH", "Hidratare optimă"],
+      subtitle: "Optimizează-ți Hidratarea Zilnică",
+      description: "Apă filtrată și ionizată pentru hidratare eficientă, suport al echilibrului pH și versatilitate în uz casnic.",
+      benefits: ["Hidratare optimă", "Reducere plastic", "Versatilitate pH"],
       image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       color: "from-blue-400 to-cyan-500",
       price: "Consultație gratuită",
       duration: "Program personalizat"
     },
     {
-      id: "biorezonanta",
+      id: "terapie-andullation",
       icon: Activity,
-      title: "Biorezonanță Magnetică",
-      subtitle: "Terapie cu Frecvențe",
-      description: "Tehnologie avansată care detectează și corectează dezechilibrele energetice ale organismului.",
-      benefits: ["Diagnostic energetic", "Echilibrare chakre", "Reducere stres"],
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      color: "from-purple-400 to-violet-500",
-      price: "200 RON",
-      duration: "60 min"
-    },
-    {
-      id: "andullation",
-      icon: Activity,
-      title: "Andullation",
-      subtitle: "Vibrații Terapeutice",
-      description: "Terapie prin vibrații mecanice și infraroșu care stimulează circulația și regenerarea celulară.",
-      benefits: ["Îmbunătățire circulație", "Reducere durere", "Relaxare profundă"],
+      title: "Terapie Andullation",
+      subtitle: "Relaxare Profundă prin Vibrații și Infraroșu",
+      description: "Tehnologie germană care combină vibrații stocastice cu căldură infraroșie pentru relaxare musculară și stimulare circulatorie.",
+      benefits: ["Ameliorare durere", "Îmbunătățire stare de bine", "Stimulare circulație"],
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      color: "from-green-400 to-emerald-500",
-      price: "150 RON",
-      duration: "45 min"
+      color: "from-teal-400 to-emerald-500",
+      price: "De la 120 RON",
+      duration: "15-30 min"
     },
     {
-      id: "healy",
-      icon: Zap,
-      title: "Healy",
-      subtitle: "Frecvențe Cuantice",
-      description: "Dispozitiv medical certificat CE care utilizează frecvențe pentru echilibrarea bioenergetică.",
-      benefits: ["Echilibrare energetică", "Optimizare vitalitate", "Suport emoțional"],
-      image: "https://images.unsplash.com/photo-1559757195-3d4a6b2c6c1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      color: "from-yellow-400 to-orange-500",
-      price: "250 RON",
-      duration: "90 min"
-    },
-    {
-      id: "alte-servicii",
-      icon: Heart,
-      title: "Alte Servicii",
-      subtitle: "Terapii Complementare",
-      description: "Nutriție celulară, terapie Bowen, Reiki și alte abordări holiste pentru sănătatea integrală.",
-      benefits: ["Terapie Bowen", "Reiki healing", "Nutriție celulară"],
+      id: "nutritie-celulara",
+      icon: Sparkles,
+      title: "Nutriție Celulară AplGo",
+      subtitle: "Suport pentru Vitalitate și Stil de Viață Activ",
+      description: "Suplimente alimentare sub formă de drajeuri cu extracte naturale concentrate pentru suport nutritiv celular.",
+      benefits: ["Suport vitalitate", "Conveniență", "Gama variată"],
       image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       color: "from-pink-400 to-rose-500",
-      price: "100-300 RON",
-      duration: "30-90 min"
-    }
-  ];
-
-  const testimonials = [
-    {
-      name: "Maria Popescu",
-      service: "Biorezonanță",
-      text: "După 3 ședințe am simțit o îmbunătățire semnificativă a energiei și a stării generale.",
-      rating: 5
-    },
-    {
-      name: "Ion Georgescu",
-      service: "Healy",
-      text: "Tehnologia Healy m-a ajutat să îmi regăsesc echilibrul emoțional și fizic.",
-      rating: 5
-    },
-    {
-      name: "Ana Mihai",
-      service: "Andullation",
-      text: "Durerile cronice de spate au dispărut complet după tratamentele Andullation.",
-      rating: 5
+      price: "De la 100 RON",
+      duration: "Consultație 30 min"
     }
   ];
 
@@ -125,27 +112,26 @@ export default function Services() {
     <section ref={sectionRef} id="servicii" className="py-24 bg-gradient-to-br from-white via-soft-cream to-white relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 right-10 w-48 h-48 bg-healing-green rounded-full blur-3xl" />
-        <div className="absolute bottom-20 left-10 w-32 h-32 bg-wellness-blue rounded-full blur-3xl" />
-        <div className="absolute top-1/2 right-1/3 w-24 h-24 bg-warm-gold rounded-full blur-3xl" />
+        <div className="absolute top-20 right-10 w-48 h-48 bg-primary rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-10 w-32 h-32 bg-secondary rounded-full blur-3xl" />
+        <div className="absolute top-1/2 right-1/3 w-24 h-24 bg-accent rounded-full blur-3xl" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Section Header */}
         <div className={`text-center mb-20 ${isVisible ? 'fade-in-up' : 'opacity-0'}`}>
-          <div className="inline-flex items-center px-6 py-3 rounded-full bg-healing-green/10 text-healing-green mb-6">
+          <div className="inline-flex items-center px-6 py-3 rounded-full bg-secondary/10 text-secondary mb-6">
             <Sparkles className="w-5 h-5 mr-2" />
-            <span className="font-semibold">Serviciile Noastre</span>
+            <span className="font-semibold">Servicii Principale</span>
           </div>
           
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Terapii 
-            <span className="wellness-gradient-text"> Holiste</span>
+            Portofoliul nostru de<br />
+            <span className="text-primary">Terapii Holistice</span>
           </h2>
           
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Descoperă o gamă completă de terapii moderne și tradiționale, 
-            adaptate pentru a-ți restaura echilibrul natural și vitalitatea.
+            Alege terapia potrivită nevoilor tale din gama noastră diversificată de abordări non-invazive și complementare.
           </p>
         </div>
 
@@ -201,7 +187,7 @@ export default function Services() {
                 </div>
 
                 {/* CTA */}
-                <Link href={`/${service.id}`}>
+                <Link href={`/servicii/${service.id}`}>
                   <Button 
                     className="w-full bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border-0 group-hover:bg-white group-hover:text-gray-900 transition-all duration-300"
                   >
@@ -212,76 +198,6 @@ export default function Services() {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* Testimonials Section */}
-        <div className={`bg-white rounded-3xl shadow-2xl p-8 md:p-12 mb-20 ${isVisible ? 'fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.6s' }}>
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">
-              Mărturii ale <span className="text-healing-green">Pacienților</span>
-            </h3>
-            <p className="text-lg text-gray-600">
-              Experiențele reale ale celor care și-au transformat viața cu noi
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div 
-                key={index} 
-                className="testimonial-card group"
-                style={{ animationDelay: `${0.7 + index * 0.1}s` }}
-              >
-                <div className="flex items-center mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-warm-gold fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-700 mb-4 italic leading-relaxed">
-                  "{testimonial.text}"
-                </p>
-                <div>
-                  <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                  <div className="text-sm text-healing-green">{testimonial.service}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Service Features */}
-        <div className={`grid grid-cols-1 md:grid-cols-4 gap-6 ${isVisible ? 'fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.8s' }}>
-          <div className="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-            <div className="w-12 h-12 bg-healing-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Shield className="text-healing-green text-xl" />
-            </div>
-            <h4 className="font-bold text-gray-900 mb-2">100% Sigur</h4>
-            <p className="text-gray-600 text-sm">Terapii non-invazive, fără efecte secundare</p>
-          </div>
-
-          <div className="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-            <div className="w-12 h-12 bg-wellness-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Users className="text-wellness-blue text-xl" />
-            </div>
-            <h4 className="font-bold text-gray-900 mb-2">Personalizat</h4>
-            <p className="text-gray-600 text-sm">Fiecare tratament adaptat individual</p>
-          </div>
-
-          <div className="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-            <div className="w-12 h-12 bg-warm-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Clock className="text-warm-gold text-xl" />
-            </div>
-            <h4 className="font-bold text-gray-900 mb-2">Rezultate Rapide</h4>
-            <p className="text-gray-600 text-sm">Îmbunătățiri vizibile din primele ședințe</p>
-          </div>
-
-          <div className="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-            <div className="w-12 h-12 bg-serenity-purple/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Heart className="text-serenity-purple text-xl" />
-            </div>
-            <h4 className="font-bold text-gray-900 mb-2">Holist</h4>
-            <p className="text-gray-600 text-sm">Tratăm cauza, nu doar simptomele</p>
-          </div>
         </div>
       </div>
     </section>

@@ -72,14 +72,8 @@ export default function DesprePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
-                  <a href={`tel:${CONTACT_INFO.phone}`} className="flex items-center">
-                    <Phone className="mr-2 h-4 w-4" />
-                    Programează Consultația
-                  </a>
-                </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-600">
                   <a href={CONTACT_INFO.whatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                    Mesaj WhatsApp
+                    Programează Consultația prin WhatsApp
                   </a>
                 </Button>
               </div>
@@ -246,14 +240,8 @@ export default function DesprePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
-              <a href={`tel:${CONTACT_INFO.phone}`} className="flex items-center">
-                <Phone className="mr-2 h-4 w-4" />
-                Sună pentru Consultație
-              </a>
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-600">
               <a href={CONTACT_INFO.whatsapp} target="_blank" rel="noopener noreferrer">
-                Mesaj WhatsApp
+                Programează Consultația prin WhatsApp
               </a>
             </Button>
           </div>

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
-import { Menu, Phone, ChevronDown, Leaf, Heart, Sparkles } from "lucide-react";
+import { Menu, Phone, ChevronDown, Leaf, Heart, Sparkles, Zap, Droplets, Activity } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import { CONTACT_INFO } from "@/lib/constants";
 
@@ -40,8 +40,6 @@ export default function Navbar() {
         Acasă
       </Link>
       
-
-      
       {/* Services Dropdown */}
       {!mobile ? (
         <DropdownMenu>
@@ -59,46 +57,43 @@ export default function Navbar() {
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="p-0">
-                <Link href="/nutritie-celulara" className="w-full px-3 py-2 rounded-md hover:bg-orange-50 transition-colors flex items-center" data-testid="nav-link-nutritie-celulara">
-                  <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mr-3">
-                    <Heart className="w-4 h-4 text-orange-600" />
-                  </div>
-                  <span className="font-medium text-gray-900">Nutriție Celulară</span>
-                </Link>
-              </DropdownMenuItem>
-
-              <DropdownMenuItem className="p-0">
-                <Link href="/apa-kangen" className="w-full px-3 py-2 rounded-md hover:bg-blue-50 transition-colors flex items-center" data-testid="nav-link-apa-kangen">
-                  <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                    <div className="w-4 h-4 bg-blue-600 rounded-full" />
-                  </div>
-                  <span className="font-medium text-gray-900">Apa Kangen</span>
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem className="p-0">
-                <Link href="/biorezonanta" className="w-full px-3 py-2 rounded-md hover:bg-indigo-50 transition-colors flex items-center" data-testid="nav-link-biorezonanta">
-                  <div className="w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center mr-3">
-                    <div className="w-4 h-4 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full" />
+                <Link href="/biorezonanta" className="w-full px-3 py-2 rounded-md hover:bg-purple-50 transition-colors flex items-center" data-testid="nav-link-biorezonanta">
+                  <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3">
+                    <Activity className="w-4 h-4 text-purple-600" />
                   </div>
                   <span className="font-medium text-gray-900">Biorezonanță</span>
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="p-0">
+                <Link href="/healy" className="w-full px-3 py-2 rounded-md hover:bg-yellow-50 transition-colors flex items-center" data-testid="nav-link-healy">
+                  <div className="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mr-3">
+                    <Zap className="w-4 h-4 text-yellow-600" />
+                  </div>
+                  <span className="font-medium text-gray-900">Healy</span>
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="p-0">
+                <Link href="/apa-kangen" className="w-full px-3 py-2 rounded-md hover:bg-blue-50 transition-colors flex items-center" data-testid="nav-link-apa-kangen">
+                  <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                    <Droplets className="w-4 h-4 text-blue-600" />
+                  </div>
+                  <span className="font-medium text-gray-900">Apă Kangen</span>
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="p-0">
                 <Link href="/andullation" className="w-full px-3 py-2 rounded-md hover:bg-teal-50 transition-colors flex items-center" data-testid="nav-link-andullation">
                   <div className="w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center mr-3">
-                    <div className="w-4 h-4 bg-teal-600 rounded-sm transform rotate-45" />
+                    <Activity className="w-4 h-4 text-teal-600" />
                   </div>
                   <span className="font-medium text-gray-900">Andullation</span>
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="p-0">
-                <Link href="/healy" className="w-full px-3 py-2 rounded-md hover:bg-emerald-50 transition-colors flex items-center" data-testid="nav-link-healy">
-                  <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center mr-3">
-                    <div className="w-3 h-3 bg-emerald-600 rounded-full relative">
-                      <div className="absolute inset-0 bg-emerald-400 rounded-full animate-ping opacity-75" />
-                    </div>
+                <Link href="/nutritie-celulara" className="w-full px-3 py-2 rounded-md hover:bg-violet-50 transition-colors flex items-center" data-testid="nav-link-nutritie-celulara">
+                  <div className="w-8 h-8 bg-violet-100 rounded-full flex items-center justify-center mr-3">
+                    <Sparkles className="w-4 h-4 text-violet-600" />
                   </div>
-                  <span className="font-medium text-gray-900">Healy</span>
+                  <span className="font-medium text-gray-900">Nutriție Celulară</span>
                 </Link>
               </DropdownMenuItem>
             </div>
@@ -109,22 +104,20 @@ export default function Navbar() {
           <Link href="/terapie-bowen" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
             Terapie Bowen
           </Link>
-          <Link href="/nutritie-celulara" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
-            Nutriție Celulară
-          </Link>
-
-
-          <Link href="/apa-kangen" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
-            Apa Kangen
-          </Link>
           <Link href="/biorezonanta" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
             Biorezonanță
+          </Link>
+          <Link href="/healy" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
+            Healy
+          </Link>
+          <Link href="/apa-kangen" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
+            Apa Kangen
           </Link>
           <Link href="/andullation" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
             Andullation
           </Link>
-          <Link href="/healy" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
-            Healy
+          <Link href="/nutritie-celulara" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
+            Nutriție Celulară
           </Link>
         </>
       )}
