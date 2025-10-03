@@ -49,11 +49,11 @@ export default function Navbar() {
           <DropdownMenuContent className="w-72 p-2">
             <div className="grid gap-1">
               <DropdownMenuItem className="p-0">
-                <Link href="/terapie-bowen" className="w-full px-3 py-2 rounded-md hover:bg-green-50 transition-colors flex items-center" data-testid="nav-link-terapie-bowen">
-                  <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3">
-                    <Leaf className="w-4 h-4 text-green-600" />
+                <Link href="/andullation" className="w-full px-3 py-2 rounded-md hover:bg-teal-50 transition-colors flex items-center" data-testid="nav-link-andullation">
+                  <div className="w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center mr-3">
+                    <Activity className="w-4 h-4 text-teal-600" />
                   </div>
-                  <span className="font-medium text-gray-900">Terapie Bowen</span>
+                  <span className="font-medium text-gray-900">Terapia Andullation</span>
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="p-0">
@@ -69,7 +69,15 @@ export default function Navbar() {
                   <div className="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mr-3">
                     <Zap className="w-4 h-4 text-yellow-600" />
                   </div>
-                  <span className="font-medium text-gray-900">Healy</span>
+                  <span className="font-medium text-gray-900">Healy - Analize si Terapie prin Frecvente si Microcurenti</span>
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="p-0">
+                <Link href="/terapie-bowen" className="w-full px-3 py-2 rounded-md hover:bg-green-50 transition-colors flex items-center" data-testid="nav-link-terapie-bowen">
+                  <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                    <Leaf className="w-4 h-4 text-green-600" />
+                  </div>
+                  <span className="font-medium text-gray-900">Terapia Bowen</span>
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="p-0">
@@ -77,15 +85,7 @@ export default function Navbar() {
                   <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
                     <Droplets className="w-4 h-4 text-blue-600" />
                   </div>
-                  <span className="font-medium text-gray-900">Apă Kangen</span>
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem className="p-0">
-                <Link href="/andullation" className="w-full px-3 py-2 rounded-md hover:bg-teal-50 transition-colors flex items-center" data-testid="nav-link-andullation">
-                  <div className="w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center mr-3">
-                    <Activity className="w-4 h-4 text-teal-600" />
-                  </div>
-                  <span className="font-medium text-gray-900">Andullation</span>
+                  <span className="font-medium text-gray-900">Apa Kangen</span>
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="p-0">
@@ -93,7 +93,7 @@ export default function Navbar() {
                   <div className="w-8 h-8 bg-violet-100 rounded-full flex items-center justify-center mr-3">
                     <Sparkles className="w-4 h-4 text-violet-600" />
                   </div>
-                  <span className="font-medium text-gray-900">Nutriție Celulară</span>
+                  <span className="font-medium text-gray-900">Nutritie Celulara</span>
                 </Link>
               </DropdownMenuItem>
             </div>
@@ -101,23 +101,23 @@ export default function Navbar() {
         </DropdownMenu>
       ) : (
         <>
-          <Link href="/terapie-bowen" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
-            Terapie Bowen
+          <Link href="/andullation" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
+            Terapia Andullation
           </Link>
           <Link href="/biorezonanta" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
             Biorezonanță
           </Link>
           <Link href="/healy" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
-            Healy
+            Healy - Analize si Terapie prin Frecvente si Microcurenti
+          </Link>
+          <Link href="/terapie-bowen" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
+            Terapia Bowen
           </Link>
           <Link href="/apa-kangen" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
             Apa Kangen
           </Link>
-          <Link href="/andullation" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
-            Andullation
-          </Link>
           <Link href="/nutritie-celulara" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
-            Nutriție Celulară
+            Nutritie Celulara
           </Link>
         </>
       )}

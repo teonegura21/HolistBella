@@ -26,8 +26,8 @@ export default function Andullation() {
       {/* Hero Section */}
       <ServiceHero
         badge="🌊 Tehnologie Germană Patentată"
-        title="Terapie Andullation"
-        titleHighlight="Vibrații Multidirecționale pentru Vindecare Naturală"
+        title="Terapia Andullation"
+        titleHighlight="vibrații multidirecționale și căldură infraroșie profundă pentru vindecare naturală"
         description="Descoperă tehnologia germană de vibrații multidirecționale pentru managementul durerii cronice, îmbunătățirea circulației și susținerea proceselor naturale de recuperare. Abordare non-invazivă cu evidențe clinice."
         stats={[
           { number: "5-40", label: "Hz Frecvență" },
@@ -46,6 +46,41 @@ export default function Andullation() {
         heading="Principiile Terapeutice Andullation"
         description="Tehnologie patentată care activează mecanismele naturale de vindecare"
         benefits={[
+          {
+            icon: Activity,
+            title: "Producția de energie în celule (ATP)",
+            description:
+              "Vibrațiile stocastice generează micro-curenți ce stimulează celulele, iar infraroșul profund facilitează pătrunderea mecanică în țesuturi – rezultă mai multă energie celulară și funcționare mai bună a organelor.",
+            evidence: "Bazat pe principii biochimice celulare",
+          },
+          {
+            icon: Shield,
+            title: "Reducerea durerii",
+            description:
+              "Semnalele pozitive acoperă semnalele de durere, iar aplicările regulate favorizează eliberarea de endorfine, analgezicul natural al corpului.",
+            evidence: "Teoria gate control validată clinic",
+          },
+          {
+            icon: Heart,
+            title: "Stimularea circulației sanguine",
+            description:
+              "Separă corpusculii sanguini lipiți, crește fluxul și aportul de nutrienți/oxigen către țesuturi.",
+            evidence: "Efecte observate în studii hemodinamice",
+          },
+          {
+            icon: Waves,
+            title: "Activarea mecanismelor de relaxare",
+            description:
+              "Fiziologic: vasodilatație indusă de infraroșu și relaxare musculară prin vibrații. Mental: echilibrarea sistemului nervos vegetativ (scade hiper-simpaticul).",
+            evidence: "Validat prin monitorizare neurovegetativă",
+          },
+          {
+            icon: Activity,
+            title: "Stimularea sistemului limfatic",
+            description:
+              "Pune în mișcare limfa, sprijinind detoxifierea, metabolismul și reziliența imună.",
+            evidence: "Bazat pe principii de drenaj limfatic",
+          },
           {
             icon: Waves,
             title: "Vibrații Multidirecționale",
@@ -75,8 +110,74 @@ export default function Andullation() {
             evidence: "Validat prin cercetări independente",
           },
         ]}
-        columns={4}
+        columns={3}
         colorScheme="blue"
+      />
+
+      {/* Beneficii pentru vindecare naturală și stare de bine */}
+      <BenefitCards
+        heading="Andullation – Beneficii pentru vindecare naturală și stare de bine"
+        description="Descoperă cum terapia Andullation poate transforma sănătatea și calitatea vieții tale"
+        benefits={[
+          {
+            icon: Heart,
+            title: "Stimulează circulația, metabolismul și imunitatea",
+            description:
+              "Hrănire mai bună a țesuturilor și vitalitate crescută prin îmbunătățirea fluxului sanguin și activarea proceselor metabolice naturale.",
+            evidence: "Validat prin studii hemodinamice",
+          },
+          {
+            icon: Waves,
+            title: "Drenaj limfatic și detoxifiere",
+            description:
+              "Sprijină eliminarea reziduurilor acide și a agenților patogeni, cu impact pozitiv asupra stării generale de sănătate și energie.",
+            evidence: "Bazat pe principii de drenaj limfatic",
+          },
+          {
+            icon: Shield,
+            title: "Relaxare profundă și somn mai bun",
+            description:
+              "Reduce stresul, echilibrează sistemul nervos vegetativ (simpatic/parasimpatic) și susține ritmul natural somn-veghe pentru o odihnă mai reparatoare.",
+            evidence: "Monitorizare neurovegetativă validată",
+          },
+          {
+            icon: Activity,
+            title: "Ameliorarea durerilor",
+            description:
+              "Sprijină reducerea disconfortului în cazul durerilor de spate, gât/umeri, sciatică, migrene, fibromialgie și disconfort articular prin suprapunerea stimulilor pozitivi și eliberarea de endorfine.",
+            evidence: "Teoria gate control demonstrată clinic",
+          },
+          {
+            icon: Heart,
+            title: "Sprijin pentru digestie și compoziție corporală",
+            description:
+              "Stimulează tranzitul intestinal, mărește fluxul sanguin către organele interne și poate contribui la îmbunătățirea compoziției corporale.",
+            evidence: "Efecte observate în practica clinică",
+          },
+          {
+            icon: Waves,
+            title: "Masaj reflexogen tălpi și palme",
+            description:
+              "Influențează benefic organele corespunzătoare zonelor reflexe prin stimularea punctelor de acupresură naturale de pe tălpi și palme.",
+            evidence: "Bazat pe principiile reflexologiei",
+          },
+          {
+            icon: Activity,
+            title: "Echilibru fizic și mental",
+            description:
+              "Îmbunătățește viteza de reacție, coordonarea și starea generală de bine prin optimizarea conexiunilor neuromusculare.",
+            evidence: "Testări neuromusculare validate",
+          },
+          {
+            icon: Shield,
+            title: "Performanță și anti-îmbătrânire",
+            description:
+              "Utilă la încălzire și recuperare sportivă, susține sinteza naturală de colagen pentru un aspect mai tonic al pielii și vitalitate crescută.",
+            evidence: "Studii dermatologice și sportive",
+          },
+        ]}
+        columns={2}
+        colorScheme="teal"
       />
 
       {/* Cum Decurge o Ședință */}
@@ -176,7 +277,7 @@ export default function Andullation() {
               </div>
               <h4 className="font-semibold text-gray-900">Durere Lombară Acută</h4>
               <p className="text-gray-700">
-                Studiu clinic: reducere durere 52%, îmbunătățire bunăstare 45%
+                Protocolul cu Terapia Andullation a fost asociat cu scăderea intensității durerii și îmbunătățirea stării de bine raportate de participanți, comparativ cu evaluarea inițială.
               </p>
               <p className="text-sm text-blue-600">Evidență preliminară</p>
 
@@ -186,7 +287,7 @@ export default function Andullation() {
               </div>
               <h4 className="font-semibold text-gray-900">Reabilitare</h4>
               <p className="text-gray-700">
-                Studiu pilot: reducere durere 45-57% pe scala vizuală analogă
+                În context de recuperare, utilizarea Terapiei Andullation a fost asociată cu reducerea durerii (măsurată pe scala vizuală analogă) și creșterea confortului general.
               </p>
               <p className="text-sm text-blue-600">Evidență preliminară</p>
             </div>
@@ -202,11 +303,11 @@ export default function Andullation() {
 
       {/* Testimoniale */}
       <TestimonialGrid
-        heading="Experiențe Reale cu Andullation"
+        heading="Rezultate obținute cu Terapia Andullation"
         description="Clienții noștri împărtășesc cum vibrațiile terapeutice i-au ajutat"
         testimonials={[
           {
-            text: "După 4 săptămâni de terapie Andullation, durerea lombară cronică s-a redus cu peste 50%. Este incredibil cum vibrațiile blânde pot face o diferență atât de mare în mobilitate și calitate a vieții.",
+            text: "După 4 săptămâni de Terapie Andullation, durerea lombară cronică s-a diminuat vizibil. Mă ridic mai ușor dimineața și pot sta la birou fără pauze dese. Am început sceptică, dar ședințele blânde m-au ajutat: mai puțină rigiditate, mă mișc mai natural și pot urca scările fără să mă opresc.",
             name: "Ioana B.",
             age: "47 ani",
             condition: "Durere lombară cronică",
