@@ -41,6 +41,191 @@ export default function Andullation() {
         onPrimaryClick={handlePrimaryClick}
       />
 
+      {/* Video Demonstrativ */}
+      <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-teal-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Cum Funcționează Terapia Andullation
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Descoperă prin acest video demonstrativ cum tehnologia germană de vibrații multidirecționale 
+              poate contribui la îmbunătățirea stării tale de sănătate și bunăstare
+            </p>
+          </div>
+
+          <div className="relative">
+            <div className="aspect-video bg-gray-900 rounded-2xl overflow-hidden shadow-2xl">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/OgwdVhH4448?hl=ro&cc_lang_pref=ro&cc_load_policy=1&rel=0&modestbranding=1"
+                title="Demonstratie Terapia Andullation - Vibrații Multidirecționale pentru Sănătate"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+            
+            {/* Video Stats */}
+            <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="text-center p-6 bg-white rounded-xl shadow-lg">
+                <div className="text-2xl font-bold text-blue-600 mb-2">🎥</div>
+                <div className="text-lg font-semibold text-gray-900">Video Demonstrativ</div>
+                <div className="text-gray-600">Tehnologia în acțiune</div>
+              </div>
+              <div className="text-center p-6 bg-white rounded-xl shadow-lg">
+                <div className="text-2xl font-bold text-teal-600 mb-2">⚡</div>
+                <div className="text-lg font-semibold text-gray-900">Vibrații 5-40 Hz</div>
+                <div className="text-gray-600">Frecvențe terapeutice</div>
+              </div>
+              <div className="text-center p-6 bg-white rounded-xl shadow-lg">
+                <div className="text-2xl font-bold text-green-600 mb-2">🌟</div>
+                <div className="text-lg font-semibold text-gray-900">Rezultate Vizibile</div>
+                <div className="text-gray-600">Din primele ședințe</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Video Description */}
+          <div className="mt-12 bg-white rounded-2xl p-8 shadow-lg">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Ce Vei Vedea în Video</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="text-blue-500 mr-3">•</span>
+                    <span>Cum funcționează tehnologia de vibrații multidirecționale</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-500 mr-3">•</span>
+                    <span>Poziționarea corectă pe masa de tratament</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-500 mr-3">•</span>
+                    <span>Setările de frecvență și intensitate</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="text-teal-500 mr-3">•</span>
+                    <span>Efectele relaxante și terapeutice</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-teal-500 mr-3">•</span>
+                    <span>Cum se simte experiența pentru pacient</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-teal-500 mr-3">•</span>
+                    <span>Beneficiile pentru circulație și relaxare</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Broșură și Certificări */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Certificări și Documentație Medicală
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Descoperă validările științifice și certificările profesionale ale terapiei Andullation
+            </p>
+          </div>
+
+          {/* PDF Viewer cu scroll orizontal */}
+          <div className="relative">
+            <div className="bg-gray-100 rounded-2xl p-4 shadow-xl">
+              <div className="aspect-[4/3] bg-white rounded-xl overflow-hidden shadow-inner">
+                <iframe
+                  src="/brosura-andullation.pdf#toolbar=1&navpanes=0&scrollbar=1&page=1&view=FitH"
+                  className="w-full h-full border-0"
+                  title="Broșură Andullation - Certificări și Documentație Medicală"
+                  loading="lazy"
+                ></iframe>
+              </div>
+              
+              {/* Controale PDF */}
+              <div className="flex items-center justify-between mt-4 px-4">
+                <div className="flex items-center space-x-4">
+                  <button 
+                    onClick={() => window.open('/brosura-andullation.pdf', '_blank')}
+                    className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                  >
+                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    Descarcă PDF
+                  </button>
+                  <button 
+                    onClick={() => window.open('/brosura-andullation.pdf', '_blank')}
+                    className="inline-flex items-center px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors"
+                  >
+                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                    Vizualizare Completă
+                  </button>
+                </div>
+                
+                <div className="text-sm text-gray-500">
+                  Derulează orizontal pentru a naviga prin pagini
+                </div>
+              </div>
+            </div>
+
+            {/* Highlights Grid */}
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl">
+                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="font-bold text-gray-900 mb-2">Certificări Medicale</h3>
+                <p className="text-gray-600 text-sm">Validări profesionale și studii clinice documentate</p>
+              </div>
+              
+              <div className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl">
+                <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                  </svg>
+                </div>
+                <h3 className="font-bold text-gray-900 mb-2">Tehnologie Germană</h3>
+                <p className="text-gray-600 text-sm">Inovație și calitate în tehnologia medicală</p>
+              </div>
+              
+              <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl">
+                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+                <h3 className="font-bold text-gray-900 mb-2">Studii Clinice</h3>
+                <p className="text-gray-600 text-sm">Cercetări peer-reviewed și evidențe științifice</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="mt-12 text-center">
+            <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full">
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span className="font-medium">Documentație completă disponibilă pentru consultare</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Beneficii Principale */}
       <BenefitCards
         heading="Principiile Terapeutice Andullation"
@@ -321,6 +506,76 @@ export default function Andullation() {
             rating: 5,
           },
           {
+            text: "Migrenele mele intense au devenit mult mai rare și mai puțin severe după 3 luni de terapie. Ședințele de Andullation m-au ajutat să reduc semnificativ medicația pentru dureri de cap.",
+            name: "Elena R.",
+            age: "39 ani",
+            condition: "Dureri intense de cap și migrene",
+            rating: 5,
+          },
+          {
+            text: "Stresul de la serviciu îmi afecta foarte mult sănătatea. După ședințele de Andullation mă simt mult mai relaxată și echilibrată. Tensiunea din umeri și gât s-a redus considerabil.",
+            name: "Maria T.",
+            age: "44 ani",
+            condition: "Stres",
+            rating: 5,
+          },
+          {
+            text: "Aveam probleme grave cu somnul de ani de zile. După 2 luni de terapie Andullation dorm mult mai bine, mă odihnesc și nu mai am trezirii nocturne frecvente.",
+            name: "Gheorghe N.",
+            age: "56 ani",
+            condition: "Tulburări de somn",
+            rating: 5,
+          },
+          {
+            text: "Circulația mea slabă și umflăturile la picioare s-au îmbunătățit mult cu terapia Andullation. Simt că sangele circulă mai bine și picioarele nu se mai înțepenesc.",
+            name: "Ana V.",
+            age: "61 ani",
+            condition: "Probleme circulatorii și limfatice",
+            rating: 5,
+          },
+          {
+            text: "Artrita de la mâini îmi făcea viața foarte dificilă. Cu terapia Andullation durerea s-a redus mult și pot din nou să scriu și să lucrez la calculator fără disconfort major.",
+            name: "Petru S.",
+            age: "58 ani",
+            condition: "Dureri de încheieturi, artrită",
+            rating: 5,
+          },
+          {
+            text: "Reumatismul îmi provoca dureri constante în toate articulațiile. Terapia Andullation m-a ajutat să reduc inflamația și să am ziluri mult mai confortabile.",
+            name: "Carmen D.",
+            age: "64 ani",
+            condition: "Reumatism și osteoporoză",
+            rating: 5,
+          },
+          {
+            text: "Sindromul picioarelor nelinștite îmi făcea nopțile un coșmar. După 6 săptămâni de Andullation, senzațiile neplăcute s-au redus dramatic și pot dormi liniștită.",
+            name: "Roxana M.",
+            age: "42 ani",
+            condition: "Sindromul picioarelor nelinștite",
+            rating: 5,
+          },
+          {
+            text: "Hernia de disc lombară îmi limita foarte mult mobilitatea. Terapia Andullation m-a ajutat să reduc durerea și să îmi recapăt încrederea în mișcare fără să mă tem de durere.",
+            name: "Adrian C.",
+            age: "48 ani",
+            condition: "Hernie de disc lombară",
+            rating: 5,
+          },
+          {
+            text: "Cu hernia cervicală aveam dureri groaznice până în brațe. După terapia Andullation pot din nou să îmi mișc capul liber și durerea iridiată s-a redus enorm.",
+            name: "Mihaela F.",
+            age: "51 ani",
+            condition: "Hernie de disc cervicală",
+            rating: 5,
+          },
+          {
+            text: "Parkinsonul îmi afecta echilibrul și coordonarea. Terapia Andullation m-a ajutat să îmi îmbunătățesc stabilitatea și să mă simt mai sigură pe picioare.",
+            name: "Vasile L.",
+            age: "67 ani",
+            condition: "Parkinson",
+            rating: 5,
+          },
+          {
             text: "Ca terapeut fizic, folosesc Andullation ca adjuvant în programele de reabilitare. Pacienții raportează reducerea durerii și îmbunătățirea circulației după doar câteva ședințe.",
             name: "Dr. Andrei P.",
             title: "Fizioterapeut",
@@ -353,7 +608,7 @@ export default function Andullation() {
           {
             question: "Este terapia sigură?",
             answer:
-              "Da, Andullation este considerată sigură când se respectă contraindicațiile și parametrii recomandați. Studiile nu raportează efecte adverse grave. Totuși, necesită evaluare medicală prealabilă și monitorizare profesională, mai ales în primele ședințe.",
+              "Da, Andullation este considerată sigură când se respectă contraindicațiile și parametrii recomandați. Studiile nu raportează efecte adverse.",
           },
           {
             question: "Cât costă tratamentul?",
@@ -363,7 +618,7 @@ export default function Andullation() {
           {
             question: "Ce dovezi științifice există?",
             answer:
-              "Studiul Universitatea Sevilla (2019) arată reducere durere 52% și îmbunătățire bunăstare 45%. Review sistematic 2023 (860 subiecți) confirmă beneficii pentru durerea lombară. Cercetarea este promițătoare dar necesită studii mai mari pentru standardizare clinică.",
+              "Studiul Universitatea Sevilla (2019) arată îmbunătățiri semnificative în reducerea durerii și creșterea bunăstării participanților. Review sistematic 2023 (860 subiecți) confirmă beneficii pentru durerea lombară. Cercetarea este promițătoare dar necesită studii mai mari pentru standardizare clinică.",
           },
         ]}
         layout="cards"

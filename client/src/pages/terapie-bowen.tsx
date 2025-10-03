@@ -31,7 +31,6 @@ export default function TerapieBowen() {
         description="Redescoperă echilibrul natural al corpului tău printr-o tehnică manuală subtilă și profund relaxantă. Terapia Bowen activează procesele naturale de auto-vindecare pentru reducerea durerii și îmbunătățirea mobilității."
         stats={[
           { number: "50+", label: "Ani de practică globală" },
-          { number: "3-5", label: "Ședințe pentru rezultate" },
           { number: "90%", label: "Clienți mulțumiți" },
         ]}
         gradientFrom="green-600"
@@ -81,7 +80,6 @@ export default function TerapieBowen() {
             title: "Evaluare Inițială",
             description:
               "Discutăm despre starea ta de sănătate, obiectivele terapeutice și așteptările tale. Acest prim pas ne ajută să personalizăm abordarea pentru nevoile tale specifice.",
-            duration: "10 minute",
             elements: [
               "Analiza stării de sănătate actuale",
               "Identificarea zonelor problematice",
@@ -93,7 +91,6 @@ export default function TerapieBowen() {
             title: "Sesiunea de Terapie Bowen",
             description:
               "Te întinzi confortabil pe masa de masaj, îmbrăcat în haine lejere. Terapeutul aplică secvențe de mișcări delicate pe puncte specifice ale corpului, urmate de pauze în care corpul procesează informația și inițiază auto-reglarea.",
-            duration: "40-50 minute",
             elements: [
               "Mișcări blânde pe mușchi, tendoane și nervi",
               "Pauze de 2-5 minute între secvențe",
@@ -110,7 +107,6 @@ export default function TerapieBowen() {
             title: "Recomandări Post-Terapie",
             description:
               "Primești sfaturi personalizate despre hidratare, mișcare și stil de viață pentru a maximiza efectele ședinței și a susține procesul de vindecare.",
-            duration: "5-10 minute",
             elements: [
               "Ghid de hidratare adecvată",
               "Exerciții simple de întreținere",
@@ -239,6 +235,48 @@ export default function TerapieBowen() {
             condition: "Recuperare sportivă",
             rating: 5,
           },
+          {
+            text: "Eram copleșită de stres și anxietate din cauza serviciului. Terapia Bowen m-a ajutat să îmi regăsesc calmul interior și să gestionez mult mai bine presiunea zilnică. Simt o pace profundă după fiecare ședință.",
+            name: "Elena R.",
+            age: "41 ani",
+            condition: "Stres, anxietate și depresie",
+            rating: 5,
+          },
+          {
+            text: "Oboseala cronică și insomniile îmi făceau viața un coșmar. După câteva ședințe de Terapie Bowen, dorm mult mai bine și am energie pe tot parcursul zilei. Mă simt renăscută!",
+            name: "Carmen T.",
+            age: "48 ani",
+            condition: "Oboseală cronică și insomnie",
+            rating: 5,
+          },
+          {
+            text: "Mă îmbolnăveam constant, răceala după răceală. Sistemul meu imunitar era la pământ. Terapia Bowen m-a ajutat să îmi fortific imunitatea și acum trec mult mai rar prin episoade de boală.",
+            name: "Andrei V.",
+            age: "35 ani",
+            condition: "Imunitate scăzută, răceli repetate",
+            rating: 5,
+          },
+          {
+            text: "După ani de încercări de a rămâne însărcinată, eram disperată. Terapia Bowen m-a ajutat să îmi echilibrez corpul și să reduc stresul. La 6 luni după ce am început terapia am rămas însărcinată!",
+            name: "Mihaela D.",
+            age: "33 ani",
+            condition: "Probleme de fertilitate",
+            rating: 5,
+          },
+          {
+            text: "Menopauza îmi făcea viața imposibilă - bufeuri, insomnie, schimbări de dispoziție. Terapia Bowen m-a ajutat să trec mult mai ușor prin această perioadă și să îmi regăsesc echilibrul hormonal.",
+            name: "Rodica M.",
+            age: "52 ani",
+            condition: "Simptome de menopauză",
+            rating: 5,
+          },
+          {
+            text: "Problemele digestive cronice îmi afectau calitatea vieții - balonare, dureri abdominale, tranzit irregular. Terapia Bowen a îmbunătățit semnificativ digestia și confortul gastric.",
+            name: "Gheorghe P.",
+            age: "44 ani",
+            condition: "Probleme digestive cronice",
+            rating: 5,
+          },
         ]}
         columns={3}
       />
@@ -261,7 +299,7 @@ export default function TerapieBowen() {
           {
             question: "De câte ședințe am nevoie pentru a vedea rezultate?",
             answer:
-              "Numărul de ședințe variază în funcție de persoană și de condiția tratată. În general, mulți clienți observă îmbunătățiri după primele 3-5 ședințe. Unii simt schimbări pozitive chiar după prima ședință, în timp ce altele pot necesita un program mai îndelungat pentru rezultate optime.",
+              "Numărul de ședințe variază în funcție de persoană și de condiția tratată. În general, mulți clienți observă îmbunătățiri după primele 3-5 ședințe. Unii simt schimbări pozitive chiar după prima ședință, în timp ce altele pot necesita un program mai îndelungat pentru rezultate optime. Există protocoale specifice pentru fiecare problemă de sănătate, care trebuie respectate pentru a obține rezultatele dorite în mod eficient și sigur.",
           },
           {
             question: "Cât durează o ședință de Terapie Bowen?",

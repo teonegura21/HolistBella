@@ -30,7 +30,6 @@ export default function Biorezonanta() {
         titleHighlight="Evaluare Energetică Funcțională Completă"
         description="Obține o perspectivă detaliată asupra stării tale de echilibru energetic. Biorezonanța este o metodă modernă, non-invazivă, de scanare a frecvențelor organismului pentru identificarea potențialelor dezechilibre și surse de stres."
         stats={[
-          { number: "60-90", label: "Minute scanare" },
           { number: "500+", label: "Parametri evaluați" },
           { number: "100%", label: "Non-invaziv" },
         ]}
@@ -81,7 +80,6 @@ export default function Biorezonanta() {
             title: "Pregătire și Confort",
             description:
               "Te așezi confortabil și ții în mână electrozi conectați la aparatul de biorezonanță. Nu există nicio disconfort sau senzație neplăcută în timpul procesului.",
-            duration: "5 minute",
             elements: [
               "Instalare confortabilă",
               "Conectare electrozi la nivelul mâinilor",
@@ -93,7 +91,6 @@ export default function Biorezonanta() {
             title: "Scanare Automată",
             description:
               "Aparatul scanează și înregistrează frecvențele electromagnetice ale organismului, comparându-le cu un model de referință pentru a detecta eventuale deviații interpretate ca dezechilibre energetice.",
-            duration: "60-90 minute",
             elements: [
               "Scanare completă automată",
               "Evaluare a peste 500 de parametri",
@@ -110,7 +107,6 @@ export default function Biorezonanta() {
             title: "Interpretare și Recomandări",
             description:
               "Terapeutul interpretează raportul detaliat generat și oferă un plan de acțiune personalizat cu recomandări specifice pentru echilibrarea energetică.",
-            duration: "20-30 minute",
             elements: [
               "Analiză raport detaliat",
               "Explicații clare și accesibile",
@@ -273,6 +269,27 @@ export default function Biorezonanta() {
             name: "Mihai D.",
             age: "29 ani",
             condition: "Optimizare performanță",
+            rating: 5,
+          },
+          {
+            text: "Eram permanent epuizată și nu înțelegeam de ce. Analizele medicale ieșeau normale, dar eu mă simțeam îngrozitor. Biorezonanța a detectat dezechilibre energetice și sensibilități care nu apăreau în testele clasice. Rezultatele m-au șocat - explica perfect cum mă simțeam!",
+            name: "Elena R.",
+            age: "45 ani",
+            condition: "Oboseală cronică inexplicată",
+            rating: 5,
+          },
+          {
+            text: "Aveam migrene constante, probleme digestive și insomnie de luni de zile. Medicul spunea că totul e în regulă, dar eu știam că ceva nu e bine. Scanarea biorezonanței a identificat surse de stres și toxine pe care nimeni nu le-a detectat până atunci. În sfârșit aveam răspunsuri!",
+            name: "Cristian P.",
+            age: "39 ani",
+            condition: "Simptome multiple fără diagnostic",
+            rating: 5,
+          },
+          {
+            text: "Mă trezeam obosită în fiecare dimineață, aveam dureri articulare și probleme de concentrare. Toate testele medicale erau normale, dar eu mă simțeam foarte rău. Biorezonanța a arătat dezechilibre clare și mi-a dat o direcție concretă de urmat. Răspunsurile pe care le căutam de atâta timp!",
+            name: "Maria V.",
+            age: "52 ani",
+            condition: "Sindrom de oboseală și dureri",
             rating: 5,
           },
         ]}
