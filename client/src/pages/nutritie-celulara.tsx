@@ -83,12 +83,6 @@ export default function NutritieCelulara() {
             description:
               "Eliminarea toxinelor, metalelor grele și stresului oxidativ din celule pentru pregătirea optimă a organismului pentru regenerare.",
             duration: "Zilele 1-30",
-            elements: [
-              "Glutation redus pentru detoxifiere",
-              "Acid alfa-lipoic antioxidant",
-              "NAC pentru susținere hepatică",
-              "Curcumin antiinflamator",
-            ],
             benefits: [
               "Creșterea energiei generale",
               "Claritate mentală îmbunătățită",
@@ -101,12 +95,6 @@ export default function NutritieCelulara() {
             description:
               "Optimizarea funcției mitocondriale și producției de energie celulară pentru vitalitate sporită și recuperare accelerată.",
             duration: "Zilele 31-60",
-            elements: [
-              "CoQ10 ubiquinol pentru energie",
-              "PQQ pentru regenerare mitocondrială",
-              "Carnitină pentru transport energie",
-              "Magneziu glicinat pentru relaxare",
-            ],
             benefits: [
               "Vitalitate și energie crescută",
               "Recuperare fizică rapidă",
@@ -119,12 +107,6 @@ export default function NutritieCelulara() {
             description:
               "Echilibrarea completă a sistemelor corpului pentru imunitate robustă, echilibru hormonal și longevitate celulară.",
             duration: "Zilele 61-90",
-            elements: [
-              "Omega-3 DHA/EPA pentru inflamație",
-              "Vitamina D3+K2 pentru oase",
-              "Probiotice pentru microbiom",
-              "Adaptogeni pentru stres",
-            ],
             benefits: [
               "Imunitate adaptivă puternică",
               "Echilibru hormonal natural",

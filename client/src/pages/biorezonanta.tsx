@@ -46,9 +46,9 @@ export default function Biorezonanta() {
         benefits={[
           {
             icon: Zap,
-            title: "Identificarea Surselor de Stres",
+            title: "Evaluare Holistică Completă",
             description:
-              "Scanarea oferă indicii despre sensibilități la anumiți alergeni, prezența metalelor grele sau a altor factori de stres energetic care pot influența starea generală de sănătate.",
+              "Scanarea oferă o perspectivă comprehensivă asupra tuturor sistemelor corporale, identificând dezechilibre energetice și zone care necesită atenție înainte ca simptomele să devină evidente.",
             evidence: "Principiu teoretic validat în practica complementară",
           },
           {
@@ -69,6 +69,110 @@ export default function Biorezonanta() {
         columns={3}
         colorScheme="purple"
       />
+
+      {/* Evaluarea Completă prin Biorezonanță */}
+      <section className="py-20 bg-gradient-to-br from-purple-50 via-white to-violet-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-600 to-violet-600 rounded-full mb-6">
+              <span className="text-2xl">🌸</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Evaluarea Completă prin Biorezonanță
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+              Scanare comprehensivă a tuturor sistemelor corporale pentru o imagine completă a stării tale de sănătate energetică
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Lista sistemelor evaluate */}
+            <div className="space-y-4">
+              <div className="grid gap-3">
+                {[
+                  "Sistemul cardiovascular și cerebral",
+                  "Sistemul digestiv și metabolism", 
+                  "Funcția vezicii biliare și pancreatică",
+                  "Hormoni și imunitate",
+                  "Ficat și rinichi",
+                  "Sistemul respirator și nervos",
+                  "Boli osoase și densitatea minerală",
+                  "Glicemie",
+                  "Glande endocrine",
+                  "Sănătate feminină/masculină",
+                  "Carențe nutriționale complete",
+                  "Alergii și intoleranțe", 
+                  "Metale grele",
+                  "Aminoacizi și coenzime",
+                  "Ochi și piele"
+                ].map((item, index) => (
+                  <div key={index} className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-purple-100 hover:shadow-md transition-shadow">
+                    <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-violet-500 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                      <span className="text-white font-bold text-sm">♦</span>
+                    </div>
+                    <span className="text-gray-800 font-medium">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Beneficii și rezultate */}
+            <div className="space-y-8">
+              <div className="bg-gradient-to-br from-purple-600 to-violet-600 rounded-2xl p-8 text-white">
+                <div className="flex items-center mb-6">
+                  <span className="text-3xl mr-3">✨</span>
+                  <h3 className="text-2xl font-bold">Rezultate Imediate</h3>
+                </div>
+                <p className="text-lg leading-relaxed mb-6">
+                  Primești rezultatele complete pe loc, cu interpretare de specialitate inclusă. 
+                  Nu mai aștepta zile sau săptămâni pentru a afla ce se întâmplă în corpul tău.
+                </p>
+                <div className="flex items-center">
+                  <span className="text-2xl mr-3">💡</span>
+                  <span className="font-semibold">Interpretare profesională inclusă!</span>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="bg-white rounded-xl p-6 shadow-lg border border-purple-100">
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <span className="text-purple-600 text-xl font-bold">500+</span>
+                    </div>
+                    <h4 className="font-bold text-gray-900 mb-2">Parametri Evaluați</h4>
+                    <p className="text-gray-600 text-sm">Analiză comprehensivă a tuturor sistemelor corporale</p>
+                  </div>
+                </div>
+                
+                <div className="bg-white rounded-xl p-6 shadow-lg border border-purple-100">
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-violet-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <span className="text-violet-600 text-xl font-bold">0</span>
+                    </div>
+                    <h4 className="font-bold text-gray-900 mb-2">Disconfort</h4>
+                    <p className="text-gray-600 text-sm">Proces complet nedureros și non-invaziv</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-6 border border-green-200">
+                <div className="flex items-start">
+                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                    <span className="text-white text-sm">✓</span>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-green-800 mb-2">Avantajul Biorezonanței</h4>
+                    <p className="text-green-700 text-sm">
+                      Detectează dezechilibre energetice înainte ca acestea să se manifeste ca simptome fizice, 
+                      oferindu-ți posibilitatea să acționezi preventiv pentru sănătatea ta.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Cum Decurge o Ședință */}
       <ProcessTimeline

@@ -70,6 +70,150 @@ export default function TerapieBowen() {
         colorScheme="green"
       />
 
+      {/* Domenii de Aplicare ale Terapiei Bowen */}
+      <section className="py-20 bg-gradient-to-br from-green-50 via-white to-emerald-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-green-600 to-emerald-600 rounded-full mb-6">
+              <Heart className="w-8 h-8 text-white" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Terapia Bowen și-a dovedit eficacitatea în următoarele probleme:
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-8">
+              Terapie manuală blândă, cu mișcări precise pe mușchi și fascie, care activează relaxarea profundă și 
+              susține autoreglarea corpului. Este non-invazivă și potrivită pentru toate vârstele.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* Durere & Mobilitate */}
+            <div className="bg-white rounded-2xl shadow-lg border border-green-100 overflow-hidden">
+              <div className="bg-gradient-to-r from-green-600 to-emerald-600 p-6 text-white">
+                <div className="flex items-center mb-2">
+                  <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mr-3">
+                    <span className="text-sm font-bold">1</span>
+                  </div>
+                  <h3 className="text-xl font-bold">Durere & Mobilitate</h3>
+                </div>
+                <p className="text-green-100 text-sm">(Aparat musculo-scheletal)</p>
+              </div>
+              <div className="p-6">
+                <div className="space-y-3">
+                  {[
+                    "Dureri de spate, gât și umeri înțepeniți",
+                    "Lombosciatică", 
+                    "Spondiloză cervicală, cifoze, scolioze",
+                    "Hernie de disc, discopatie lombară",
+                    "Probleme ale șoldurilor și genunchilor",
+                    "Coxartroză",
+                    "Entorse/luxații glezne",
+                    "Întinderi de ligamente, tensiuni musculare",
+                    "Dureri articulare",
+                    "Sindrom de tunel carpian",
+                    "Osteoporoză, spondilită",
+                    "Monturi/degete deformate",
+                    "Torticollis"
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start">
+                      <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="text-gray-700 text-sm leading-relaxed">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Organe Interne & Metabolism */}
+            <div className="bg-white rounded-2xl shadow-lg border border-emerald-100 overflow-hidden">
+              <div className="bg-gradient-to-r from-emerald-600 to-teal-600 p-6 text-white">
+                <div className="flex items-center mb-2">
+                  <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mr-3">
+                    <span className="text-sm font-bold">2</span>
+                  </div>
+                  <h3 className="text-xl font-bold">Organe Interne & Metabolism</h3>
+                </div>
+                <p className="text-emerald-100 text-sm">Funcții vitale și echilibru hormonal</p>
+              </div>
+              <div className="p-6">
+                <div className="space-y-3">
+                  {[
+                    "Infecții urinare recidivante, cistită",
+                    "Afecțiuni renale/prostată",
+                    "Simptome de menopauză",
+                    "Dureri premenstruale, chisturi ovariene",
+                    "Infertilitate, enurezis nocturn",
+                    "Constipație cronică, crampe",
+                    "Greață, disconfort digestiv",
+                    "Calculi biliari/renali",
+                    "Alergii",
+                    "Tensiune arterială mărită/oscillantă",
+                    "Afecțiuni cardio-vasculare și circulatorii",
+                    "Infecții respiratorii",
+                    "Dificultăți de respirație, astm, bronșită",
+                    "Dureri de cap/migrene",
+                    "Dureri dentare/mandibulare",
+                    "Imunitate scăzută, obezitate",
+                    "Congestii/infecții ale sinusurilor",
+                    "Tinitus"
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start">
+                      <div className="w-2 h-2 bg-emerald-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="text-gray-700 text-sm leading-relaxed">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Sistem Nervos & Echilibru Emoțional */}
+            <div className="bg-white rounded-2xl shadow-lg border border-teal-100 overflow-hidden">
+              <div className="bg-gradient-to-r from-teal-600 to-cyan-600 p-6 text-white">
+                <div className="flex items-center mb-2">
+                  <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mr-3">
+                    <span className="text-sm font-bold">3</span>
+                  </div>
+                  <h3 className="text-xl font-bold">Sistem Nervos & Echilibru</h3>
+                </div>
+                <p className="text-teal-100 text-sm">Stare mentală și recuperare neurologică</p>
+              </div>
+              <div className="p-6">
+                <div className="space-y-3">
+                  {[
+                    "Stres, anxietate",
+                    "Dezechilibre emoționale, depresii",
+                    "Oboseală cronică, insomnie",
+                    "Sprijin adjuvant în boala Parkinson",
+                    "Recuperare post-AVC",
+                    "Paralizii/tetraplegii"
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start">
+                      <div className="w-2 h-2 bg-teal-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="text-gray-700 text-sm leading-relaxed">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="mt-16 text-center">
+            <div className="bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl p-8 text-white">
+              <h3 className="text-2xl font-bold mb-4">Versatilitate Excepțională</h3>
+              <p className="text-lg leading-relaxed mb-6 max-w-3xl mx-auto">
+                Terapia Bowen se adaptează nevoilor fiecărui organism, fiind eficientă pentru o gamă largă de condiții. 
+                Mișcările blânde și pauzele specifice permit corpului să își activeze propriile mecanisme de vindecare.
+              </p>
+              <div className="inline-flex items-center px-6 py-3 bg-white/20 rounded-full">
+                <Heart className="w-5 h-5 mr-2" />
+                <span className="font-medium">Potrivită pentru toate vârstele - de la copii la vârstnici</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Cum Decurge o Ședință */}
       <ProcessTimeline
         heading="Procesul Tău de Transformare"

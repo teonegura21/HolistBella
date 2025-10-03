@@ -25,13 +25,13 @@ export default function Healy() {
 
       {/* Hero Section */}
       <ServiceHero
-        badge="🔋 Dispozitiv Medical Certificat"
-        title="Terapie Healy"
-        titleHighlight="Armonizare Bioenergetică cu Microcurenți"
-        description="Explorează o nouă dimensiune a stării de bine cu Healy, un dispozitiv portabil de wellness ce utilizează programe de microcurenți și frecvențe pentru a susține echilibrul natural al organismului."
+        badge="🔋 Distribuitor Oficial & Terapeut Certificat"
+        title="HEALY - Revoluția Wellness-ului Personal"
+        titleHighlight="Terapie Profesională & Achiziție Aparate Originale"
+        description="Descoperă puterea HEALY - tehnologia germană de vârf pentru armonizare bioenergetică. Beneficiază de terapie profesională în cabinet și online și achiziționează aparatul tău HEALY original pentru wellness acasă."
         stats={[
-          { number: "20-60", label: "Minute ședință" },
-          { number: "100+", label: "Programe specializate" },
+          { number: "30-60", label: "Minute ședință" },
+          { number: "200+", label: "Programe specializate" },
           { number: "FDA", label: "Certificat medical" },
         ]}
         gradientFrom="yellow-500"
@@ -40,10 +40,298 @@ export default function Healy() {
         onPrimaryClick={handlePrimaryClick}
       />
 
+      {/* Link Achiziționare */}
+      <section className="py-8 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl p-8 border border-yellow-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">🛒 Achiziționare Directă Aparat HEALY</h3>
+              <p className="text-lg text-gray-700 mb-6">
+                Comandă aparatul tău HEALY original direct de la distribuitor cu garanție completă:
+              </p>
+              <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-yellow-300">
+                <p className="text-lg font-semibold text-gray-900 mb-3">Link oficial pentru achiziționare:</p>
+                <a 
+                  href="https://eu.healy.shop/?partnername=5050-1126-9807" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-black font-bold text-xl hover:text-gray-700 underline break-all"
+                >
+                  https://eu.healy.shop/?partnername=5050-1126-9807
+                </a>
+              </div>
+              <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-gray-600">
+                <div className="flex items-center">
+                  <span className="text-green-500 mr-2">✓</span>
+                  Garanție oficială
+                </div>
+                <div className="flex items-center">
+                  <span className="text-green-500 mr-2">✓</span>
+                  Suport tehnic inclus
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Healy - Sănătate și Echilibru */}
+      <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full mb-6">
+              <Heart className="w-8 h-8 text-white" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Healy - Sănătate și Echilibru Fizic și Mental
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Primul dispozitiv portabil terapeutic activ cu Medical Cloud pentru wellness holistic
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Coloana stânga - Informații principale */}
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  🏥 Dispozitiv Medical Certificat
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Healy este un produs medical recunoscut pentru reducerea durerii cronice, fibromialgiei, 
+                  durerilor scheletice și migrenei, precum și pentru susținerea tratamentului bolilor psihice 
+                  precum depresia, anxietatea și tulburările de somn.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  🌟 Versatilitate Completă
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Fie că este vorba despre sănătate, wellness, stare de bine, frumusețe sau echilibru mental, 
+                  Healy este extrem de versatil. Acest dispozitiv multi-talentat oferă programe pentru toate 
+                  domeniile importante ale vieții tale, disponibile oricând și oriunde.
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-6 border border-yellow-200">
+                <h4 className="font-bold text-yellow-800 mb-3">
+                  🔬 Inovație Științifică
+                </h4>
+                <p className="text-yellow-700 text-sm leading-relaxed">
+                  Dezvoltat de Marcus Schmieke, inventatorul sistemelor TimeWaver, în colaborare cu o echipă 
+                  internațională de medici, oameni de știință și ingineri. După 10 ani de succes cu TimeWaver, 
+                  tehnologia a devenit accesibilă tuturor.
+                </p>
+              </div>
+            </div>
+
+            {/* Coloana dreaptă - Funcționarea la nivel celular */}
+            <div className="space-y-6">
+              <div className="bg-white rounded-2xl shadow-lg p-8 border border-blue-100">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-blue-600 text-xl">🧬</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900">
+                    Sănătatea Începe în Celule
+                  </h3>
+                </div>
+                
+                <div className="space-y-4">
+                  <p className="text-gray-700 leading-relaxed">
+                    Conform cercetărilor lui Robert O. Becker și Bjorn Nordenstrom (fost președinte al 
+                    Comisiei pentru Premiul Nobel), întreruperea tensiunii membranelor celulare este 
+                    cauza principală a bolilor acute și cronice.
+                  </p>
+                  
+                  <div className="bg-blue-50 rounded-lg p-4">
+                    <h4 className="font-semibold text-blue-800 mb-2">Cum Funcționează Healy:</h4>
+                    <ul className="space-y-2 text-blue-700 text-sm">
+                      <li className="flex items-start">
+                        <span className="text-blue-500 mr-2 mt-1">•</span>
+                        Restaurează tensiunea sănătoasă a membranelor celulare
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-500 mr-2 mt-1">•</span>
+                        Contracarează procesul de degradare celulară
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-500 mr-2 mt-1">•</span>
+                        Reduce durerea și inflamația la nivel celular
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-500 mr-2 mt-1">•</span>
+                        Susține regenerarea și vitalitatea celulară
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-6 border border-green-200">
+                <h4 className="font-bold text-green-800 mb-3">
+                  🎯 Analiză Personalizată
+                </h4>
+                <p className="text-green-700 text-sm leading-relaxed">
+                  Healy analizează frecvențele individuale de care ai nevoie la un moment dat, oferindu-ți 
+                  experiența bunăstării într-un mod holistic și pe termen lung - ușor și peste tot.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Beneficii cheie */}
+          <div className="mt-16">
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="text-center bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Zap className="w-8 h-8 text-yellow-600" />
+                </div>
+                <h4 className="font-bold text-gray-900 mb-2">Portabil și Accesibil</h4>
+                <p className="text-gray-600 text-sm">Tehnologie avansată în format compact, disponibilă oricând ai nevoie</p>
+              </div>
+              
+              <div className="text-center bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Brain className="w-8 h-8 text-blue-600" />
+                </div>
+                <h4 className="font-bold text-gray-900 mb-2">Echilibru Holistic</h4>
+                <p className="text-gray-600 text-sm">Susținere completă pentru sănătatea fizică și mentală</p>
+              </div>
+              
+              <div className="text-center bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Activity className="w-8 h-8 text-green-600" />
+                </div>
+                <h4 className="font-bold text-gray-900 mb-2">Regenerare Celulară</h4>
+                <p className="text-gray-600 text-sm">Restaurare la nivel celular pentru vitalitate optimă</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Beneficii Principale */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Beneficiile Terapiei Healy
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
+              Programe specializate pentru susținerea stării de bine și managementul durerii
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Coloana stânga - Beneficii detaliate */}
+            <div className="space-y-6">
+              <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-200">
+                <h3 className="text-2xl font-bold text-green-800 mb-8 text-center">
+                  🌟 Avantajele Exclusive HEALY
+                </h3>
+                
+                <div className="space-y-6">
+                  <div className="flex items-start">
+                    <span className="text-green-600 text-xl mr-4 mt-1">√</span>
+                    <p className="text-green-800 leading-relaxed">
+                      <strong>Oferă accesul la peste 200 de programe</strong>, ușor de selectat și de activat din aplicația downloadată pe smartphone
+                    </p>
+                  </div>
+                  
+                  <div className="flex items-start">
+                    <span className="text-green-600 text-xl mr-4 mt-1">√</span>
+                    <p className="text-green-800 leading-relaxed">
+                      <strong>Oferă un tratament holistic, eficient</strong>, ce poate fi efectuat acasă, în călătorii, în timpul liber și chiar în timpul orelor de muncă
+                    </p>
+                  </div>
+                  
+                  <div className="flex items-start">
+                    <span className="text-green-600 text-xl mr-4 mt-1">√</span>
+                    <p className="text-green-800 leading-relaxed">
+                      <strong>Funcționează cu succes</strong> pentru a vă ajuta să vă relaxați, să ameliorați durerile, să eliminați insomniile, să fiți mai performanți în sportul pe care îl practicați, să vă concentrați mai bine și să tratați diverse afecțiuni, de la durere la acnee
+                    </p>
+                  </div>
+                  
+                  <div className="flex items-start">
+                    <span className="text-green-600 text-xl mr-4 mt-1">√</span>
+                    <p className="text-green-800 leading-relaxed">
+                      <strong>Programe ideale pentru toată familia</strong>, foarte ușor de folosit
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Coloana dreaptă - Electrozi și CTA */}
+            <div className="space-y-6">
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-200">
+                <h3 className="text-2xl font-bold text-blue-800 mb-6 text-center">
+                  🔌 Electrozi Specializați
+                </h3>
+                
+                <div className="flex items-start mb-6">
+                  <span className="text-blue-600 text-xl mr-4 mt-1">√</span>
+                  <div className="text-blue-800 leading-relaxed">
+                    <p><strong>Este prevăzut cu electrozi disponibili în diverse variante:</strong></p>
+                    <ul className="mt-3 space-y-2 ml-4">
+                      <li className="flex items-start">
+                        <span className="text-blue-500 mr-2 mt-1.5 text-xs">•</span>
+                        <span><strong>Electrozi pentru urechi</strong> - pentru îmbunătățirea memoriei, concentrării, creativității și reducerea stresului</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-500 mr-2 mt-1.5 text-xs">•</span>
+                        <span><strong>Electrozi autoadezivi</strong> - pentru tratamentul durerii localizate, dureri menstruale, musculare, articulare, nevralgii</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-500 mr-2 mt-1.5 text-xs">•</span>
+                        <span><strong>Electrozi-brățară</strong> - pentru tratamentul sistemic</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* CTA Section */}
+              <div className="bg-gradient-to-r from-yellow-400 to-orange-400 rounded-2xl p-8 text-white text-center">
+                <h3 className="text-2xl font-bold mb-6">🚀 Începe Transformarea Ta!</h3>
+                <p className="text-lg leading-relaxed mb-8">
+                  Programează acum o sesiune la noi sau comandă acum pe linkul de mai jos propriul tău aparat Healy:
+                </p>
+                
+                <div className="bg-white rounded-xl p-4 mb-6">
+                  <a 
+                    href="https://eu.healy.shop/?partnername=5050-1126-9807" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-black font-bold text-lg hover:text-gray-700 underline break-all"
+                  >
+                    https://eu.healy.shop/?partnername=5050-1126-9807
+                  </a>
+                </div>
+                
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <div className="bg-white/20 rounded-lg px-4 py-2 text-sm">
+                    📱 Sesiune în cabinet
+                  </div>
+                  <div className="bg-white/20 rounded-lg px-4 py-2 text-sm">
+                    💻 Sesiune Online
+                  </div>
+                  <div className="bg-white/20 rounded-lg px-4 py-2 text-sm">
+                    🏠 Aparat pentru acasă
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <BenefitCards
-        heading="Beneficiile Terapiei Healy"
-        description="Programe specializate pentru susținerea stării de bine și managementul durerii"
+        heading="Aplicații Clinice Validate"
+        description="Beneficii recunoscute medical și aplicații practice"
         benefits={[
           {
             icon: Zap,
@@ -110,7 +398,7 @@ export default function Healy() {
             title: "Derularea Programului",
             description:
               "Te relaxezi complet în timp ce programul Healy rulează. Microcurenții de joasă intensitate sunt livrați prin electrozi, iar intensitatea poate fi ajustată pentru confort maxim.",
-            duration: "20-60 minute",
+            duration: "30-60 minute",
             elements: [
               "Microcurenți de joasă intensitate",
               "Frecvențe specifice programului",
