@@ -359,55 +359,52 @@ export default function Healy() {
         colorScheme="yellow"
       />
 
-      {/* Cum Decurge o Ședință */}
+      {/* Cum Funcționează Terapia Healy */}
       <ProcessTimeline
         heading="Cum Funcționează Terapia Healy"
-        description="Proces personalizat și confortabil cu programe adaptate nevoilor tale"
+        description="Proces inovator de armonizare bioenergetică prin microcurenți și frecvențe specifice"
         steps={[
           {
             number: "1",
-            title: "Selectarea Programului",
+            title: "Consultație și Personalizare",
             description:
-              "Împreună cu terapeutul, alegem programul potrivit din cele peste 100 de programe disponibile în aplicația Healy, adaptat obiectivelor tale specifice.",
-            duration: "5-10 minute",
+              "Analizăm starea ta de sănătate și obiectivele dorite pentru a selecta programele HEALY cele mai potrivite din cele peste 200 disponibile. Fiecare program este adaptat nevoilor tale specifice pentru rezultate optime.",
             elements: [
-              "Evaluarea nevoilor tale",
-              "Alegerea programului optim",
-              "Explicarea procesului",
+              "Evaluare completă a stării de sănătate",
+              "Identificarea zonelor de îmbunătățire",
+              "Selecția programelor personalizate",
             ],
           },
           {
             number: "2",
-            title: "Aplicarea Electrozi",
+            title: "Configurare Tehnologică Avansată",
             description:
-              "Se aplică electrozii conform instrucțiunilor programului - brățări la încheieturi, electrozi adezivi sau electrozi de ureche, în funcție de tipul de program selectat.",
-            duration: "5 minute",
+              "Aplicăm electrozii specializați în funcție de obiectivele terapeutice (dacă folosim programul specific lor): electrozi auriculari pentru funcții cognitive, electrozi adezivi pentru zone localizate sau electrozi-brățară pentru tratament sistemic complet.",
             elements: [
-              "Brățări la încheieturi (standard)",
-              "Electrozi adezivi pentru zone specifice",
-              "Electrozi de ureche pentru programe auriculare",
+              "Electrozi auriculari pentru memorie și concentrare",
+              "Electrozi adezivi pentru dureri localizate",
+              "Electrozi-brățară pentru echilibru sistemic",
             ],
             benefits: [
-              "Aplicare simplă și confortabilă",
-              "Adaptare la nevoile specifice",
-              "Fără disconfort sau durere",
+              "Tehnologie precisă și confortabilă",
+              "Adaptare la tipul de terapie necesară",
+              "Zero disconfort în timpul aplicării",
             ],
           },
           {
             number: "3",
-            title: "Derularea Programului",
+            title: "Sesiune de Armonizare Bioenergetică",
             description:
-              "Te relaxezi complet în timp ce programul Healy rulează. Microcurenții de joasă intensitate sunt livrați prin electrozi, iar intensitatea poate fi ajustată pentru confort maxim.",
-            duration: "30-60 minute",
+              "Experimentezi relaxarea profundă în timp ce HEALY livrează microcurenți terapeutici și frecvențe specifice pentru restaurarea echilibrului celular și energetic. Intensitatea este perfect ajustată pentru confortul și eficacitatea maximă.",
             elements: [
-              "Microcurenți de joasă intensitate",
-              "Frecvențe specifice programului",
-              "Intensitate ajustabilă",
+              "Microcurenți cu intensitate controlată",
+              "Frecvențe calibrate pentru obiective specifice",
+              "Monitorizare continuă a confortului",
             ],
             benefits: [
-              "Relaxare profundă",
-              "Susținere echilibru energetic",
-              "Management durere locală",
+              "Relaxare profundă și regenerare",
+              "Echilibrare bioenergetică completă",
+              "Susținerea proceselor naturale de vindecare",
             ],
           },
         ]}
@@ -431,13 +428,13 @@ export default function Healy() {
 
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <div className="w-2 h-2 bg-yellow-600 rounded-full mt-2 mr-3"></div>
+                  <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></div>
                   <div>
                     <h4 className="font-semibold text-gray-900">
-                      Metode Complementare de Wellness
+                      Persoane cu Probleme de Sănătate sau Dezechilibre
                     </h4>
                     <p className="text-gray-600">
-                      Ideal pentru persoane care caută abordări moderne și non-invazive pentru susținerea stării de bine generale
+                      HEALY se adresează oricărei persoane care experimentează orice tip de problemă de sănătate, dezechilibru fizic, emoțional sau energetic. Tehnologia cu microcurenți poate susține procesele naturale de vindecare la nivel celular, indiferent de natura afecțiunii.
                     </p>
                   </div>
                 </div>
@@ -446,10 +443,10 @@ export default function Healy() {
                   <div className="w-2 h-2 bg-yellow-600 rounded-full mt-2 mr-3"></div>
                   <div>
                     <h4 className="font-semibold text-gray-900">
-                      Sportivi și Persoane Active
+                      Specialiști în Medicina Integrativă și Complementară
                     </h4>
                     <p className="text-gray-600">
-                      Perfect pentru recuperare musculară, reducerea durerii și îmbunătățirea performanței fizice
+                      Profesioniștii din sănătate care implementează abordări holistice moderne și tehnologii avansate pentru optimizarea rezultatelor terapeutice și susținerea pacienților în procesul de vindecare
                     </p>
                   </div>
                 </div>
@@ -458,10 +455,34 @@ export default function Healy() {
                   <div className="w-2 h-2 bg-yellow-600 rounded-full mt-2 mr-3"></div>
                   <div>
                     <h4 className="font-semibold text-gray-900">
-                      Stil de Viață Agitat
+                      Sportivi de Performanță și Persoane Active
                     </h4>
                     <p className="text-gray-600">
-                      Excelent pentru gestionarea stresului zilnic, îmbunătățirea somnului și susținerea concentrării
+                      Tehnologia HEALY optimizează recuperarea musculară, reduce inflamația, accelerează vindecarea leziunilor și îmbunătățește performanța atletică prin restaurarea echilibrului bioelectric celular
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-yellow-600 rounded-full mt-2 mr-3"></div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">
+                      Managementul Stresului și Optimizarea Performanței Mentale
+                    </h4>
+                    <p className="text-gray-600">
+                      Ideal pentru executivi, studenți și profesioniști care necesită gestionarea stresului acut, îmbunătățirea concentrării cognitive, optimizarea somnului și susținerea echilibrului neurovegetativ
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-yellow-600 rounded-full mt-2 mr-3"></div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">
+                      Prevenție și Wellness Proactiv
+                    </h4>
+                    <p className="text-gray-600">
+                      Persoane proactive în menținerea sănătății care doresc să prevină dezechilibrele înainte de manifestarea clinică și să optimizeze funcționarea sistemelor corporale la nivel celular
                     </p>
                   </div>
                 </div>
@@ -566,6 +587,27 @@ export default function Healy() {
             name: "Andrei T.",
             age: "28 ani",
             condition: "Recuperare sportivă",
+            rating: 5,
+          },
+          {
+            text: "Durerile de spate cronice mă împiedicau să îmi trăiesc viața normal. După 3 săptămâni cu programele HEALY pentru durere, pot din nou să dorm toată noaptea și să mă mișc fără medicație. Este incredibil!",
+            name: "Carmen R.",
+            age: "48 ani",
+            condition: "Dureri lombare cronice",
+            rating: 5,
+          },
+          {
+            text: "Lucrez în IT și stresul era insuportabil. HEALY m-a ajutat să îmi regăsesc concentrarea și să gestionez presiunea de la birou. Productivitatea mea s-a dublat și am scăpat de anxietatea zilnică.",
+            name: "Alexandru P.",
+            age: "32 ani",
+            condition: "Stres profesional și anxietate",
+            rating: 5,
+          },
+          {
+            text: "Ca life coach, folosesc HEALY atât personal cât și în sesiunile cu clienții. Îmi îmbunătățește intuiția și claritatea mentală, iar clienții observă schimbări profunde după sesiuni combinate coaching-HEALY.",
+            name: "Ioana M.",
+            age: "39 ani",
+            condition: "Optimizare performanță în coaching",
             rating: 5,
           },
         ]}
