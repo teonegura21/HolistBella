@@ -73,7 +73,7 @@ export default function Hero() {
           <div className="flex flex-wrap justify-center items-center gap-8 text-sm">
             <div className="flex items-center">
               <div className="w-2 h-2 bg-accent rounded-full mr-2 animate-pulse" />
-              Peste 500 de clienți mulțumiți
+              Peste 1000 de clienți mulțumiți
             </div>
             <div className="flex items-center">
               <div className="w-2 h-2 bg-accent rounded-full mr-2 animate-pulse" />

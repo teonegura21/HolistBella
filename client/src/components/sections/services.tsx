@@ -35,24 +35,24 @@ export default function Services() {
 
   const services = [
     {
-      id: "terapie-bowen",
-      icon: Heart,
-      title: "Terapie Bowen",
-      subtitle: "Reechilibrare Neuromusculară Blândă",
-      description: "Tehnică manuală subtilă care activează procesul natural de auto-vindecare prin mișcări delicate pe mușchi și tendoane.",
-      benefits: ["Relaxare profundă", "Ameliorarea durerii", "Îmbunătățirea mobilității"],
-      image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      color: "from-green-400 to-emerald-500",
-      price: "De la 150 RON",
-      duration: "50-60 min"
+      id: "terapie-andullation",
+      icon: Activity,
+      title: "Terapie Andullation",
+      subtitle: "Recuperare și Sănătate Optimă",
+      description: "Tehnologie germană care combină vibrații stocastice cu căldură infraroșie pentru a accelera recuperarea și a susține vindecarea naturală a corpului.",
+      benefits: ["Reduce durerea și inflamația", "Activează drenajul limfatic", "Stimulează circulația și oxigenarea", "Relaxare musculară profundă", "Îmbunătățește somnul și energia"],
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      color: "from-teal-400 to-emerald-500",
+      price: "De la 120 RON",
+      duration: "30-60 min"
     },
     {
       id: "biorezonanta",
       icon: Activity,
       title: "Biorezonanță",
       subtitle: "Evaluare Energetică Funcțională",
-      description: "Metodă non-invazivă de scanare a frecvențelor corpului pentru identificarea dezechilibrelor energetice și crearea unui plan personalizat.",
-      benefits: ["Identificare stresori", "Plan de echilibrare", "Monitorizare progres"],
+      description: "Biorezonanța este o metodă modernă, non-invazivă, de scanare a frecvențelor organismului pentru identificarea potențialelor dezechilibre și surse de stres.",
+      benefits: ["Identificare dezechilibre si surse de stres", "Plan de echilibrare", "Monitorizare progres"],
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       color: "from-purple-400 to-violet-500",
       price: "De la 200 RON",
@@ -83,16 +83,16 @@ export default function Services() {
       duration: "Program personalizat"
     },
     {
-      id: "terapie-andullation",
-      icon: Activity,
-      title: "Terapie Andullation",
-      subtitle: "Relaxare Profundă prin Vibrații și Infraroșu",
-      description: "Tehnologie germană care combină vibrații stocastice cu căldură infraroșie pentru relaxare musculară și stimulare circulatorie.",
-      benefits: ["Ameliorare durere", "Îmbunătățire stare de bine", "Stimulare circulație"],
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      color: "from-teal-400 to-emerald-500",
-      price: "De la 120 RON",
-      duration: "15-30 min"
+      id: "terapie-bowen",
+      icon: Heart,
+      title: "Terapie Bowen",
+      subtitle: "Reechilibrare Neuromusculară Blândă",
+      description: "Tehnică manuală subtilă care activează procesul natural de auto-vindecare prin mișcări delicate pe mușchi și tendoane.",
+      benefits: ["Relaxare profundă", "Ameliorarea durerii", "Îmbunătățirea mobilității"],
+      image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      color: "from-green-400 to-emerald-500",
+      price: "De la 150 RON",
+      duration: "50-60 min"
     },
     {
       id: "nutritie-celulara",
@@ -165,7 +165,6 @@ export default function Services() {
                   </div>
                   <div className="text-right opacity-90">
                     <div className="text-sm font-medium">{service.duration}</div>
-                    <div className="text-lg font-bold">{service.price}</div>
                   </div>
                 </div>
 

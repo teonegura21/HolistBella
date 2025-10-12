@@ -5,13 +5,15 @@ import { CONTACT_INFO } from "@/lib/constants";
 
 export default function DesprePage() {
   const qualifications = [
-    "Certificată în Terapia Bowen - Nivel Avansat",
+    "Certificată în Terapia Bowen - Nivel MASTER",
     "Specialist în Biorezonanță Magnetică",
-    "Master Reiki - Tradițional Japonez",
-    "Certificată în Nutritie Celulară",
-    "Formator autorizat Apa Kangen",
     "Specialist în Terapia Andullation",
-    "Certificată în utilizarea dispozitivului Healy"
+    "Specialist în utilizarea dispozitivului Healy",
+    "Master Reiki - Tradițional Japonez",
+    "Specialist în Nutritie Celulară",
+    "Formator autorizat Apa Kangen",
+    "Trainer formator si Consilier de dezvoltare personala",
+    "Certificat Terapia Theta Healing si Tehnica Ho'oponopono"
   ];
 
   const testimonials = [
@@ -50,7 +52,6 @@ export default function DesprePage() {
   const achievements = [
     { icon: Users, number: "1000+", label: "Pacienți tratați" },
     { icon: Clock, number: "15+", label: "Ani experiență" },
-    { icon: Award, number: "7", label: "Certificări internaționale" },
     { icon: Heart, number: "98%", label: "Rata de satisfacție" }
   ];
 
@@ -140,7 +141,7 @@ export default function DesprePage() {
             <p className="text-xl text-gray-600">Experiența și rezultatele vorbesc de la sine</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {achievements.map((achievement, index) => (
               <Card key={index} className="text-center shadow-lg">
                 <CardContent className="p-8">

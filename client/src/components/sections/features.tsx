@@ -44,7 +44,7 @@ export default function Features() {
       icon: Heart,
       title: "Eliberarea de durere",
       description: "Abordări blânde pentru dureri de spate, gât sau articulare.",
-      linkText: "Vezi terapiile recomandate",
+      linkText: "",
       linkTo: "/servicii/terapie-bowen-iasi",
       color: "bg-gradient-to-br from-red-400 to-pink-500",
       delay: "0.1s"
@@ -53,7 +53,7 @@ export default function Features() {
       icon: Brain,
       title: "Managementul stresului",
       description: "Soluții pentru reducerea oboselii cronice, anxietății și îmbunătățirea somnului.",
-      linkText: "Descoperă metodele de relaxare",
+      linkText: "",
       linkTo: "/servicii/terapie-andullation-iasi",
       color: "bg-gradient-to-br from-blue-400 to-indigo-500",
       delay: "0.2s"
@@ -62,7 +62,7 @@ export default function Features() {
       icon: Sparkles,
       title: "Optimizarea stării de bine",
       description: "Programe de prevenție și echilibrare pentru un stil de viață energic și sănătos.",
-      linkText: "Află cum poți investi în sănătatea ta",
+      linkText: "",
       linkTo: "/servicii/biorezonanta-iasi",
       color: "bg-gradient-to-br from-purple-400 to-violet-500",
       delay: "0.3s"
