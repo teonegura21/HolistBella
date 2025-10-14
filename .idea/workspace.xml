@@ -1,30 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d62aa6c-5d50-456f-a62a-995bc693e6d1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/sections/contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sections/contact.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/sections/features.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sections/features.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/sections/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sections/hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/sections/testimonials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sections/testimonials.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/lib/constants.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lib/constants.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/alte-servicii.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/alte-servicii.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/detoxifiere-naturala.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/terapie-bowen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/terapie-bowen.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/terapie-reiki.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/testimoniale.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/testimoniale.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drizzle.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/replit.md" beforeDir="false" afterPath="$PROJECT_DIR$/replit.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/db.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/storage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/storage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/schema.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
-    </list>
+    <list default="true" id="0d62aa6c-5d50-456f-a62a-995bc693e6d1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,31 +17,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="33EkssbhgmBCjnCx1pgiZsK5VRT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.RadMigrateCodeStyle": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0d62aa6c-5d50-456f-a62a-995bc693e6d1" name="Changes" comment="" />
@@ -69,6 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1758889832209</updated>
       <workItem from="1758889834792" duration="136000" />
+      <workItem from="1759830797891" duration="79000" />
     </task>
     <servers />
   </component>

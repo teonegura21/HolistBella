@@ -38,12 +38,11 @@ export default function Services() {
       id: "terapie-andullation",
       icon: Activity,
       title: "Terapie Andullation",
-      subtitle: "Recuperare și Sănătate Optimă",
+      subtitle: "Recuperare, Sănătate, Vindecare",
       description: "Tehnologie germană care combină vibrații stocastice cu căldură infraroșie pentru a accelera recuperarea și a susține vindecarea naturală a corpului.",
-      benefits: ["Reduce durerea și inflamația", "Activează drenajul limfatic", "Stimulează circulația și oxigenarea", "Relaxare musculară profundă", "Îmbunătățește somnul și energia"],
+      benefits: ["Reduce durerea și inflamația", "Activează drenajul limfatic", "Relaxare musculară profundă"],
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       color: "from-teal-400 to-emerald-500",
-      price: "De la 120 RON",
       duration: "30-60 min"
     },
     {
@@ -51,11 +50,10 @@ export default function Services() {
       icon: Activity,
       title: "Biorezonanță",
       subtitle: "Evaluare Energetică Funcțională",
-      description: "Biorezonanța este o metodă modernă, non-invazivă, de scanare a frecvențelor organismului pentru identificarea potențialelor dezechilibre și surse de stres.",
-      benefits: ["Identificare dezechilibre si surse de stres", "Plan de echilibrare", "Monitorizare progres"],
+      description: "Metodă non-invazivă de scanare a frecvențelor corpului pentru identificarea dezechilibrelor energetice și crearea unui plan personalizat.",
+      benefits: ["Identificare stresori", "Plan de echilibrare", "Monitorizare progres"],
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       color: "from-purple-400 to-violet-500",
-      price: "De la 200 RON",
       duration: "60-90 min"
     },
     {
@@ -67,7 +65,6 @@ export default function Services() {
       benefits: ["Management durere", "Susținere relaxare", "Suport somn și concentrare"],
       image: "https://images.unsplash.com/photo-1559757195-3d4a6b2c6c1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       color: "from-yellow-400 to-orange-500",
-      price: "De la 180 RON",
       duration: "20-60 min"
     },
     {
@@ -79,7 +76,6 @@ export default function Services() {
       benefits: ["Hidratare optimă", "Reducere plastic", "Versatilitate pH"],
       image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       color: "from-blue-400 to-cyan-500",
-      price: "Consultație gratuită",
       duration: "Program personalizat"
     },
     {
@@ -91,7 +87,6 @@ export default function Services() {
       benefits: ["Relaxare profundă", "Ameliorarea durerii", "Îmbunătățirea mobilității"],
       image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       color: "from-green-400 to-emerald-500",
-      price: "De la 150 RON",
       duration: "50-60 min"
     },
     {
@@ -103,7 +98,6 @@ export default function Services() {
       benefits: ["Suport vitalitate", "Conveniență", "Gama variată"],
       image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       color: "from-pink-400 to-rose-500",
-      price: "De la 100 RON",
       duration: "Consultație 30 min"
     }
   ];
@@ -186,7 +180,7 @@ export default function Services() {
                 </div>
 
                 {/* CTA */}
-                <Link href={`/servicii/${service.id}`}>
+                <Link href="/servicii">
                   <Button 
                     className="w-full bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border-0 group-hover:bg-white group-hover:text-gray-900 transition-all duration-300"
                   >

@@ -4,9 +4,24 @@ import { Star } from "lucide-react";
 export default function Testimonials() {
   const testimonials = [
     {
-      name: "Ana M.",
+      name: "Maria L.",
+      location: "Valea Lupului-Iași",
+      text: "După luni de insomnie severă, Andullation mi-a readus somnul liniștit. Acum dorm profund și mă trezesc odihnită. Este incredibil cât de rapid s-a îmbunătățit calitatea somnului meu!"
+    },
+    {
+      name: "Daniel C.",
       location: "Iași",
-      text: "Terapia Bowen mi-a schimbat viața. Durerile cronice de spate au dispărut complet după doar câteva ședințe. Recomand cu încredere!"
+      text: "Stresul de la serviciu mă copleșea complet. Andullation m-a ajutat să îmi regăsesc calmul și echilibrul interior. Mă simt mult mai relaxat și capabil să gestionez presiunea zilnică."
+    },
+    {
+      name: "Carmen R.",
+      location: "București",
+      text: "Burnout-ul și oboseala cronică îmi afectau întreaga viață. Healy mi-a redat energia și motivația. Acum mă simt revitalizată și capabilă să îmi iau din nou viața în propriile mâini."
+    },
+    {
+      name: "Mihai S.",
+      location: "Iași", 
+      text: "Andullation mi-a schimbat viața. Durerile cronice de spate au dispărut complet după doar câteva ședințe. Recomand cu încredere!"
     },
     {
       name: "Alexandru R.",
@@ -24,9 +39,9 @@ export default function Testimonials() {
       text: "Apa Kangen a fost o revelație pentru mine. Nivelul meu de energie s-a îmbunătățit semnificativ și mă simt mult mai hidratată."
     },
     {
-      name: "Mihai S.",
-      location: "Iași", 
-      text: "Andullation m-a ajutat să recuperez după o accidentare sportivă. Durerile au dispărut rapid și mobilitatea s-a îmbunătățit."
+      name: "Ana M.",
+      location: "Iași",
+      text: "Terapia Bowen m-a ajutat să recuperez după o accidentare sportivă. Durerile au dispărut rapid și mobilitatea s-a îmbunătățit."
     },
     {
       name: "Ioana D.",

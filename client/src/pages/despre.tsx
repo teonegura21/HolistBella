@@ -5,53 +5,55 @@ import { CONTACT_INFO } from "@/lib/constants";
 
 export default function DesprePage() {
   const qualifications = [
-    "Certificată în Terapia Bowen - Nivel MASTER",
+    "Absolventă a Universității Alexandru Ioan Cuza din Iași, Master FEAA",
+    "Certificată în Terapia Bowen - nivel Master și Avansat",
     "Specialist în Biorezonanță Magnetică",
     "Specialist în Terapia Andullation",
-    "Specialist în utilizarea dispozitivului Healy",
+    "Certificată în utilizarea dispozitivului Healy",
     "Master Reiki - Tradițional Japonez",
-    "Specialist în Nutritie Celulară",
+    "Specialist în Nutriție Celulară",
     "Formator autorizat Apa Kangen",
-    "Trainer formator si Consilier de dezvoltare personala",
-    "Certificat Terapia Theta Healing si Tehnica Ho'oponopono"
+    "Trainer, formator și consilier de dezvoltare personală",
+    "Certificată Terapia Theta Healing și tehnica Ho'oponopono"
   ];
 
   const testimonials = [
     {
       name: "Dr. Mircea Popescu",
       title: "Medic Specialist Neurologie",
-      text: "Colaborez cu Angelica de mulți ani. Abordarea ei holistică completează perfect tratamentele medicale clasice. Recomand cu încredere serviciile sale."
+      text: "Colaborez cu Angelica de mul╚¢i ani. Abordarea ei holistic─â completeaz─â perfect tratamentele medicale clasice. Recomand cu ├«ncredere serviciile sale."
     },
     {
       name: "Maria Georgescu",
-      location: "Iași",
-      text: "Angelica nu este doar un terapeut excepțional, ci și o persoană cu o căldură și empatie deosebite. M-a ajutat să îmi regăsesc echilibrul după o perioadă foarte dificilă."
+      location: "Ia╚Öi",
+      text: "Angelica nu este doar un terapeut excep╚¢ional, ci ╚Öi o persoan─â cu o c─âldur─â ╚Öi empatie deosebite. M-a ajutat s─â ├«mi reg─âsesc echilibrul dup─â o perioad─â foarte dificil─â."
     },
     {
       name: "Ion Vasilescu",
-      location: "Iași",
-      text: "Sunt pacientul Angelicăi de peste 5 ani. Professionalismul și dedicarea ei sunt remarcabile. Îmi vine greu să îmi imaginez viața fără sprijinul ei."
+      location: "Ia╚Öi",
+      text: "Sunt pacientul Angelic─âi de peste 5 ani. Professionalismul ╚Öi dedicarea ei sunt remarcabile. ├Ämi vine greu s─â ├«mi imaginez via╚¢a f─âr─â sprijinul ei."
     },
     {
       name: "Carmen Mihalache",
-      location: "Iași",
-      text: "Am încercat multe tratamente pentru problemele mele de sănătate. Angelica a fost prima care a înțeles cu adevărat de ce aveam nevoie și m-a ajutat să mă vindec."
+      location: "Ia╚Öi",
+      text: "Am ├«ncercat multe tratamente pentru problemele mele de s─ân─âtate. Angelica a fost prima care a ├«n╚¢eles cu adev─ârat de ce aveam nevoie ╚Öi m-a ajutat s─â m─â vindec."
     },
     {
       name: "Alexandru Radu",
-      location: "Iași",
-      text: "Angelica combină perfect știința cu spiritualitatea. Îți oferă nu doar un tratament, ci o experiență transformatoare completă."
+      location: "Ia╚Öi",
+      text: "Angelica combin─â perfect ╚Ötiin╚¢a cu spiritualitatea. ├Ä╚¢i ofer─â nu doar un tratament, ci o experien╚¢─â transformatoare complet─â."
     },
     {
       name: "Elena Cristea",
-      location: "Iași",
-      text: "Ca persoană care a fost sceptică la început, pot spune că Angelica mi-a schimbat complet perspectiva asupra medicinei alternative. Rezultatele vorbesc de la sine."
+      location: "Ia╚Öi",
+      text: "Ca persoan─â care a fost sceptic─â la ├«nceput, pot spune c─â Angelica mi-a schimbat complet perspectiva asupra medicinei alternative. Rezultatele vorbesc de la sine."
     }
   ];
 
   const achievements = [
     { icon: Users, number: "1000+", label: "Pacienți tratați" },
     { icon: Clock, number: "15+", label: "Ani experiență" },
+    { icon: Award, number: "7", label: "Certificări internaționale" },
     { icon: Heart, number: "98%", label: "Rata de satisfacție" }
   ];
 
@@ -68,13 +70,13 @@ export default function DesprePage() {
                 <span className="block text-green-200">Fondatoarea Holist Bella</span>
               </h1>
               <p className="text-xl mb-8 leading-relaxed">
-                Cu peste 15 ani de experiență în medicina holistică, Angelica Negura și-a dedicat viața 
-                ajutării oamenilor să-și regăsească echilibrul și sănătatea prin abordări naturale și non-invazive.
+                Cu peste 15 ani de experien╚¢─â ├«n medicina holistic─â, Angelica Negura ╚Öi-a dedicat via╚¢a 
+                ajut─ârii oamenilor s─â-╚Öi reg─âseasc─â echilibrul ╚Öi s─ân─âtatea prin abord─âri naturale ╚Öi non-invazive.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
                   <a href={CONTACT_INFO.whatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                    Programează Consultația prin WhatsApp
+                    Programeaz─â Consulta╚¢ia prin WhatsApp
                   </a>
                 </Button>
               </div>
@@ -87,7 +89,7 @@ export default function DesprePage() {
               />
               <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg">
                 <div className="text-green-600 font-bold text-2xl">15+</div>
-                <div className="text-gray-600 text-sm">Ani Experiență</div>
+                <div className="text-gray-600 text-sm">Ani Experien╚¢─â</div>
               </div>
             </div>
           </div>
@@ -103,31 +105,31 @@ export default function DesprePage() {
           
           <div className="prose prose-lg mx-auto text-gray-600 leading-relaxed">
             <p className="text-xl mb-6">
-              Călătoria mea în lumea medicinei holiste a început din dorința de a găsi soluții reale 
-              pentru problemele de sănătate pe care medicina convențională nu le putea rezolva complet.
+              C─âl─âtoria mea ├«n lumea medicinei holiste a ├«nceput din dorin╚¢a de a g─âsi solu╚¢ii reale 
+              pentru problemele de s─ân─âtate pe care medicina conven╚¢ional─â nu le putea rezolva complet.
             </p>
             
             <p className="mb-6">
-              Am descoperit că adevărata vindecare vine atunci când tratăm omul ca întreg - trup, minte și suflet. 
-              Această filozofie m-a condus să studiez și să mă specializez în multiple discipline complementare, 
-              de la terapia Bowen și Reiki, până la tehnologiile moderne de biorezonanță.
+              Am descoperit c─â adev─ârata vindecare vine atunci c├ónd trat─âm omul ca ├«ntreg - trup, minte ╚Öi suflet. 
+              Aceast─â filozofie m-a condus s─â studiez ╚Öi s─â m─â specializez ├«n multiple discipline complementare, 
+              de la terapia Bowen ╚Öi Reiki, p├ón─â la tehnologiile moderne de biorezonan╚¢─â.
             </p>
             
             <p className="mb-6">
-              De-a lungul anilor, am avut privilegiul să lucrez cu peste 1000 de pacienți, fiecare cu povestea 
-              și nevoile sale unice. Am învățat că fiecare persoană merită o abordare personalizată și că 
-              încrederea este fundamentul oricărei vindecări adevărate.
+              De-a lungul anilor, am avut privilegiul s─â lucrez cu peste 1000 de pacien╚¢i, fiecare cu povestea 
+              ╚Öi nevoile sale unice. Am ├«nv─â╚¢at c─â fiecare persoan─â merit─â o abordare personalizat─â ╚Öi c─â 
+              ├«ncrederea este fundamentul oric─ârei vindec─âri adev─ârate.
             </p>
             
             <p className="mb-8">
-              Astăzi, la Holist Bella, îmbin tradiția cu inovația, oferind atât terapii ancestrale precum Reiki 
-              și Bowen, cât și tehnologii de vârf precum Healy și Andullation. Scopul meu rămâne același: 
-              să ajut fiecare persoană să-și descopere potențialul natural de autovindecare.
+              Ast─âzi, la Holist Bella, ├«mbin tradi╚¢ia cu inova╚¢ia, oferind at├ót terapii ancestrale precum Reiki 
+              ╚Öi Bowen, c├ót ╚Öi tehnologii de v├órf precum Healy ╚Öi Andullation. Scopul meu r─âm├óne acela╚Öi: 
+              s─â ajut fiecare persoan─â s─â-╚Öi descopere poten╚¢ialul natural de autovindecare.
             </p>
             
             <blockquote className="text-2xl text-center text-green-600 font-semibold italic border-l-4 border-green-600 pl-6">
-              "Cea mai mare satisfacție a mea este să văd cum pacienții mei își regăsesc sănătatea, 
-              energia și bucuria de a trăi."
+              "Cea mai mare satisfac╚¢ie a mea este s─â v─âd cum pacien╚¢ii mei ├«╚Öi reg─âsesc s─ân─âtatea, 
+              energia ╚Öi bucuria de a tr─âi."
             </blockquote>
           </div>
         </div>
@@ -137,8 +139,8 @@ export default function DesprePage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">În Cifre</h2>
-            <p className="text-xl text-gray-600">Experiența și rezultatele vorbesc de la sine</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">├Än Cifre</h2>
+            <p className="text-xl text-gray-600">Experien╚¢a ╚Öi rezultatele vorbesc de la sine</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -162,7 +164,7 @@ export default function DesprePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-8">Certificări și Specializări</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-8">Certific─âri ╚Öi Specializ─âri</h2>
               <div className="space-y-4">
                 {qualifications.map((qualification, index) => (
                   <div key={index} className="flex items-center p-4 bg-green-50 rounded-lg">
@@ -175,7 +177,7 @@ export default function DesprePage() {
             <div>
               <img 
                 src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=500" 
-                alt="Certificări medicale" 
+                alt="Certific─âri medicale" 
                 className="rounded-2xl shadow-lg"
               />
             </div>
@@ -189,14 +191,14 @@ export default function DesprePage() {
           <h2 className="text-4xl font-bold text-gray-900 mb-8">Filosofia Mea</h2>
           <div className="bg-white p-8 rounded-2xl shadow-lg">
             <p className="text-lg text-gray-600 leading-relaxed mb-6">
-              Cred cu tărie că fiecare om posedă o capacitate naturală de autovindecare. Rolul meu ca terapeut 
-              este să activez și să sprijin această capacitate prin tehnici dovedite științific, 
-              într-un cadru de încredere și empatie.
+              Cred cu t─ârie c─â fiecare om posed─â o capacitate natural─â de autovindecare. Rolul meu ca terapeut 
+              este s─â activez ╚Öi s─â sprijin aceast─â capacitate prin tehnici dovedite ╚Ötiin╚¢ific, 
+              ├«ntr-un cadru de ├«ncredere ╚Öi empatie.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Abordarea mea este întotdeauna personalizată, pentru că înțeleg că fiecare persoană este unică 
-              și merită un tratament adaptat nevoilor sale specifice. Medicina holistică nu înlocuiește 
-              medicina convențională, ci o completează, oferind o perspectivă mai largă asupra sănătății și bunăstării.
+              Abordarea mea este ├«ntotdeauna personalizat─â, pentru c─â ├«n╚¢eleg c─â fiecare persoan─â este unic─â 
+              ╚Öi merit─â un tratament adaptat nevoilor sale specifice. Medicina holistic─â nu ├«nlocuie╚Öte 
+              medicina conven╚¢ional─â, ci o completeaz─â, oferind o perspectiv─â mai larg─â asupra s─ân─ât─â╚¢ii ╚Öi bun─âst─ârii.
             </p>
           </div>
         </div>
@@ -206,8 +208,8 @@ export default function DesprePage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Ce Spun Pacienții</h2>
-            <p className="text-xl text-gray-600">Încrederea și rezultatele pacienților sunt cea mai bună recomandare</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Ce Spun Pacien╚¢ii</h2>
+            <p className="text-xl text-gray-600">├Äncrederea ╚Öi rezultatele pacien╚¢ilor sunt cea mai bun─â recomandare</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -234,15 +236,15 @@ export default function DesprePage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-green-600 to-teal-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Hai să Începem Împreună Călătoria Spre Sănătate</h2>
+          <h2 className="text-4xl font-bold mb-6">Hai s─â ├Äncepem ├Ämpreun─â C─âl─âtoria Spre S─ân─âtate</h2>
           <p className="text-xl mb-8 leading-relaxed">
-            Îmi doresc să te cunosc și să înțeleg cum te pot ajuta să îți atingi obiectivele de sănătate 
-            și bunăstare. Programează o consultație și să discutăm despre nevoile tale.
+            ├Ämi doresc s─â te cunosc ╚Öi s─â ├«n╚¢eleg cum te pot ajuta s─â ├«╚¢i atingi obiectivele de s─ân─âtate 
+            ╚Öi bun─âstare. Programeaz─â o consulta╚¢ie ╚Öi s─â discut─âm despre nevoile tale.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
               <a href={CONTACT_INFO.whatsapp} target="_blank" rel="noopener noreferrer">
-                Programează Consultația prin WhatsApp
+                Programeaz─â Consulta╚¢ia prin WhatsApp
               </a>
             </Button>
           </div>
@@ -252,3 +254,5 @@ export default function DesprePage() {
     </div>
   );
 }
+
+
