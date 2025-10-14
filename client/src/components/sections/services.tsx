@@ -36,6 +36,7 @@ export default function Services() {
   const services = [
     {
       id: "terapie-andullation",
+      link: "/andullation",
       icon: Activity,
       title: "Terapie Andullation",
       subtitle: "Recuperare și Sănătate Optimă",
@@ -48,6 +49,7 @@ export default function Services() {
     },
     {
       id: "biorezonanta",
+      link: "/biorezonanta",
       icon: Activity,
       title: "Biorezonanță",
       subtitle: "Evaluare Energetică Funcțională",
@@ -60,6 +62,7 @@ export default function Services() {
     },
     {
       id: "terapie-healy",
+      link: "/healy",
       icon: Zap,
       title: "Terapie Healy",
       subtitle: "Armonizare și Vitalitate",
@@ -72,6 +75,7 @@ export default function Services() {
     },
     {
       id: "apa-kangen",
+      link: "/apa-kangen",
       icon: Droplets,
       title: "Apă Kangen",
       subtitle: "Optimizează-ți Hidratarea Zilnică",
@@ -84,6 +88,7 @@ export default function Services() {
     },
     {
       id: "terapie-bowen",
+      link: "/terapie-bowen",
       icon: Heart,
       title: "Terapie Bowen",
       subtitle: "Reechilibrare Neuromusculară Blândă",
@@ -96,11 +101,12 @@ export default function Services() {
     },
     {
       id: "nutritie-celulara",
+      link: "/nutritie-celulara",
       icon: Sparkles,
-      title: "Nutriție Celulară AplGo",
-      subtitle: "Suport pentru Vitalitate și Stil de Viață Activ",
-      description: "Suplimente alimentare sub formă de drajeuri cu extracte naturale concentrate pentru suport nutritiv celular.",
-      benefits: ["Suport vitalitate", "Conveniență", "Gama variată"],
+      title: "Nutriție Celulară",
+      subtitle: "Suport pentru vitalitate și stil de viață activ",
+      description: "Remedii energo informaționale, suplimente alimentare cu extracte naturale concentrate, concepute să susțină nutriția la nivel celular — pentru energie, recuperare și echilibru zilnic.",
+      benefits: ["Suport pentru vitalitate", "Ușor de utilizat, oriunde și oricând", "Gamă variată de formule, adaptate nevoilor tale"],
       image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       color: "from-pink-400 to-rose-500",
       price: "De la 100 RON",
@@ -157,11 +163,11 @@ export default function Services() {
                 <div className={`absolute inset-0 bg-gradient-to-t ${service.color} opacity-80`} />
               </div>
 
-              <CardContent className="relative z-10 p-8 h-full flex flex-col text-white">
+              <CardContent className="relative z-10 p-8 h-full flex flex-col text-gray-900">
                 {/* Icon */}
                 <div className="flex items-start justify-between mb-6">
                   <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <service.icon className="text-3xl text-white" />
+                    <service.icon className="text-3xl text-gray-900" />
                   </div>
                   <div className="text-right opacity-90">
                     <div className="text-sm font-medium">{service.duration}</div>
@@ -171,14 +177,14 @@ export default function Services() {
                 {/* Content */}
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
-                  <p className="text-white/90 font-medium mb-4">{service.subtitle}</p>
-                  <p className="text-white/80 leading-relaxed mb-6">{service.description}</p>
+                  <p className="text-gray-800 font-medium mb-4">{service.subtitle}</p>
+                  <p className="text-gray-700 leading-relaxed mb-6">{service.description}</p>
                   
                   {/* Benefits */}
                   <div className="space-y-2 mb-6">
                     {service.benefits.map((benefit, idx) => (
                       <div key={idx} className="flex items-center text-sm">
-                        <div className="w-2 h-2 bg-white rounded-full mr-3 opacity-80" />
+                        <div className="w-2 h-2 bg-gray-900 rounded-full mr-3 opacity-80" />
                         {benefit}
                       </div>
                     ))}
@@ -186,7 +192,7 @@ export default function Services() {
                 </div>
 
                 {/* CTA */}
-                <Link href={`/servicii/${service.id}`}>
+                <Link href={service.link}>
                   <Button 
                     className="w-full bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border-0 group-hover:bg-white group-hover:text-gray-900 transition-all duration-300"
                   >

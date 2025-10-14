@@ -58,15 +58,118 @@ export default function DesprePage() {
   return (
     <div>
       
-      {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-br from-green-600 via-teal-600 to-green-800 text-white">
+      {/* Misiune și Filozofie */}
+      <section className="py-20 bg-gradient-to-br from-teal-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+              Misiunea noastră: Sănătate holistică și stare de bine durabilă
+            </h1>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              La Holist Bella, ne dedicăm să oferim îngrijire centrată pe pacient, integrând cele mai avansate terapii alternative cu o abordare personalizată care respectă individualitatea fiecărei persoane.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center mt-16">
+            <div>
+              <h3 className="text-3xl font-bold text-gray-900 mb-6">
+                Filozofia Noastră Holistică
+              </h3>
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                Adoptăm o abordare integrativă care privește sănătatea ca un echilibru dinamic între corp, minte și spirit. 
+                Fiecare tratament este conceput pentru a activa mecanismele naturale de vindecare ale organismului, 
+                oferind soluții sustenabile pe termen lung.
+              </p>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                Cu o experiență de peste 15 ani în domeniul terapiilor alternative, ne bazăm pe dovezi științifice 
+                disponibile și pe transparență absolută în toate abordările noastre.
+              </p>
+            </div>
+            <div>
+              <img 
+                src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
+                alt="Filozofia holistică Holist Bella" 
+                className="rounded-lg shadow-lg w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Terapeut Detalii */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              Angelica Negura - Terapeut Certificat
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Cu o pasiune de peste 15 ani pentru medicina integrativă, combină expertiza tradițională 
+              cu tehnologiile moderne pentru a oferi îngrijire personalizată și eficientă.
+            </p>
+          </div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <img 
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500" 
+                alt="Angelica Negura - Terapeut Holist Bella" 
+                className="rounded-lg shadow-lg w-full h-auto"
+              />
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Experiență și Formare
+              </h3>
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                Formare internațională în terapii alternative, cu accent pe tehnici non-invazive și abordări bazate pe dovezi. 
+                Membru al asociațiilor profesionale de medicină complementară, cu participare activă la conferințe și workshop-uri internaționale.
+              </p>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                Peste 1000 de pacienți tratați cu rezultate dovedite în managementul durerii cronice, stresului și optimizării stării de bine.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <Award className="w-5 h-5 text-green-600 mr-3" />
+                  <span className="font-semibold">15+ ani experiență</span>
+                </div>
+                <div className="flex items-center">
+                  <Award className="w-5 h-5 text-green-600 mr-3" />
+                  <span className="font-semibold">Certificări internaționale</span>
+                </div>
+                <div className="flex items-center">
+                  <Award className="w-5 h-5 text-green-600 mr-3" />
+                  <span className="font-semibold">1000+ pacienți mulțumiți</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Formare Continuă */}
+      <section className="py-16 bg-green-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-xl text-gray-700 mb-8">
+            Formarea continuă și certificările internaționale asigură cele mai actuale și eficiente abordări terapeutice.
+          </p>
+          <h3 className="text-2xl font-bold text-gray-900 mb-6">
+            Află mai multe despre cum putem contribui la sănătatea ta
+          </h3>
+          <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white">
+            <a href="/programari">Programează o consultație</a>
+          </Button>
+        </div>
+      </section>
+
+      {/* Hero Section - Despre Angelica */}
+      <section className="py-20 bg-gradient-to-br from-green-600 via-teal-600 to-green-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 Despre Angelica Negura
                 <span className="block text-green-200">Fondatoarea Holist Bella</span>
-              </h1>
+              </h2>
               <p className="text-xl mb-8 leading-relaxed">
                 Cu peste 15 ani de experiență în medicina holistică, Angelica Negura și-a dedicat viața 
                 ajutării oamenilor să-și regăsească echilibrul și sănătatea prin abordări naturale și non-invazive.

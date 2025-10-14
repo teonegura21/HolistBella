@@ -6,7 +6,7 @@ export default function Testimonials() {
     {
       name: "Ana M.",
       location: "Iași",
-      text: "Terapia Bowen mi-a schimbat viața. Durerile cronice de spate au dispărut complet după doar câteva ședințe. Recomand cu încredere!"
+      text: "În câteva ședințe de Andullation, durerea de spate și de articulații s-a redus vizibil: mă ridic fără înțepenire, merg lejer și adorm fără pulsații dureroase. Respectând protocolul recomandat, starea mea s-a îmbunătățit vizibil, ma simt foarte bine."
     },
     {
       name: "Alexandru R.",
@@ -16,7 +16,7 @@ export default function Testimonials() {
     {
       name: "Elena M.",
       location: "Iași",
-      text: "Nutriția celulară mi-a adus echilibrul de care aveam nevoie. Mă simt mult mai energică și în pace cu mine."
+      text: "Nutriția celulară, integrată într-un protocol personalizat, mi-a stabilizat energia pe tot parcursul zilei, a îmbunătățit calitatea somnului și mi-a adus un echilibru interior solid și claritate mentală."
     },
     {
       name: "Cristina P.",
@@ -26,7 +26,7 @@ export default function Testimonials() {
     {
       name: "Mihai S.",
       location: "Iași", 
-      text: "Andullation m-a ajutat să recuperez după o accidentare sportivă. Durerile au dispărut rapid și mobilitatea s-a îmbunătățit."
+      text: "Terapia Bowen mi-a schimbat viața. Durerile cronice de spate au dispărut complet după doar câteva ședințe. Recomand cu încredere!"
     },
     {
       name: "Ioana D.",

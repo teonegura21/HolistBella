@@ -43,7 +43,7 @@ export default function Features() {
     {
       icon: Heart,
       title: "Eliberarea de durere",
-      description: "Abordări blânde pentru dureri de spate, gât sau articulare.",
+      description: "Abordări blânde pentru toate tipurile de durere — acute și cronice : spate, gât, umeri, genunchi, șolduri, mușchi, dureri de cap și alte tipuri de dureri",
       linkText: "",
       linkTo: "/servicii/terapie-bowen-iasi",
       color: "bg-gradient-to-br from-red-400 to-pink-500",
