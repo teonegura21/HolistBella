@@ -42,7 +42,7 @@ export default function Services() {
       subtitle: "Recuperare și Sănătate Optimă",
       description: "Tehnologie germană care combină vibrații stocastice cu căldură infraroșie pentru a accelera recuperarea și a susține vindecarea naturală a corpului.",
       benefits: ["Reduce durerea și inflamația", "Activează drenajul limfatic", "Stimulează circulația și oxigenarea", "Relaxare musculară profundă", "Îmbunătățește somnul și energia"],
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      image: "/andullation.png",
       color: "from-teal-400 to-emerald-500",
       price: "De la 120 RON",
       duration: "30-60 min"

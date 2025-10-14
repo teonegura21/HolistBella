@@ -90,8 +90,8 @@ export default function DespreNoi() {
               </div>
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
-                  alt="Filozofia holistică Holist Bella" 
+                  src="https://raw.githubusercontent.com/teonegura21/HolistBella/main/client/public/cabinet.jpg"
+                  alt="Cabinet Holist Bella" 
                   className="rounded-lg shadow-lg w-full h-auto"
                 />
               </div>
