@@ -7,39 +7,39 @@ import { SEO } from "@/components/ui/seo";
 export default function Servicii() {
   const services = [
     {
-      title: "Terapie Bowen",
-      description: "Tehnică manuală subtilă care activează procesul natural de auto-vindecare prin mișcări delicate pe mușchi și tendoane.",
-      link: "/servicii/terapie-bowen-iasi",
-      image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+      title: "Terapie Andullation",
+      description: "Tehnologie germană care combină vibrații stocastice cu căldură infraroșie pentru relaxare musculară și stimulare circulatorie.",
+      link: "/andullation",
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
     },
     {
       title: "Biorezonanță",
       description: "Metodă non-invazivă de scanare a frecvențelor corpului pentru identificarea dezechilibrelor energetice și crearea unui plan personalizat.",
-      link: "/servicii/biorezonanta-iasi",
+      link: "/biorezonanta",
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
     },
     {
       title: "Terapie Healy",
       description: "Dispozitiv portabil cu microcurenți și frecvențe pentru susținerea echilibrului bioenergetic și managementul durerii.",
-      link: "/servicii/terapie-healy-iasi",
+      link: "/healy",
       image: "https://images.unsplash.com/photo-1559757195-3d4a6b2c6c1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
     },
     {
       title: "Apă Kangen",
       description: "Apă filtrată și ionizată pentru hidratare eficientă, suport al echilibrului pH și versatilitate în uz casnic.",
-      link: "/servicii/apa-kangen-iasi",
+      link: "/apa-kangen",
       image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
     },
     {
-      title: "Terapie Andullation",
-      description: "Tehnologie germană care combină vibrații stocastice cu căldură infraroșie pentru relaxare musculară și stimulare circulatorie.",
-      link: "/servicii/terapie-andullation-iasi",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+      title: "Terapie Bowen",
+      description: "Tehnică manuală subtilă care activează procesul natural de auto-vindecare prin mișcări delicate pe mușchi și tendoane.",
+      link: "/terapie-bowen",
+      image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
     },
     {
       title: "Nutriție Celulară AplGo",
       description: "Suplimente alimentare sub formă de drajeuri cu extracte naturale concentrate pentru suport nutritiv celular.",
-      link: "/servicii/nutritie-celulara-iasi",
+      link: "/nutritie-celulara",
       image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
     }
   ];
