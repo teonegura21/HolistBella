@@ -2,13 +2,13 @@ import { useState, useEffect, useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { 
-  Heart, 
-  Shield, 
-  Users, 
-  Award, 
-  Sparkles, 
-  Leaf, 
+import {
+  Heart,
+  Shield,
+  Users,
+  Award,
+  Sparkles,
+  Leaf,
   Brain,
   Zap,
   Star,
@@ -99,16 +99,16 @@ export default function Features() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Section Header */}
         <div className={`text-center mb-20 ${isVisible ? 'fade-in-up' : 'opacity-0'}`}>
-          <div className="inline-flex items-center px-6 py-3 rounded-full bg-secondary/10 text-secondary mb-6">
+          <div className="inline-flex items-center px-6 py-3 rounded-full bg-primary/10 text-primary mb-6">
             <Sparkles className="w-5 h-5 mr-2" />
             <span className="font-semibold">Cum te putem ajuta?</span>
           </div>
-          
+
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Soluții personalizate pentru<br />
             <span className="text-primary">nevoile tale</span>
           </h2>
-          
+
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Identificăm sursa problemelor tale și îți oferim terapii adaptate pentru rezultate durabile.
           </p>
@@ -119,9 +119,8 @@ export default function Features() {
           {problems.map((problem, index) => (
             <Card
               key={index}
-              className={`group cursor-pointer border-0 hover:shadow-lg transition-shadow ${
-                isVisible ? 'fade-in-up' : 'opacity-0'
-              }`}
+              className={`group cursor-pointer border-0 hover:shadow-lg transition-shadow ${isVisible ? 'fade-in-up' : 'opacity-0'
+                }`}
               style={{ animationDelay: problem.delay }}
             >
               <CardContent className="p-8 text-center h-full flex flex-col justify-between">
@@ -129,11 +128,11 @@ export default function Features() {
                   <div className={`w-16 h-16 ${problem.color} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                     <problem.icon className="text-white text-2xl" />
                   </div>
-                  
+
                   <h3 className="text-xl font-bold text-gray-900 mb-4">
                     {problem.title}
                   </h3>
-                  
+
                   <p className="text-gray-600 leading-relaxed mb-6">
                     {problem.description}
                   </p>

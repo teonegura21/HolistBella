@@ -2,12 +2,12 @@ import { useState, useEffect, useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { 
-  Droplets, 
-  Activity, 
-  Zap, 
-  Heart, 
-  Sparkles, 
+import {
+  Droplets,
+  Activity,
+  Zap,
+  Heart,
+  Sparkles,
   ChevronRight
 } from "lucide-react";
 
@@ -126,16 +126,16 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Section Header */}
         <div className={`text-center mb-20 ${isVisible ? 'fade-in-up' : 'opacity-0'}`}>
-          <div className="inline-flex items-center px-6 py-3 rounded-full bg-secondary/10 text-secondary mb-6">
+          <div className="inline-flex items-center px-6 py-3 rounded-full bg-primary/10 text-primary mb-6">
             <Sparkles className="w-5 h-5 mr-2" />
             <span className="font-semibold">Servicii Principale</span>
           </div>
-          
+
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             Portofoliul nostru de<br />
             <span className="text-primary">Terapii Holistice</span>
           </h2>
-          
+
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Alege terapia potrivită nevoilor tale din gama noastră diversificată de abordări non-invazive și complementare.
           </p>
@@ -144,19 +144,18 @@ export default function Services() {
         {/* Services Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-20">
           {services.map((service, index) => (
-            <Card 
+            <Card
               key={service.id}
-              className={`service-card group cursor-pointer relative overflow-hidden ${
-                isVisible ? 'fade-in-up' : 'opacity-0'
-              }`}
+              className={`service-card group cursor-pointer relative overflow-hidden ${isVisible ? 'fade-in-up' : 'opacity-0'
+                }`}
               style={{ animationDelay: `${index * 0.1}s` }}
               onMouseEnter={() => setHoveredService(index)}
               onMouseLeave={() => setHoveredService(null)}
             >
               {/* Background Image */}
               <div className="absolute inset-0">
-                <img 
-                  src={service.image} 
+                <img
+                  src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
@@ -179,7 +178,7 @@ export default function Services() {
                   <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
                   <p className="text-gray-800 font-medium mb-4">{service.subtitle}</p>
                   <p className="text-gray-700 leading-relaxed mb-6">{service.description}</p>
-                  
+
                   {/* Benefits */}
                   <div className="space-y-2 mb-6">
                     {service.benefits.map((benefit, idx) => (
@@ -193,7 +192,7 @@ export default function Services() {
 
                 {/* CTA */}
                 <Link href={service.link}>
-                  <Button 
+                  <Button
                     className="w-full bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border-0 group-hover:bg-white group-hover:text-gray-900 transition-all duration-300"
                   >
                     Află Mai Mult
