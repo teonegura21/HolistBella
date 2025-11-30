@@ -25,10 +25,10 @@ export default function Hero() {
     <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary to-secondary text-white overflow-hidden">
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-black/40" />
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')",
+          backgroundImage: "url('/hero-background.jpg')",
           filter: "brightness(0.5)"
         }}
       />
@@ -40,12 +40,12 @@ export default function Hero() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Terapii holistice non-invazive pentru o viață echilibrată și fără durere.
           </h1>
-          
+
           {/* Subtitle */}
           <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed">
             La Holist Bella Iași, combinăm tehnici avansate cu o abordare personalizată pentru a-ți susține procesele naturale de regenerare și echilibru.
           </p>
-          
+
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
             <Button
@@ -57,7 +57,7 @@ export default function Hero() {
                 Programează o consultație
               </Link>
             </Button>
-            
+
             <Button
               size="lg"
               asChild

@@ -10,6 +10,7 @@ import {
 import { Waves, Activity, Heart, Shield, AlertCircle } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
 import { CONTACT_INFO } from "@/lib/constants";
+import VideoShowcase from "@/components/video-showcase";
 
 export default function Andullation() {
   const handlePrimaryClick = () => {
@@ -66,40 +67,29 @@ export default function Andullation() {
               Cum Funcționează Terapia Andullation
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Descoperă prin acest video demonstrativ cum tehnologia germană de vibrații multidirecționale 
+              Descoperă prin aceste video-uri demonstrative cum tehnologia germană de vibrații multidirecționale
               poate contribui la îmbunătățirea stării tale de sănătate și bunăstare
             </p>
           </div>
 
-          <div className="relative">
-            <div className="aspect-video bg-gray-900 rounded-2xl overflow-hidden shadow-2xl">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/OgwdVhH4448?hl=ro&cc_lang_pref=ro&cc_load_policy=1&rel=0&modestbranding=1"
-                title="Demonstratie Terapia Andullation - Vibrații Multidirecționale pentru Sănătate"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
+          <VideoShowcase />
+
+          {/* Video Stats */}
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="text-2xl font-bold text-blue-600 mb-2">🎥</div>
+              <div className="text-lg font-semibold text-gray-900">Video Demonstrativ</div>
+              <div className="text-gray-600">Tehnologia în acțiune</div>
             </div>
-            
-            {/* Video Stats */}
-            <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="text-center p-6 bg-white rounded-xl shadow-lg">
-                <div className="text-2xl font-bold text-blue-600 mb-2">🎥</div>
-                <div className="text-lg font-semibold text-gray-900">Video Demonstrativ</div>
-                <div className="text-gray-600">Tehnologia în acțiune</div>
-              </div>
-              <div className="text-center p-6 bg-white rounded-xl shadow-lg">
-                <div className="text-2xl font-bold text-teal-600 mb-2">⚡</div>
-                <div className="text-lg font-semibold text-gray-900">Vibrații 5-40 Hz</div>
-                <div className="text-gray-600">Frecvențe terapeutice</div>
-              </div>
-              <div className="text-center p-6 bg-white rounded-xl shadow-lg">
-                <div className="text-2xl font-bold text-green-600 mb-2">🌟</div>
-                <div className="text-lg font-semibold text-gray-900">Rezultate Vizibile</div>
-                <div className="text-gray-600">Din primele ședințe</div>
-              </div>
+            <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="text-2xl font-bold text-teal-600 mb-2">⚡</div>
+              <div className="text-lg font-semibold text-gray-900">Vibrații 5-40 Hz</div>
+              <div className="text-gray-600">Frecvențe terapeutice</div>
+            </div>
+            <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="text-2xl font-bold text-green-600 mb-2">🌟</div>
+              <div className="text-lg font-semibold text-gray-900">Rezultate Vizibile</div>
+              <div className="text-gray-600">Din primele ședințe</div>
             </div>
           </div>
         </div>
@@ -128,11 +118,11 @@ export default function Andullation() {
                   loading="lazy"
                 ></iframe>
               </div>
-              
+
               {/* Controale PDF */}
               <div className="flex items-center justify-between mt-4 px-4">
                 <div className="flex items-center space-x-4">
-                  <button 
+                  <button
                     onClick={() => window.open('/brosura-andullation.pdf', '_blank')}
                     className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
                   >
@@ -141,7 +131,7 @@ export default function Andullation() {
                     </svg>
                     Descarcă PDF
                   </button>
-                  <button 
+                  <button
                     onClick={() => window.open('/brosura-andullation.pdf', '_blank')}
                     className="inline-flex items-center px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors"
                   >
@@ -151,7 +141,7 @@ export default function Andullation() {
                     Vizualizare Completă
                   </button>
                 </div>
-                
+
                 <div className="text-sm text-gray-500">
                   Derulează orizontal pentru a naviga prin pagini
                 </div>
@@ -169,7 +159,7 @@ export default function Andullation() {
                 <h3 className="font-bold text-gray-900 mb-2">Certificări Medicale</h3>
                 <p className="text-gray-600 text-sm">Validări profesionale și studii clinice documentate</p>
               </div>
-              
+
               <div className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl">
                 <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -179,7 +169,7 @@ export default function Andullation() {
                 <h3 className="font-bold text-gray-900 mb-2">Tehnologie Germană</h3>
                 <p className="text-gray-600 text-sm">Inovație și calitate în tehnologia medicală</p>
               </div>
-              
+
               <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl">
                 <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -65,19 +65,19 @@ export default function DespreNoi() {
   ];
 
   const galleryImages = [
-    "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
-    "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
-    "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
-    "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+    "/Angi1.jpg",
+    "/Angi2.jpg",
+    "/Angi3.jpg",
+    "/Angi4.jpg"
   ];
 
   return (
     <>
-      <SEO 
+      <SEO
         title="Despre Holist Bella – Terapeut Certificat & Cabinet Wellness Iași"
         description="Află mai multe despre filozofia Holist Bella, expertiza terapeutului nostru și cabinetul modern din Iași dedicat stării tale de bine."
       />
-      
+
       <section className="pt-20 pb-16 bg-gradient-to-br from-primary to-secondary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex mb-4 text-sm">
@@ -98,33 +98,24 @@ export default function DespreNoi() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
           {/* Filozofia */}
           <section>
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                  Filozofia Noastră Holistică
-                </h2>
-                <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                  Adoptăm o abordare integrativă care privește sănătatea ca un echilibru dinamic între corp, minte și spirit. 
-                  Fiecare tratament este conceput pentru a activa mecanismele naturale de vindecare ale organismului, 
-                  oferind soluții sustenabile pe termen lung.
-                </p>
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                  Cu o experiență de peste 15 ani în domeniul terapiilor alternative, ne bazăm pe dovezi științifice 
-                  disponibile și pe transparență absolută în toate abordările noastre.
-                </p>
-                <Button asChild variant="outline" size="lg">
-                  <Link href="/servicii">
-                    Descoperă serviciile noastre
-                  </Link>
-                </Button>
-              </div>
-              <div>
-                <img 
-                  src="https://raw.githubusercontent.com/teonegura21/HolistBella/main/client/public/cabinet.jpg"
-                  alt="Cabinet Holist Bella" 
-                  className="rounded-lg shadow-lg w-full h-auto"
-                />
-              </div>
+            <div className="text-center max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                Filozofia Noastră Holistică
+              </h2>
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                Adoptăm o abordare integrativă care privește sănătatea ca un echilibru dinamic între corp, minte și spirit.
+                Fiecare tratament este conceput pentru a activa mecanismele naturale de vindecare ale organismului,
+                oferind soluții sustenabile pe termen lung.
+              </p>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                Cu o experiență de peste 15 ani în domeniul terapiilor alternative, ne bazăm pe dovezi științifice
+                disponibile și pe transparență absolută în toate abordările noastre.
+              </p>
+              <Button asChild variant="outline" size="lg">
+                <Link href="/servicii">
+                  Descoperă serviciile noastre
+                </Link>
+              </Button>
             </div>
           </section>
 
@@ -135,15 +126,15 @@ export default function DespreNoi() {
                 Angelica Negura - Terapeut Certificat
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Cu o pasiune de peste 15 ani pentru medicina integrativă, Angelica Negura combină expertiza tradițională 
+                Cu o pasiune de peste 15 ani pentru medicina integrativă, Angelica Negura combină expertiza tradițională
                 cu tehnologiile moderne pentru a oferi îngrijire personalizată și eficientă.
               </p>
             </div>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <img 
-                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500" 
-                  alt="Angelica Negura - Terapeut Holist Bella" 
+                <img
+                  src="/Angi.jpg"
+                  alt="Angelica Negura - Terapeut Holist Bella"
                   className="rounded-lg shadow-lg w-full h-auto"
                 />
               </div>
@@ -152,7 +143,7 @@ export default function DespreNoi() {
                   Experiență și Formare
                 </h3>
                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                  Formare internațională în terapii alternative, cu accent pe tehnici non-invazive și abordări bazate pe dovezi. 
+                  Formare internațională în terapii alternative, cu accent pe tehnici non-invazive și abordări bazate pe dovezi.
                   Membru al asociațiilor profesionale de medicină complementară, cu participare activă la conferințe și workshop-uri internaționale.
                 </p>
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -265,9 +256,9 @@ export default function DespreNoi() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
               {galleryImages.map((img, index) => (
                 <div key={index} className="group">
-                  <img 
-                    src={img} 
-                    alt={`Cabinet Holist Bella - Imagine ${index + 1}`} 
+                  <img
+                    src={img}
+                    alt={`Cabinet Holist Bella - Imagine ${index + 1}`}
                     className="rounded-lg shadow-lg w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>

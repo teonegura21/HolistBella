@@ -253,6 +253,13 @@ export default function AlteServicii() {
         description="Programează o consultație pentru a afla care dintre terapiile Theta Healing, Access Bars sau Reiki este cea mai potrivită pentru tine."
         gradientFrom="purple-600"
         gradientTo="pink-600"
+        ctaPrimary="Consultație prin WhatsApp"
+        trustSignals={[
+          "🔬 Terapii validate internațional",
+          "💫 Abordare personalizată",
+          "🌟 Rezultate demonstrabile"
+        ]}
+        onPrimaryClick={handlePrimaryClick}
       />
     </>
   );
