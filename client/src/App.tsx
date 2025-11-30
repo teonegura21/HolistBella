@@ -13,7 +13,6 @@ import Footer from "@/components/layout/footer";
 import FloatingWhatsApp from "@/components/ui/floating-whatsapp";
 import Home from "@/pages/home";
 import DespreNoiPage from "@/pages/despre-noi";
-import DesprePage from "@/pages/despre";
 import PreturiPage from "@/pages/preturi-si-abonamente";
 import ResursePage from "@/pages/resurse";
 import ProgramariPage from "@/pages/programari";
@@ -26,6 +25,7 @@ import AndullationPage from "@/pages/andullation";
 import NutritieCelularaPage from "@/pages/nutritie-celulara";
 import TestimonialePage from "@/pages/testimoniale";
 import ServiciiPage from "@/pages/servicii";
+import AlteServiciiPage from "@/pages/alte-servicii";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -40,7 +40,7 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/despre" component={DesprePage} />
+      <Route path="/despre" component={DespreNoiPage} />
       <Route path="/despre-noi" component={DespreNoiPage} />
       <Route path="/preturi-si-abonamente" component={PreturiPage} />
       <Route path="/resurse" component={ResursePage} />
@@ -54,6 +54,7 @@ function Router() {
       <Route path="/andullation" component={AndullationPage} />
       <Route path="/nutritie-celulara" component={NutritieCelularaPage} />
       <Route path="/testimoniale" component={TestimonialePage} />
+      <Route path="/alte-servicii" component={AlteServiciiPage} />
       <Route component={NotFound} />
     </Switch>
   );

@@ -130,6 +130,17 @@ export default function Contact() {
                       Sună Acum
                     </a>
                   </Button>
+
+                  <Button
+                    asChild
+                    variant="outline"
+                    className="w-full border-wellness-blue text-wellness-blue hover:bg-wellness-blue hover:text-white py-3"
+                  >
+                    <a href={`mailto:${CONTACT_INFO.email}`}>
+                      <Mail className="w-5 h-5 mr-2" />
+                      Trimite Email
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -176,7 +187,7 @@ export default function Contact() {
               </div>
               <div className="aspect-video">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2712.8583871572743!2d27.57726!3d47.16587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cafb3c84b8de53%3A0x48e3d8fb69cd3f2e!2sStrada%20Soficu%201%2C%20Ia%C8%99i%20700497%2C%20Romania!5e0!3m2!1sen!2sus!4v1699123456789!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2712.8583871572743!2d27.57726!3d47.16587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cafb3c84b8de53%3A0x48e3d8fb69cd3f2e!2sStrada%20Soficu%201%2C%20Ia%C8%99i%2C%20Romania!5e0!3m2!1sro!2sro!4v1699123456789!5m2!1sro!2sro"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

@@ -8,39 +8,45 @@ export default function Servicii() {
   const services = [
     {
       title: "Terapie Andullation",
-      description: "Tehnologie germană care combină vibrații stocastice cu căldură infraroșie pentru relaxare musculară și stimulare circulatorie.",
+      description: "Tehnologie germană non-invazivă pentru reducerea durerii, relaxare neuromusculară și echilibru emoțional — ajută la gestionarea stresului și la îmbunătățirea somnului prin stimularea microcirculației. Susține procesele naturale de recuperare. Abordare bazată pe evidențe clinice.",
       link: "/andullation",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+      image: "https://raw.githubusercontent.com/teonegura21/HolistBella/main/client/public/andullation-correct.png"
     },
     {
       title: "Biorezonanță",
       description: "Metodă non-invazivă de scanare a frecvențelor corpului pentru identificarea dezechilibrelor energetice și crearea unui plan personalizat.",
       link: "/biorezonanta",
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+      image: "/biorezonanta-device.jpg"
     },
     {
       title: "Terapie Healy",
       description: "Dispozitiv portabil cu microcurenți și frecvențe pentru susținerea echilibrului bioenergetic și managementul durerii.",
       link: "/healy",
-      image: "https://images.unsplash.com/photo-1559757195-3d4a6b2c6c1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+      image: "https://raw.githubusercontent.com/teonegura21/HolistBella/main/client/public/healy-device.jpg"
     },
     {
       title: "Apă Kangen",
       description: "Apă filtrată și ionizată pentru hidratare eficientă, suport al echilibrului pH și versatilitate în uz casnic.",
       link: "/apa-kangen",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+      image: "/kangen-water.jpg"
     },
     {
       title: "Terapie Bowen",
       description: "Tehnică manuală subtilă care activează procesul natural de auto-vindecare prin mișcări delicate pe mușchi și tendoane.",
       link: "/terapie-bowen",
-      image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+      image: "/bowen-therapy.jpg"
     },
     {
       title: "Nutriție Celulară AplGo",
       description: "Suplimente alimentare sub formă de drajeuri cu extracte naturale concentrate pentru suport nutritiv celular.",
       link: "/nutritie-celulara",
-      image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+      image: "/apl-nutritie.png"
+    },
+    {
+      title: "Alte Servicii",
+      description: "Terapii energetice complementare: Theta Healing pentru transformarea convingerilor, Access Bars pentru eliberare mentală, și Reiki pentru echilibrare spirituală.",
+      link: "/alte-servicii",
+      image: "/energy-healing.jpg"
     }
   ];
 

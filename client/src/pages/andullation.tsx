@@ -9,10 +9,12 @@ import {
 } from "@/components/services";
 import { Waves, Activity, Heart, Shield, AlertCircle } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
+import { CONTACT_INFO } from "@/lib/constants";
 
 export default function Andullation() {
   const handlePrimaryClick = () => {
     trackEvent("andullation_cta", "service_page", "whatsapp_click");
+    window.open(CONTACT_INFO.whatsapp, "_blank");
   };
 
   return (
@@ -27,11 +29,10 @@ export default function Andullation() {
       <ServiceHero
         badge="🌊 Tehnologie Germană Patentată"
         title="Terapia Andullation"
-        titleHighlight="vibrații multidirecționale și căldură infraroșie profundă pentru vindecare naturală"
-        description="Descoperă tehnologia germană de vibrații multidirecționale pentru managementul durerii cronice, îmbunătățirea circulației și susținerea proceselor naturale de recuperare. Abordare non-invazivă cu evidențe clinice."
+        titleHighlight="Recuperare prin vibrații stocastice și infraroșu profund"
+        description="Tehnologie germană non-invazivă pentru reducerea durerii, relaxare neuromusculară și echilibru emoțional. Prin stimularea microcirculației ajută la gestionarea stresului și la îmbunătățirea somnului. Susține procesele naturale de recuperare. Abordare bazată pe evidențe clinice."
         stats={[
-          { number: "5-40", label: "Hz Frecvență" },
-          { number: "30-45", label: "Minute ședință" },
+          { number: "30-60", label: "Minute ședință" },
           { number: "50+", label: "Studii clinice" },
         ]}
         gradientFrom="blue-600"
@@ -40,6 +41,22 @@ export default function Andullation() {
         heroIcon={Waves}
         onPrimaryClick={handlePrimaryClick}
       />
+
+      {/* Ce este Andullation */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+            Ce este Andullation
+          </h2>
+          <p className="text-xl text-gray-600 leading-relaxed">
+            ANDUMEDIC 3 Pro este un dispozitiv medical produs în Germania în strânsă colaborare cu oameni
+            de știință, clinici universitare și medici, care oferă 20 de programe de terapii Andullation
+            ce contribuie la tratarea unei game largi de afecțiuni. Andullation reprezintă o tehnologie medicală unică ce combină efectul benefic al vibrațiilor
+            stocastice cu căldură profundă infraroșie, oferind beneficii importante pentru sănătate și
+            bună-dispoziție.
+          </p>
+        </div>
+      </section>
 
       {/* Video Demonstrativ */}
       <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-teal-50">
@@ -82,45 +99,6 @@ export default function Andullation() {
                 <div className="text-2xl font-bold text-green-600 mb-2">🌟</div>
                 <div className="text-lg font-semibold text-gray-900">Rezultate Vizibile</div>
                 <div className="text-gray-600">Din primele ședințe</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Video Description */}
-          <div className="mt-12 bg-white rounded-2xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Ce Vei Vedea în Video</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <ul className="space-y-3 text-gray-700">
-                  <li className="flex items-start">
-                    <span className="text-blue-500 mr-3">•</span>
-                    <span>Cum funcționează tehnologia de vibrații multidirecționale</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-500 mr-3">•</span>
-                    <span>Poziționarea corectă pe masa de tratament</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-500 mr-3">•</span>
-                    <span>Setările de frecvență și intensitate</span>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <ul className="space-y-3 text-gray-700">
-                  <li className="flex items-start">
-                    <span className="text-teal-500 mr-3">•</span>
-                    <span>Efectele relaxante și terapeutice</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-teal-500 mr-3">•</span>
-                    <span>Cum se simte experiența pentru pacient</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-teal-500 mr-3">•</span>
-                    <span>Beneficiile pentru circulație și relaxare</span>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
@@ -387,7 +365,7 @@ export default function Andullation() {
             title: "Sesiune Terapeutică",
             description:
               "Te așezi confortabil pe patul de terapie. Vibrațiile multidirecționale (5-40 Hz) sunt aplicate în mod progresiv, cu monitorizare continuă pentru confort maxim.",
-            duration: "30-45 minute",
+            duration: "30-60 minute",
             elements: [
               "Vibrații multidirecționale 5-40 Hz",
               "Amplitudine ajustabilă 2-8 mm",
@@ -598,7 +576,7 @@ export default function Andullation() {
           {
             question: "Care sunt contraindicațiile terapiei?",
             answer:
-              "Contraindicații absolute: tromboză acută, aneurisme, sarcină primul trimestru, implanturi cardiace nestabile. Contraindicații relative: hipertensiune severă necontrolată, epilepsie, proteze articulare recente. Evaluarea medicală prealabilă este obligatorie pentru siguranță.",
+              "Contraindicații absolute: tromboză acută, aneurisme, sarcină primul trimestru, implanturi cardiace nestabile. Contraindicații relative: hipertensiune severă necontrolată, epilepsie, proteze articulare recente.",
           },
           {
             question: "Cât timp durează să văd rezultate?",
@@ -618,7 +596,7 @@ export default function Andullation() {
           {
             question: "Ce dovezi științifice există?",
             answer:
-              "Studiul Universitatea Sevilla (2019) arată îmbunătățiri semnificative în reducerea durerii și creșterea bunăstării participanților. Review sistematic 2023 (860 subiecți) confirmă beneficii pentru durerea lombară. Cercetarea este promițătoare dar necesită studii mai mari pentru standardizare clinică.",
+              "Studiul Universitatea Sevilla (2019) arată îmbunătățiri semnificative în reducerea durerii și creșterea bunăstării participanților. Review sistematic 2023 (860 subiecți) confirmă beneficii pentru durerea lombară, durere cervicala, stres, insomnii etc. Cercetarea este promițătoare dar necesită studii mai mari pentru standardizare clinică.",
           },
         ]}
         layout="cards"
@@ -627,13 +605,11 @@ export default function Andullation() {
       {/* CTA Final */}
       <ServiceCTA
         heading="Dorești să Descoperi Beneficiile Andullation?"
-        description="Programează o consultație informativă gratuită pentru a discuta aplicabilitatea terapiei Andullation pentru situația ta specifică, bazat pe evidențele științifice disponibile și nevoile tale individuale."
+        description="Programează o consultație pentru a discuta aplicabilitatea terapiei Andullation pentru situația ta specifică, bazat pe evidențele științifice disponibile și nevoile tale individuale."
         gradientFrom="blue-600"
         gradientTo="teal-600"
         ctaPrimary="Consultația prin WhatsApp"
         trustSignals={[
-          "✨ Consultație gratuită și informativă",
-          "📞 Răspundem în maxim 2 ore",
           "🔬 Bazat pe studii clinice validate",
         ]}
         onPrimaryClick={handlePrimaryClick}

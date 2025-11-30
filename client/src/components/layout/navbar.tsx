@@ -36,14 +36,14 @@ export default function Navbar() {
 
   const NavLinks = ({ mobile = false }: { mobile?: boolean }) => (
     <>
-      <Link href="/" className={`${mobile ? "block px-3 py-2" : "px-3 py-2"} text-gray-700 hover:text-primary transition-colors`}>
+      <Link href="/" className={`${mobile ? "block px-3 py-2" : "px-3 py-2"} text-gray-700 hover:text-primary transition-colors text-2xl`}>
         Acasă
       </Link>
       
       {/* Services Dropdown */}
       {!mobile ? (
         <DropdownMenu>
-          <DropdownMenuTrigger className="px-3 py-2 text-gray-700 hover:text-primary transition-colors flex items-center font-medium">
+          <DropdownMenuTrigger className="px-3 py-2 text-gray-700 hover:text-primary transition-colors flex items-center font-medium text-2xl">
             Servicii <ChevronDown className="ml-1 h-4 w-4" />
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-72 p-2">
@@ -69,7 +69,7 @@ export default function Navbar() {
                   <div className="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mr-3">
                     <Zap className="w-4 h-4 text-yellow-600" />
                   </div>
-                  <span className="font-medium text-gray-900">Healy - Analize si Terapie prin Frecvente si Microcurenti</span>
+                  <span className="font-medium text-gray-900">Healy — Analiză bioenergetică & terapie prin frecvențe sau microcurenti</span>
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="p-0">
@@ -108,7 +108,7 @@ export default function Navbar() {
             Biorezonanță
           </Link>
           <Link href="/healy" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
-            Healy - Analize si Terapie prin Frecvente si Microcurenti
+            Healy — Analiză bioenergetică & terapie prin frecvențe sau microcurenti
           </Link>
           <Link href="/terapie-bowen" className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">
             Terapia Bowen
@@ -122,17 +122,17 @@ export default function Navbar() {
         </>
       )}
       
-      <Link href="/despre" className={`${mobile ? "block px-3 py-2" : "px-3 py-2"} text-gray-700 hover:text-primary transition-colors`} data-testid={`nav-link-despre${mobile ? '-mobile' : ''}`}>
+      <Link href="/despre-noi" className={`${mobile ? "block px-3 py-2" : "px-3 py-2"} text-gray-700 hover:text-primary transition-colors text-2xl`} data-testid={`nav-link-despre${mobile ? '-mobile' : ''}`}>
         Despre Noi
       </Link>
       
-      <Link href="/testimoniale" className={`${mobile ? "block px-3 py-2" : "px-3 py-2"} text-gray-700 hover:text-primary transition-colors`} data-testid={`nav-link-testimoniale${mobile ? '-mobile' : ''}`}>
+      <Link href="/testimoniale" className={`${mobile ? "block px-3 py-2" : "px-3 py-2"} text-gray-700 hover:text-primary transition-colors text-2xl`} data-testid={`nav-link-testimoniale${mobile ? '-mobile' : ''}`}>
         Testimoniale
       </Link>
       
       <button
         onClick={() => scrollToSection("contact")}
-        className={`${mobile ? "block px-3 py-2" : "px-3 py-2"} text-gray-700 hover:text-primary transition-colors`}
+        className={`${mobile ? "block px-3 py-2" : "px-3 py-2"} text-gray-700 hover:text-primary transition-colors text-2xl`}
       >
         Contact
       </button>
@@ -147,7 +147,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/">
-              <h1 className="text-2xl font-bold text-primary cursor-pointer hover:text-primary/80 transition-colors">Holist Bella</h1>
+              <h1 className="text-5xl font-bold text-primary cursor-pointer hover:text-primary/80 transition-colors">Holist Bella</h1>
             </Link>
           </div>
           
@@ -155,9 +155,9 @@ export default function Navbar() {
             <div className="ml-10 flex items-baseline space-x-8">
               <NavLinks />
               <Button asChild size="sm">
-                <a href={`tel:${CONTACT_INFO.phone}`}>
+                <a href={CONTACT_INFO.whatsapp} target="_blank" rel="noopener noreferrer">
                   <Phone className="mr-2 h-4 w-4" />
-                  Sună Acum
+                  Programează-te
                 </a>
               </Button>
             </div>
@@ -174,9 +174,9 @@ export default function Navbar() {
                 <div className="flex flex-col space-y-4 mt-8">
                   <NavLinks mobile />
                   <Button asChild className="mt-4">
-                    <a href={`tel:${CONTACT_INFO.phone}`}>
+                    <a href={CONTACT_INFO.whatsapp} target="_blank" rel="noopener noreferrer">
                       <Phone className="mr-2 h-4 w-4" />
-                      Sună Acum
+                      Programează-te
                     </a>
                   </Button>
                 </div>

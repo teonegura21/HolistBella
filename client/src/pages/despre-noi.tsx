@@ -9,28 +9,58 @@ import { CONTACT_INFO } from "@/lib/constants";
 export default function DespreNoi() {
   const certifications = [
     {
-      name: "Certificare Internațională Bowen",
-      year: "2018",
-      icon: "bowen-cert",
-      description: "Certificare avansată în tehnica Bowen de la Academia Internațională."
+      name: "Certificată în terapia Bowen — nivel Master",
+      year: "Certificare Profesională",
+      icon: "bowen-master",
+      description: "Certificare avansată nivel Master în terapia Bowen."
     },
     {
-      name: "Diplomă Medicina Holistică",
-      year: "2015",
-      icon: "holistic-med",
-      description: "Program complet de formare în abordări integrative de sănătate."
+      name: "Specialistă în biorezonanță magnetică",
+      year: "Certificare Profesională",
+      icon: "bioresonance",
+      description: "Formare specializată în diagnostic și terapie prin biorezonanță magnetică."
     },
     {
-      name: "Certificat Biorezonanță",
-      year: "2020",
-      icon: "bioresonance-cert",
-      description: "Formare specializată în diagnostic și terapie bioenergetică."
+      name: "Specialistă în terapia Andullation",
+      year: "Certificare Profesională",
+      icon: "andullation",
+      description: "Certificare în utilizarea terapiei Andullation pentru management durere și recuperare."
     },
     {
-      name: "Certificare Healy Professional",
-      year: "2021",
-      icon: "healy-cert",
-      description: "Certificare pentru utilizare clinică a dispozitivului Healy."
+      name: "Specialistă în utilizarea dispozitivului Healy",
+      year: "Certificare Profesională",
+      icon: "healy",
+      description: "Certificare profesională pentru utilizarea dispozitivului Healy în terapie."
+    },
+    {
+      name: "Reiki Master — tradiție japoneză (Usui)",
+      year: "Certificare Profesională",
+      icon: "reiki",
+      description: "Master Reiki în tradiția japoneză Usui."
+    },
+    {
+      name: "Specialistă în nutriție celulară",
+      year: "Certificare Profesională",
+      icon: "nutrition",
+      description: "Formare specializată în nutriție celulară și optimizare metabolică."
+    },
+    {
+      name: "Formator autorizat — Apă Kangen",
+      year: "Certificare Profesională",
+      icon: "kangen",
+      description: "Formator autorizat pentru educație despre apa Kangen."
+    },
+    {
+      name: "Trainer & Formator; Consilier de dezvoltare personală",
+      year: "Certificare Profesională",
+      icon: "trainer",
+      description: "Certificare ca trainer formator și consilier de dezvoltare personală."
+    },
+    {
+      name: "Certificată în ThetaHealing® și tehnica Ho'oponopono",
+      year: "Certificare Profesională",
+      icon: "theta",
+      description: "Certificare în ThetaHealing® și tehnica tradițională Ho'oponopono."
     }
   ];
 
@@ -90,8 +120,8 @@ export default function DespreNoi() {
               </div>
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
-                  alt="Filozofia holistică Holist Bella" 
+                  src="https://raw.githubusercontent.com/teonegura21/HolistBella/main/client/public/cabinet.jpg"
+                  alt="Cabinet Holist Bella" 
                   className="rounded-lg shadow-lg w-full h-auto"
                 />
               </div>
@@ -143,6 +173,56 @@ export default function DespreNoi() {
                   </div>
                 </div>
               </div>
+            </div>
+          </section>
+
+          {/* Studii universitare */}
+          <section>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                Studii
+              </h2>
+            </div>
+            <div className="max-w-4xl mx-auto space-y-6">
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-start">
+                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                      <Award className="w-6 h-6 text-blue-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg mb-2">Bowen Therapy Academy of Australia — Certificată în terapia Bowen — nivel Master</h3>
+                      <p className="text-gray-600">Certificare internațională în terapia Bowen la nivel avansat</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-start">
+                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                      <Award className="w-6 h-6 text-blue-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg mb-2">Studii universitare de licență — Specializarea: Management</h3>
+                      <p className="text-gray-600">Universitatea "Alexandru Ioan Cuza" din Iași — FEAA (Facultatea de Economie și Administrarea Afacerilor)</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-start">
+                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                      <Award className="w-6 h-6 text-blue-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg mb-2">Studii universitare de master — Management</h3>
+                      <p className="text-gray-600">Universitatea "Alexandru Ioan Cuza" din Iași — FEAA</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </section>
 
