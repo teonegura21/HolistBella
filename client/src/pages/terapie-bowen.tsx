@@ -9,10 +9,12 @@ import {
 } from "@/components/services";
 import { Heart, Zap, Smile, Activity } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
+import { CONTACT_INFO } from "@/lib/constants";
 
 export default function TerapieBowen() {
   const handlePrimaryClick = () => {
     trackEvent("terapie_bowen_cta", "service_page", "whatsapp_click");
+    window.open(CONTACT_INFO.whatsapp, "_blank");
   };
 
   return (
@@ -467,12 +469,12 @@ export default function TerapieBowen() {
       {/* CTA Final */}
       <ServiceCTA
         heading="Pregătit să Experimentezi Relaxarea Profundă?"
-        description="Descoperă cum Terapia Bowen poate transforma starea ta de bine. Programează o consultație gratuită și primești un plan personalizat adaptat nevoilor tale."
+        description="Descoperă cum Terapia Bowen poate transforma starea ta de bine. Programează o consultație și primești un plan personalizat adaptat nevoilor tale."
         gradientFrom="green-600"
         gradientTo="emerald-600"
         ctaPrimary="Programează Consultația prin WhatsApp"
         trustSignals={[
-          "✨ Consultație și evaluare gratuită",
+          "✨ Consultație și evaluare",
           "📞 Răspundem în maxim 2 ore",
           "🌿 Terapie blândă și non-invazivă",
         ]}

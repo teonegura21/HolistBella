@@ -9,10 +9,12 @@ import {
 } from "@/components/services";
 import { Atom, Shield, Dna, Heart, Brain, Activity } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
+import { CONTACT_INFO } from "@/lib/constants";
 
 export default function NutritieCelulara() {
   const handlePrimaryClick = () => {
     trackEvent("nutritie_celulara_cta", "service_page", "whatsapp_click");
+    window.open(CONTACT_INFO.whatsapp, "_blank");
   };
 
   return (
@@ -28,7 +30,7 @@ export default function NutritieCelulara() {
         badge="🧬 Protocol Științific Avansat"
         title="Nutriție Celulară"
         titleHighlight="Optimizare la Nivel Molecular"
-        description="Descoperă puterea nutriției precision medicine pentru revitalizarea completă a organismului. Protocoluri personalizate bazate pe analize avansate și cercetări în longevitate celulară."
+        description="Descoperă puterea nutriției celulare pentru revitalizarea completă a organismului. Protocoluri personalizate bazate pe analize avansate și cercetări în longevitate celulară."
         stats={[
           { number: "89%", label: "Funcție mitocondrială" },
           { number: "90", label: "Zile protocol complet" },
@@ -235,14 +237,9 @@ export default function NutritieCelulara() {
               "Mulți clienți observă îmbunătățiri în energie și claritate mentală în primele 2-3 săptămâni. Rezultatele complete, inclusiv în biomarkeri, se văd după 60-90 zile de implementare consistentă. Monitorizarea periodică ajută la ajustări optime.",
           },
           {
-            question: "Ce analize sunt necesare?",
-            answer:
-              "Se recomandă analize de sânge complete (profil metabolic, markeri inflamatori, funcție hepatică, stres oxidativ) pentru a personaliza protocolul. Acestea ajută la identificarea zonelor specifice de optimizare și la monitorizarea progresului.",
-          },
-          {
             question: "Pot combina cu alte tratamente?",
             answer:
-              "Da, nutriția celulară completează perfect alte terapii (Bowen, Healy, etc.). Protocolul este conceput să se integreze armonios cu tratamentele existente, maximizând rezultatele și susținând procesele naturale de vindecare.",
+              "Da, nutriția celulară completează perfect alte terapii (Andullation , Healy, Bowen etc.). Protocolul este conceput să se integreze armonios cu tratamentele existente, maximizând rezultatele și susținând procesele naturale de vindecare.",
           },
         ]}
         layout="cards"
@@ -251,12 +248,12 @@ export default function NutritieCelulara() {
       {/* CTA Final */}
       <ServiceCTA
         heading="Optimizează-ți Potențialul Genetic"
-        description="Descoperă cum nutriția precision medicine poate revoluționa sănătatea ta la nivel celular. Programează o consultație și primești primul set de analize gratuit."
+        description="Descoperă cum nutriția precision medicine poate revoluționa sănătatea ta la nivel celular. Programează o consultație pentru evaluare și protocol personalizat."
         gradientFrom="violet-600"
         gradientTo="violet-800"
         ctaPrimary="Programează Consultația prin WhatsApp"
         trustSignals={[
-          "✨ Analize și evaluare inițială gratuite",
+          "✨ Analize și evaluare inițială",
           "📞 Suport continuu pe parcursul protocolului",
           "🧬 Protocol personalizat bazat pe analize",
         ]}

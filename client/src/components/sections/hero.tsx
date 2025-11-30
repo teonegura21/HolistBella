@@ -43,7 +43,7 @@ export default function Hero() {
           
           {/* Subtitle */}
           <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed">
-            La Holist Bella Iași, combinăm tehnici avansate cu o abordare personalizată pentru a-ți reactiva potențialul natural de vindecare.
+            La Holist Bella Iași, combinăm tehnici avansate cu o abordare personalizată pentru a-ți susține procesele naturale de regenerare și echilibru.
           </p>
           
           {/* CTA Buttons */}
@@ -54,7 +54,7 @@ export default function Hero() {
               className="px-10 py-5 text-lg bg-secondary hover:bg-secondary/90 text-primary font-bold"
             >
               <Link href="/programari">
-                Programează o ședință de evaluare
+                Programează o consultație
               </Link>
             </Button>
             

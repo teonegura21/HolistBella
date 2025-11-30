@@ -8,7 +8,7 @@ export default function Servicii() {
   const services = [
     {
       title: "Terapie Andullation",
-      description: "Tehnologie germană care combină vibrații stocastice cu căldură infraroșie pentru relaxare musculară și stimulare circulatorie.",
+      description: "Tehnologie germană non-invazivă pentru reducerea durerii, relaxare neuromusculară și echilibru emoțional — ajută la gestionarea stresului și la îmbunătățirea somnului prin stimularea microcirculației. Susține procesele naturale de recuperare. Abordare bazată pe evidențe clinice.",
       link: "/andullation",
       image: "https://raw.githubusercontent.com/teonegura21/HolistBella/main/client/public/andullation-correct.png"
     },
@@ -41,6 +41,12 @@ export default function Servicii() {
       description: "Suplimente alimentare sub formă de drajeuri cu extracte naturale concentrate pentru suport nutritiv celular.",
       link: "/nutritie-celulara",
       image: "/apl-nutritie.png"
+    },
+    {
+      title: "Alte Servicii",
+      description: "Terapii energetice complementare: Theta Healing pentru transformarea convingerilor, Access Bars pentru eliberare mentală, și Reiki pentru echilibrare spirituală.",
+      link: "/alte-servicii",
+      image: "/energy-healing.jpg"
     }
   ];
 

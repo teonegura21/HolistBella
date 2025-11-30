@@ -9,10 +9,12 @@ import {
 } from "@/components/services";
 import { Zap, Target, TrendingUp, Radio, Shield, AlertCircle } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
+import { CONTACT_INFO } from "@/lib/constants";
 
 export default function Biorezonanta() {
   const handlePrimaryClick = () => {
     trackEvent("biorezonanta_cta", "service_page", "whatsapp_click");
+    window.open(CONTACT_INFO.whatsapp, "_blank");
   };
 
   return (
@@ -41,8 +43,8 @@ export default function Biorezonanta() {
 
       {/* Beneficii Principale */}
       <BenefitCards
-        heading="Cum Te Poate Ajuta Biorezonanța"
-        description="O abordare complementară pentru înțelegerea stării tale de sănătate la nivel energetic"
+        heading="Ce este Biorezonanța și cum te poate Ajuta"
+        description="Biorezonanța reprezintă o tehnică non-invazivă de diagnostic și tratament care se bazează pe utilizarea unor dispozitive specializate destinate măsurării și analizei frecvențelor electromagnetice generate de diferitele structuri ale organismului. Principiul acestei metode constă în faptul că fiecare organ și celulă din corpul uman emit vibrații la o frecvență caracteristică, iar modificările în aceste frecvențe pot semnala existența unor disfuncții. Prin evaluarea și raportarea acestora la valorile de referință, pot fi detectate tulburările de sănătate înaintea apariției simptomatologiei manifeste."
         benefits={[
           {
             icon: Zap,
@@ -81,7 +83,7 @@ export default function Biorezonanta() {
               Evaluarea Completă prin Biorezonanță
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              Scanare comprehensivă a tuturor sistemelor corporale pentru o imagine completă a stării tale de sănătate energetică
+              Scanare detaliată a tuturor sistemelor corporale pentru o imagine completă a stării tale de sănătate energetică
             </p>
           </div>
 
@@ -104,7 +106,14 @@ export default function Biorezonanta() {
                   "Alergii și intoleranțe", 
                   "Metale grele",
                   "Aminoacizi și coenzime",
-                  "Ochi și piele"
+                  "Ochi și piele",
+                  "Prostata",
+                  "Calități fizice fundamentale",
+                  "Toxine",
+                  "Oligoelemente",
+                  "Metale grele",
+                  "Coenzime",
+                  "Elemente ale corpului uman"
                 ].map((item, index) => (
                   <div key={index} className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-purple-100 hover:shadow-md transition-shadow">
                     <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-violet-500 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
@@ -183,10 +192,9 @@ export default function Biorezonanta() {
             number: "1",
             title: "Pregătire și Confort",
             description:
-              "Te așezi confortabil și ții în mână electrozi conectați la aparatul de biorezonanță. Nu există nicio disconfort sau senzație neplăcută în timpul procesului.",
+              "Te așezi confortabil și ești conectat(ă) la aparatul de biorezonanță. Procedura este non-invazivă, fără durere și fără niciun disconfort.",
             elements: [
               "Instalare confortabilă",
-              "Conectare electrozi la nivelul mâinilor",
               "Explicarea procesului de scanare",
             ],
           },
@@ -406,14 +414,9 @@ export default function Biorezonanta() {
         description="Răspunsuri clare și oneste la cele mai comune întrebări"
         faqs={[
           {
-            question: "Ce este biorezonanța și cum funcționează?",
+            question: "Cum funcționează Biorezonanta?",
             answer:
               "Biorezonanța se bazează pe principiul că fiecare celulă și organ emite un spectru specific de frecvențe electromagnetice. Aparatul de biorezonanță măsoară aceste frecvențe și le compară cu un model de referință pentru a detecta deviațiile, care sunt interpretate ca dezechilibre energetice. Este o metodă de evaluare funcțională complementară.",
-          },
-          {
-            question: "Biorezonanța poate diagnostica boli sau cancer?",
-            answer:
-              "Nu, categoric nu. Biorezonanța este o metodă de evaluare funcțională complementară, NU o metodă de diagnostic medical. Nu poate diagnostica boli sau cancer. Pentru diagnostic medical, este necesar să consultați un medic calificat care va folosi metode validate medical.",
           },
           {
             question: "Ce primesc la finalul ședinței de biorezonanță?",
@@ -423,12 +426,12 @@ export default function Biorezonanta() {
           {
             question: "Cât durează o ședință completă de biorezonanță?",
             answer:
-              "Întregul proces durează aproximativ 90-120 de minute: pregătirea (5 min), scanarea automată (60-90 min) și interpretarea cu recomandări (20-30 min). Scanarea în sine este complet automată, nedureroasă și nu necesită nicio acțiune din partea ta.",
+              "Întregul proces durează aproximativ 90-120 de minute. Scanarea în sine este complet automată, nedureroasă și nu necesită nicio acțiune din partea ta.",
           },
           {
             question: "Este sigură biorezonanța? Simt ceva în timpul scanării?",
             answer:
-              "Da, biorezonanța este considerată sigură și complet non-invazivă. În timpul scanării nu vei simți nicio durere sau disconfort. Unii clienți raportează o senzație subtilă de relaxare. Procesul este pasiv - ții doar electrozii în mâini în timp ce aparatul scanează.",
+              "Da, biorezonanța este considerată sigură și complet non-invazivă. În timpul scanării nu vei simți nicio durere sau disconfort. Unii clienți raportează o senzație subtilă de relaxare.",
           },
           {
             question: "Cât de des trebuie să fac reevaluări?",

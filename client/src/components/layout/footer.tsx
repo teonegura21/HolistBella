@@ -7,21 +7,17 @@ export default function Footer() {
 
   const quickLinks = [
     { title: "Acasă", href: "/" },
-    { title: "Despre Noi", href: "/despre" },
-    { title: "Apă Kangen", href: "/apa-kangen" },
-    { title: "Biorezonanță", href: "/biorezonanta" },
-    { title: "Andullation", href: "/andullation" },
-    { title: "Healy", href: "/healy" },
-    { title: "Alte Servicii", href: "/alte-servicii" }
+    { title: "Despre Noi", href: "/despre-noi" }
   ];
 
   const servicii = [
-    "Terapie Bowen",
-    "Reiki Healing", 
-    "Nutriție Celulară",
-    "Biorezonanță Magnetică",
-    "Echilibrare Energetică",
-    "Detoxifiere Naturală"
+    { title: "Andullation", href: "/andullation" },
+    { title: "Biorezonanță", href: "/biorezonanta" },
+    { title: "Healy", href: "/healy" },
+    { title: "Terapia Bowen", href: "/terapie-bowen" },
+    { title: "Apă Kangen", href: "/apa-kangen" },
+    { title: "Nutriție Celulară", href: "/nutritie-celulara" },
+    { title: "Alte Servicii", href: "/alte-servicii" }
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -95,12 +91,15 @@ export default function Footer() {
             <div>
               <h4 className="text-lg font-semibold mb-6 text-white">Serviciile Noastre</h4>
               <ul className="space-y-3">
-                {servicii.map((serviciu, index) => (
-                  <li key={index} className="text-gray-300 text-sm">
-                    <div className="flex items-center">
-                      <div className="w-2 h-2 bg-healing-green rounded-full mr-3 opacity-60" />
-                      {serviciu}
-                    </div>
+                {servicii.map((serviciu) => (
+                  <li key={serviciu.href}>
+                    <Link 
+                      href={serviciu.href} 
+                      className="text-gray-300 hover:text-healing-green transition-colors cursor-pointer"
+                      data-testid={`footer-link-${serviciu.href.replace('/', '')}`}
+                    >
+                      {serviciu.title}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -157,25 +156,18 @@ export default function Footer() {
                 Începe Călătoria Către Wellness Astăzi
               </h3>
               <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-                Programează o consultație gratuită și descoperă cum putem să-ți transformăm viața 
+                Programează o consultație și descoperă cum putem să-ți transformăm viața 
                 prin puterea medicinei holiste.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button
-                  onClick={() => scrollToSection("contact")}
-                  className="bg-white text-healing-green hover:bg-gray-50 px-8 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
-                  data-testid="button-schedule-consultation"
-                >
-                  Programează Consultația
-                </button>
                 <a
                   href={CONTACT_INFO.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 px-8 py-3 rounded-full font-semibold transition-all duration-300 border border-white/30"
+                  className="bg-white text-healing-green hover:bg-gray-50 px-8 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
                   data-testid="link-whatsapp-direct"
                 >
-                  WhatsApp Direct
+                  Programează
                 </a>
               </div>
             </div>

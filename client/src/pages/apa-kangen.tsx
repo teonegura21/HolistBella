@@ -9,10 +9,12 @@ import {
 } from "@/components/services";
 import { Droplets, Shield, Heart, Zap, Award, AlertCircle } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
+import { CONTACT_INFO } from "@/lib/constants";
 
 export default function ApaKangen() {
   const handlePrimaryClick = () => {
     trackEvent("apa_kangen_cta", "service_page", "whatsapp_click");
+    window.open(CONTACT_INFO.whatsapp, "_blank");
   };
 
   return (
@@ -78,6 +80,20 @@ export default function ApaKangen() {
         columns={4}
         colorScheme="blue"
       />
+
+      <section className="py-10 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Apa Kangen este bogată în anti-oxidanți, apă sănătoasă pentru revitalizarea celulelor și o alternativă sănătoasă a apei potabile și apei îmbuteliate
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Apa Kangen (apa alcalină)Aparatele de apă Enagic® filtrează clorul și alte impurități care se găsesc în apa potabilă, apoi separă hidrogenul și oxigenul printr-un proces cunoscut drept electroliză. Acest proces adaugă un electron hidrogenului, formând o nouă moleculă numită gaz diatomic de hidrogen molecular. Când această moleculă este adăugată apei de la robinet, rezultă apa alcalină Kangen® puternic antioxidantă.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            Oxidantul, prin definiție, este un agent de oxidare, în timp ce anti-oxidantul este orice substanță care încetinește sau previne oxidarea unei alte substanțe chimice.
+          </p>
+        </div>
+      </section>
 
       {/* Ce este apa Kangen? */}
       <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
@@ -835,14 +851,14 @@ export default function ApaKangen() {
       {/* CTA Final */}
       <ServiceCTA
         heading="Transformă-ți Hidratarea Zilnică?"
-        description="Descoperă cum apa Kangen poate îmbunătăți hidratarea, digestia și echilibrul metabolic. Programează o consultație gratuită pentru a înțelege beneficiile specifice nevoilor tale."
+        description="Descoperă cum apa Kangen poate îmbunătăți hidratarea, digestia și echilibrul metabolic. Programează o consultație pentru a înțelege beneficiile specifice nevoilor tale."
         gradientFrom="blue-600"
         gradientTo="teal-600"
         ctaPrimary="Programează Consultația prin WhatsApp"
         trustSignals={[
           "✨ Aprobat medical Japonia & Coreea",
           "💧 Hidratare celulară superioară",
-          "📞 Consultanță personalizată gratuită",
+          "📞 Consultanță personalizată",
         ]}
         onPrimaryClick={handlePrimaryClick}
       />

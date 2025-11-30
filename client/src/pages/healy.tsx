@@ -9,10 +9,12 @@ import {
 } from "@/components/services";
 import { Zap, Heart, Brain, Activity, Shield, AlertCircle } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
+import { CONTACT_INFO } from "@/lib/constants";
 
 export default function Healy() {
   const handlePrimaryClick = () => {
     trackEvent("healy_cta", "service_page", "whatsapp_click");
+    window.open(CONTACT_INFO.whatsapp, "_blank");
   };
 
   return (
@@ -26,9 +28,9 @@ export default function Healy() {
       {/* Hero Section */}
       <ServiceHero
         badge="🔋 Distribuitor Oficial & Terapeut Certificat"
-        title="HEALY - Revoluția Wellness-ului Personal"
-        titleHighlight="Terapie Profesională & Achiziție Aparate Originale"
-        description="Descoperă puterea HEALY - tehnologia germană de vârf pentru armonizare bioenergetică. Beneficiază de terapie profesională în cabinet și online și achiziționează aparatul tău HEALY original pentru wellness acasă."
+        title="HEALY"
+        titleHighlight="Terapie cu frecvențe personalizate și microcurenți pentru recuperare și echilibru"
+        description="Descoperă puterea HEALY - tehnologia germană de vârf pentru armonizare bioenergetică. Beneficiază de terapie profesională în cabinet și online sau achiziționează aparatul tău HEALY original pentru wellness acasă."
         stats={[
           { number: "30-60", label: "Minute ședință" },
           { number: "200+", label: "Programe specializate" },
@@ -83,7 +85,7 @@ export default function Healy() {
               <Heart className="w-8 h-8 text-white" />
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Healy - Sănătate și Echilibru Fizic și Mental
+              Healy — Sănătate & echilibru fizic și mental
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Primul dispozitiv portabil terapeutic activ cu Medical Cloud pentru wellness holistic
@@ -637,7 +639,7 @@ export default function Healy() {
           {
             question: "Ce programe sunt disponibile în Healy?",
             answer:
-              "Healy conține peste 100 de programe specializate, inclusiv pentru managementul durerii, relaxare, somn, concentrare, fitness, echilibru emoțional și susținerea stării de bine generală. Programele sunt grupate în categorii specifice.",
+              "Healy conține peste 200 de programe specializate, inclusiv pentru managementul durerii, relaxare, somn, concentrare, fitness, echilibru emoțional și susținerea stării de bine generală. Programele sunt grupate în categorii specifice.",
           },
           {
             question: "Pot folosi Healy acasă?",
