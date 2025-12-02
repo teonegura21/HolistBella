@@ -95,6 +95,171 @@ The development server will automatically handle both frontend and backend, with
 ### Available Scripts
 
 - `npm run dev` - Start development server with hot reload
-- `npm run build` - Build the application for production
+- `npm run build` - Build the complete application for production (client + server)
+- `npm run build:client` - Build only the frontend static files (for static hosting)
+- `npm run build:server` - Build only the backend Node.js application
 - `npm run start` - Start the production server
 - `npm run check` - Run TypeScript type checking
+
+### Build Outputs
+
+After running the build commands, you'll find the built files in the following locations:
+
+- **Frontend (Static Files)**: `dist/public/`
+  - Contains: `index.html`, `assets/` folder with minified CSS and JS
+  - These files are ready to be uploaded to any static web hosting
+
+- **Backend (Node.js Server)**: `dist/index.js`
+  - Bundled Node.js application
+  - Serves both API endpoints and static frontend files in production
+
+---
+
+## Deployment on Hosterion
+
+This project is configured for easy deployment on Hosterion hosting. There are two deployment options depending on your hosting plan:
+
+### Option 1: Static Frontend Deployment (Recommended for Basic Plans)
+
+This is the simplest option - deploy only the frontend as static files. The backend features will not be available with this option.
+
+#### Manual Deployment
+
+1. **Build the frontend:**
+   ```bash
+   npm run build:client
+   ```
+
+2. **Upload files to Hosterion:**
+   - Connect to your hosting via FTP/SFTP:
+     - Host: `holistbella.ro` (or `92.114.98.33` initially)
+     - Username: Your cPanel username
+     - Password: Your cPanel password
+   - Navigate to the `public_html` folder
+   - Upload **all contents** from the `dist/public/` folder (not the folder itself)
+   - Your `public_html` should contain: `index.html`, `assets/`, etc.
+
+3. **Access your site:**
+   - Visit `https://www.holistbella.ro`
+
+#### Automated Deployment with GitHub Actions
+
+The repository includes a GitHub Actions workflow that automatically deploys your site when you push to the `main` branch.
+
+**Setup Instructions:**
+
+1. **Configure GitHub Secrets:**
+   - Go to your GitHub repository
+   - Navigate to: `Settings` → `Secrets and variables` → `Actions`
+   - Click `New repository secret` and add each of the following:
+
+   | Secret Name | Value |
+   |-------------|-------|
+   | `HOSTERION_HOST` | `holistbella.ro` (or `92.114.98.33`) |
+   | `HOSTERION_USERNAME` | `holistbe` |
+   | `HOSTERION_PASSWORD` | Your hosting password |
+
+2. **Deploy:**
+   ```bash
+   git add .
+   git commit -m "Your changes"
+   git push origin main
+   ```
+
+3. **Monitor deployment:**
+   - Go to the `Actions` tab in your GitHub repository
+   - Watch the deployment workflow execute
+   - Once complete (green checkmark), your site is live!
+
+**Note:** The workflow uses FTPS (FTP over SSL) on port 21. If deployment fails, verify that your hosting supports FTPS.
+
+---
+
+### Option 2: Full-Stack Node.js Deployment
+
+If your Hosterion plan supports Node.js applications (available in the cPanel "Setup Node.js App" section), you can deploy the complete application with backend functionality.
+
+#### Prerequisites
+
+- Hosterion plan with Node.js support
+- SSH access to your hosting account (request from Hosterion support if needed)
+
+#### Deployment Steps
+
+1. **Build the complete application:**
+   ```bash
+   npm run build
+   ```
+   This creates both `dist/public/` (frontend) and `dist/index.js` (backend).
+
+2. **Upload files via SFTP/SSH:**
+   - Upload the entire project to your hosting (e.g., `/home/holistbe/holistbella/`)
+   - Include: `dist/`, `node_modules/`, `package.json`, `package-lock.json`
+
+   **Alternative:** Upload only necessary files and run `npm install` on the server:
+   - Upload: `dist/`, `package.json`, `package-lock.json`
+   - SSH into your server and run:
+     ```bash
+     cd ~/holistbella
+     npm install --production
+     ```
+
+3. **Configure Node.js Application in cPanel:**
+   - Log into cPanel: `https://pontus.hosterion.net:2083/`
+   - Navigate to: `Software` → `Setup Node.js App`
+   - Click `Create Application`
+   - Configure:
+     - **Node.js version**: 20.x or latest LTS
+     - **Application mode**: Production
+     - **Application root**: Path to your project folder (e.g., `holistbella`)
+     - **Application URL**: `holistbella.ro` (or your domain)
+     - **Application startup file**: `dist/index.js`
+     - **Environment variables**: Add `PORT` (cPanel will auto-assign, or use the suggested port)
+
+4. **Start the application:**
+   - Click `Save` in cPanel
+   - The application should start automatically
+   - Monitor the application status in the Node.js App manager
+
+5. **Access your site:**
+   - Visit `https://www.holistbella.ro`
+   - Both frontend and backend features should now work
+
+#### Updating the Node.js Application
+
+When you make changes:
+
+1. Build locally: `npm run build`
+2. Upload the new `dist/` folder to your server
+3. In cPanel Node.js App manager, click `Restart` on your application
+
+---
+
+### Troubleshooting
+
+**Static Deployment Issues:**
+- **404 errors on refresh**: Make sure your web server is configured to redirect all requests to `index.html` (for client-side routing)
+- **Missing styles/images**: Verify you uploaded the contents of `dist/public/`, not the folder itself
+
+**Node.js Deployment Issues:**
+- **Application won't start**: Check Node.js version (should be 18.x or higher)
+- **Port conflicts**: Ensure the PORT environment variable is set correctly in cPanel
+- **Module errors**: Run `npm install --production` on the server to ensure dependencies are installed
+
+**GitHub Actions Issues:**
+- **Authentication failed**: Double-check your GitHub Secrets are set correctly
+- **Connection timeout**: Try using the IP address `92.114.98.33` instead of the domain name in `HOSTERION_HOST`
+- **Permission denied**: Verify your FTP user has write permissions to `public_html/`
+
+---
+
+### Domain Configuration
+
+Your domain `holistbella.ro` is already configured with Hosterion's nameservers:
+- `ns1.hosterion.net`
+- `ns2.hosterion.net`
+- `ns1.hosterion.com`
+- `ns2.hosterion.com`
+
+DNS propagation can take up to 48 hours. Until then, you can access your site via the temporary URL or IP address.
+
