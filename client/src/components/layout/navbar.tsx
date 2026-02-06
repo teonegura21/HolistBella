@@ -166,7 +166,7 @@ export default function Navbar() {
           <div className="md:hidden">
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="sm">
+                <Button variant="ghost" size="sm" aria-label="Deschide meniul principal">
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>

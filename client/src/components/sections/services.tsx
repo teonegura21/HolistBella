@@ -55,7 +55,7 @@ export default function Services() {
       subtitle: "Evaluare Energetică Funcțională",
       description: "Biorezonanța este o metodă modernă, non-invazivă, de scanare a frecvențelor organismului pentru identificarea potențialelor dezechilibre și surse de stres.",
       benefits: ["Identificare dezechilibre si surse de stres", "Plan de echilibrare", "Monitorizare progres"],
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      image: "/biorezonanta-device.jpg",
       color: "from-purple-400 to-violet-500",
       price: "De la 200 RON",
       duration: "60-90 min"
@@ -68,7 +68,7 @@ export default function Services() {
       subtitle: "Armonizare și Vitalitate",
       description: "Dispozitiv portabil cu microcurenți și frecvențe pentru susținerea echilibrului bioenergetic și managementul durerii.",
       benefits: ["Management durere", "Susținere relaxare", "Suport somn și concentrare"],
-      image: "https://images.unsplash.com/photo-1559757195-3d4a6b2c6c1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      image: "/healy-device.jpg",
       color: "from-yellow-400 to-orange-500",
       price: "De la 180 RON",
       duration: "20-60 min"
@@ -81,7 +81,7 @@ export default function Services() {
       subtitle: "Optimizează-ți Hidratarea Zilnică",
       description: "Apă filtrată și ionizată pentru hidratare eficientă, suport al echilibrului pH și versatilitate în uz casnic.",
       benefits: ["Hidratare optimă", "Reducere plastic", "Versatilitate pH"],
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      image: "/kangen-water.jpg",
       color: "from-blue-400 to-cyan-500",
       price: "Consultație gratuită",
       duration: "Program personalizat"
@@ -94,7 +94,7 @@ export default function Services() {
       subtitle: "Reechilibrare Neuromusculară Blândă",
       description: "Tehnică manuală subtilă care activează procesul natural de auto-vindecare prin mișcări delicate pe mușchi și tendoane.",
       benefits: ["Relaxare profundă", "Ameliorarea durerii", "Îmbunătățirea mobilității"],
-      image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      image: "/bowen-therapy.jpg",
       color: "from-green-400 to-emerald-500",
       price: "De la 150 RON",
       duration: "50-60 min"
@@ -107,7 +107,7 @@ export default function Services() {
       subtitle: "Suport pentru vitalitate și stil de viață activ",
       description: "Remedii energo informaționale, suplimente alimentare cu extracte naturale concentrate, concepute să susțină nutriția la nivel celular — pentru energie, recuperare și echilibru zilnic.",
       benefits: ["Suport pentru vitalitate", "Ușor de utilizat, oriunde și oricând", "Gamă variată de formule, adaptate nevoilor tale"],
-      image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      image: "/apl-nutritie.png",
       color: "from-pink-400 to-rose-500",
       price: "De la 100 RON",
       duration: "Consultație 30 min"

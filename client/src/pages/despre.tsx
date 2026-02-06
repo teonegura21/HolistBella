@@ -89,7 +89,7 @@ export default function DesprePage() {
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
+                src="/cover-cabinet.jpg" 
                 alt="Filozofia holistică Holist Bella" 
                 className="rounded-lg shadow-lg w-full h-auto"
               />
@@ -113,7 +113,7 @@ export default function DesprePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500" 
+                src="/landingpage-photo.jpg" 
                 alt="Angelica Negura - Terapeut Holist Bella" 
                 className="rounded-lg shadow-lg w-full h-auto"
               />
@@ -186,7 +186,7 @@ export default function DesprePage() {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
+                src="/cabinet.jpg" 
                 alt="Angelica Negura" 
                 className="rounded-2xl shadow-2xl"
               />
@@ -279,7 +279,7 @@ export default function DesprePage() {
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=500" 
+                src="/hero-background.jpg" 
                 alt="Certific─âri medicale" 
                 className="rounded-2xl shadow-lg"
               />

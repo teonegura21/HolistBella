@@ -6,9 +6,25 @@ declare global {
   }
 }
 
+const ensureGtagStub = () => {
+  if (typeof window === 'undefined') return;
+
+  if (!window.dataLayer) {
+    window.dataLayer = [];
+  }
+
+  if (!window.gtag) {
+    window.gtag = (...args: any[]) => {
+      window.dataLayer.push(args);
+    };
+  }
+};
+
 // Initialize Google Analytics with GDPR compliance and idempotency
 export const initGA = () => {
   const measurementId = import.meta.env.VITE_GA_MEASUREMENT_ID;
+
+  ensureGtagStub();
 
   if (!measurementId) {
     console.warn('Missing required Google Analytics key: VITE_GA_MEASUREMENT_ID');
@@ -57,11 +73,11 @@ export const initGA = () => {
 
 // Track page views - useful for single-page applications
 export const trackPageView = (url: string) => {
-  if (typeof window === 'undefined' || !window.gtag) return;
-  
+  if (typeof window === 'undefined') return;
+
   const measurementId = import.meta.env.VITE_GA_MEASUREMENT_ID;
-  if (!measurementId) return;
-  
+  if (!measurementId || !window.gtag) return;
+
   window.gtag('config', measurementId, {
     page_path: url
   });
@@ -74,8 +90,11 @@ export const trackEvent = (
   label?: string, 
   value?: number
 ) => {
-  if (typeof window === 'undefined' || !window.gtag) return;
-  
+  if (typeof window === 'undefined') return;
+
+  const measurementId = import.meta.env.VITE_GA_MEASUREMENT_ID;
+  if (!measurementId || !window.gtag) return;
+
   window.gtag('event', action, {
     event_category: category,
     event_label: label,

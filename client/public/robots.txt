@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+Disallow: /server/
+
+# Prioritize core service pages
+Allow: /terapie-bowen
+Allow: /biorezonanta
+Allow: /andullation
+Allow: /healy
+Allow: /apa-kangen
+Allow: /nutritie-celulara
+Allow: /preturi-si-abonamente
+Allow: /servicii
+Allow: /resurse
+Allow: /programari
+Allow: /testimoniale
+Allow: /contact
+
+Sitemap: https://holistbella.ro/sitemap.xml
+Host: holistbella.ro

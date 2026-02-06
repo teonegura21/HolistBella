@@ -1,5 +1,35 @@
-import { useState } from "react";
-import { Play, Pause } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Play } from "lucide-react";
+
+type VideoConfig = {
+    id: 1 | 2;
+    sources: string[];
+    title: string;
+    description: string;
+};
+
+const videos: VideoConfig[] = [
+    {
+        id: 1,
+        sources: [
+            "/andullation-therapy-demo-1-720p.mp4",
+            "/andullation-therapy-demo-1-480p.mp4",
+            "/andullation-therapy-demo-1.mp4",
+        ],
+        title: "Demonstrație Terapie Andullation - Partea 1",
+        description: "Prezentarea dispozitivului medical și a tehnologiei de vibrații multidirecționale",
+    },
+    {
+        id: 2,
+        sources: [
+            "/andullation-therapy-demo-2-720p.mp4",
+            "/andullation-therapy-demo-2-480p.mp4",
+            "/andullation-therapy-demo-2.mp4",
+        ],
+        title: "Demonstrație Terapie Andullation - Partea 2",
+        description: "Aplicare practică și beneficiile terapiei Andullation",
+    },
+];
 
 export default function VideoShowcase() {
     const [activeVideo, setActiveVideo] = useState<1 | 2>(1);
@@ -7,23 +37,51 @@ export default function VideoShowcase() {
         1: false,
         2: false,
     });
+    const [shouldLoad, setShouldLoad] = useState<{ 1: boolean; 2: boolean }>({
+        1: false,
+        2: false,
+    });
+    const [sourceIndex, setSourceIndex] = useState<{ 1: number; 2: number }>({ 1: 0, 2: 0 });
+    const [videoSrc, setVideoSrc] = useState<{ 1: string; 2: string }>(() => ({
+        1: videos.find((v) => v.id === 1)?.sources[0] || "",
+        2: videos.find((v) => v.id === 2)?.sources[0] || "",
+    }));
 
-    const videos = [
-        {
-            id: 1 as const,
-            src: "/andullation-therapy-demo-1.mp4",
-            title: "Demonstrație Terapie Andullation - Partea 1",
-            description: "Prezentarea dispozitivului medical și a tehnologiei de vibrații multidirecționale",
-        },
-        {
-            id: 2 as const,
-            src: "/andullation-therapy-demo-2.mp4",
-            title: "Demonstrație Terapie Andullation - Partea 2",
-            description: "Aplicare practică și beneficiile terapiei Andullation",
-        },
-    ];
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    const id = Number((entry.target as HTMLElement).dataset.videoId) as 1 | 2;
+                    if (entry.isIntersecting) {
+                        setShouldLoad((prev) => (prev[id] ? prev : { ...prev, [id]: true }));
+                    }
+                });
+            },
+            { rootMargin: "200px 0px" }
+        );
+
+        videos.forEach((video) => {
+            const node = document.getElementById(`video-shell-${video.id}`);
+            if (node) observer.observe(node);
+        });
+
+        return () => observer.disconnect();
+    }, []);
+
+    const handleError = (videoId: 1 | 2) => {
+        const videoConfig = videos.find((v) => v.id === videoId);
+        if (!videoConfig) return;
+
+        const nextIndex = sourceIndex[videoId] + 1;
+        const nextSrc = videoConfig.sources[nextIndex];
+        if (!nextSrc) return;
+
+        setSourceIndex((prev) => ({ ...prev, [videoId]: nextIndex }));
+        setVideoSrc((prev) => ({ ...prev, [videoId]: nextSrc }));
+    };
 
     const togglePlay = (videoId: 1 | 2) => {
+        setShouldLoad((prev) => ({ ...prev, [videoId]: true }));
         const video = document.getElementById(`video-${videoId}`) as HTMLVideoElement;
         if (video) {
             if (isPlaying[videoId]) {
@@ -42,7 +100,10 @@ export default function VideoShowcase() {
                 {videos.map((video) => (
                     <button
                         key={video.id}
-                        onClick={() => setActiveVideo(video.id)}
+                        onClick={() => {
+                            setActiveVideo(video.id);
+                            setShouldLoad((prev) => ({ ...prev, [video.id]: true }));
+                        }}
                         className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${activeVideo === video.id
                                 ? "bg-gradient-to-r from-blue-600 to-teal-600 text-white shadow-lg scale-105"
                                 : "bg-white text-gray-700 hover:bg-gray-50 shadow-md"
@@ -61,6 +122,8 @@ export default function VideoShowcase() {
                 {videos.map((video) => (
                     <div
                         key={video.id}
+                        id={`video-shell-${video.id}`}
+                        data-video-id={video.id}
                         className={`transition-all duration-500 ${activeVideo === video.id
                                 ? "opacity-100 relative"
                                 : "opacity-0 absolute top-0 left-0 w-full pointer-events-none"
@@ -79,12 +142,14 @@ export default function VideoShowcase() {
                                     id={`video-${video.id}`}
                                     className="w-full h-full object-cover"
                                     controls
-                                    preload="metadata"
+                                    preload={shouldLoad[video.id] ? "metadata" : "none"}
+                                    playsInline
+                                    src={shouldLoad[video.id] ? videoSrc[video.id] : undefined}
                                     onPlay={() => setIsPlaying({ ...isPlaying, [video.id]: true })}
                                     onPause={() => setIsPlaying({ ...isPlaying, [video.id]: false })}
+                                    onError={() => handleError(video.id)}
                                     poster={`data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080'%3E%3Crect fill='%23111827' width='1920' height='1080'/%3E%3Ctext fill='%23ffffff' font-family='Arial' font-size='48' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3E${video.title}%3C/text%3E%3C/svg%3E`}
                                 >
-                                    <source src={video.src} type="video/mp4" />
                                     Browserul tău nu suportă redarea video-ului.
                                 </video>
                             </div>
